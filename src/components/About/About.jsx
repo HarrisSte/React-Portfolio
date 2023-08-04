@@ -1,5 +1,6 @@
 import React from 'react';
-// About section
+
+// About section.
 export default function About() {
   return (
     <div className='about'>
@@ -13,7 +14,6 @@ export default function About() {
         mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
         nostrum temporibus ad omnis nam rerum eligendi.
       </p>
-
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
         tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis

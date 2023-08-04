@@ -1,10 +1,9 @@
 import Nav from 'react-bootstrap/Nav';
-// import { Link } from 'react-router-dom';
 
 function NavLinks() {
   return (
     <>
-      <Nav className='justify-content-center' activeKey='/home'>
+      <Nav className='justify-content-center' activeKey='/'>
         <Nav.Item>
           <Nav.Link href='/'>Home</Nav.Link>
         </Nav.Item>

@@ -1,6 +1,6 @@
 // Here we are importing a CSS file as a dependency
-import React from 'react';
-import './Footer.css';
+// import React from 'react';
+import '../../../src/index.css';
 
 function Footer() {
   return (

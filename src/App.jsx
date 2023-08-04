@@ -12,8 +12,10 @@ function App() {
       <div>
         <Header />
         <Navigation />
+        <main className='mx-3'>
+          <Outlet />
+        </main>
         <Footer />
-        <Outlet />
       </div>
     </>
   );
