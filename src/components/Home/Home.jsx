@@ -11,7 +11,7 @@ export default function Home() {
             Welcome!
           </h1>
         </div>
-        <div className='col-md-8'>
+        {/* <div className='col-md-8'> */}
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
             tenetur maiores, dolor iusto dolorum ullam, natus deleniti
@@ -34,6 +34,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-    </div>
+    // </div>
   );
 }
