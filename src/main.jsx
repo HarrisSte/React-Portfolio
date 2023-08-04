@@ -5,10 +5,9 @@ import './index.css';
 import App from './App';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-// import Portfolio from './components/Portfolio/Project' 
-// import Contact from './components/Contact/Contact';
-
-// import Portfolio from './components/Portfolio';
+import Portfolio from './components/Portfolio/Project';
+import Resume from './components/Resume/Resume';
+import Contact from './components/Contact/Contact';
 
 const router = createBrowserRouter([
   {
@@ -20,17 +19,21 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/About',
+        path: '/about',
         element: <About />,
       },
-        // {
-        //   path: '/portfolio',
-        //   element: <Portfolio />,
-        // },
-        // {
-        //   path: '/Contact',
-        //   element: <Contact />,
-        // },
+      {
+        path: '/portfolio',
+        element: <Portfolio />,
+      },
+      {
+        path: '/resume',
+        element: <Resume />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
+      },
     ],
   },
 ]);
