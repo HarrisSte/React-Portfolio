@@ -1,4 +1,4 @@
-/* 
+
 html,
 body {
     height: 100%;
@@ -6,22 +6,19 @@ body {
     padding: 0;
 }
 
-.header {
-    background: #35201f;
-    height: 200px;
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.header h1 {
-    margin: 0;
-    padding-top: 75px;
-    text-align: center;
-    color: #c84839;
-    font-size: 3rem;
+.content {
+    flex: 1;
 }
-
 
 #root {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-} */
+    background-color: pink;
+}

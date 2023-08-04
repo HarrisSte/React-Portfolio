@@ -1,16 +1,15 @@
 .footer {
-    background: #35201f;
-    height: 200px;
-    padding-top: 1.6rem;
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-left: 35rem;
     text-align: center;
     font-size: 0.9rem;
-    margin-top: 20rem;
+    position: absolute;
+    bottom: 0;
+   
 }
 
 .footer a {
     margin: 0;
-    padding-top: 75px;
-    color: white;
-    font-size: 3rem;
+    color: #922f44;
+    font-size: 2.5rem;
 }
