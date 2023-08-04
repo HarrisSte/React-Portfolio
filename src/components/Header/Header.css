@@ -1,5 +1,7 @@
 .header {
-    background: #35201f;
+    background-image: url('../../assets/Wildflowers.jpg');
+    background-size: cover;
+    background-position: center;
     height: 200px;
 }
 
@@ -7,6 +9,6 @@
     margin: 0;
     padding-top: 75px;
     text-align: center;
-    color: #c84839;
+    color: white;
     font-size: 3rem;
 }

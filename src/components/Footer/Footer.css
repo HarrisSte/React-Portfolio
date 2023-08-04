@@ -1,31 +1,16 @@
 .footer {
-    background: magenta;
+    background: #35201f;
     height: 200px;
     padding-top: 1.6rem;
     padding-bottom: 3rem;
     text-align: center;
     font-size: 0.9rem;
-    margin-top: 5rem;
+    margin-top: 20rem;
 }
 
-.footer h1 {
+.footer a {
     margin: 0;
     padding-top: 75px;
-    text-align: center;
     color: white;
     font-size: 3rem;
-}
-
-/* In your CSS or SCSS file */
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-#root {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }

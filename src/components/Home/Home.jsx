@@ -1,4 +1,5 @@
-import React from 'react';
+// import React from 'react';
+import '../Home/Home.css';
 
 // About section.
 export default function Home() {

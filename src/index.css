@@ -1,4 +1,4 @@
-
+/* 
 html,
 body {
     height: 100%;
@@ -24,25 +24,4 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-.footer {
-    background: #35201f;
-    height: 200px;
-    padding-top: 1.6rem;
-    padding-bottom: 3rem;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 20rem;
-}
-
-.footer a {
-    margin: 0;
-    padding-top: 75px;
-    /* text-align: center; */
-    color: white;
-    font-size: 3rem;
-}
-
-
-
+} */

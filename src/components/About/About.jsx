@@ -1,11 +1,12 @@
-import React from 'react';
+// import React from 'react';
+import '../About/About.css';
 
 // About section.
 export default function About() {
   return (
     <div className='about'>
       <div className='row'>
-        <div className='col-md-3'>
+        <div id='about'className='col-md-3'>
           <h1>About<br></br>Stephanie</h1>
         </div>
         <div className='col-md-8'>
