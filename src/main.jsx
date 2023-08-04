@@ -1,0 +1,48 @@
+import ReactDOM from 'react-dom/client';
+// Imports from 'react-router-dom' to set up application routing behavior
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import App from './App';
+import Error from './pages/Error';
+import Home from './pages/home';
+import Contact from './pages/contact';
+import About from './pages/about';
+import Portfolio from './pages/portfolio';
+import Resume from './pages/resume';
+
+// Accessible routes and which components respond to which URL
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: '/about',
+        element: <About />,
+      },
+      {
+        path: '/portfolio',
+        element: <Portfolio />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
+      },
+      {
+        path: '/resume',
+        element: <Resume />,
+      },
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <RouterProvider router={router} />
+);
