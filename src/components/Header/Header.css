@@ -3,11 +3,13 @@
     background-size: cover;
     background-position: center;
     height: 200px;
+    /* opacity: 0.33; */
 }
 
 .header h1 {
     margin: 0;
-    padding-top: 75px;
+    padding-top: 2rem;
+    /* padding-left: 20rem; */
     text-align: center;
     color: white;
     font-size: 3rem;

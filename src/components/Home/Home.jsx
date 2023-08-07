@@ -4,7 +4,7 @@ import '../Home/Home.css';
 // About section.
 export default function Home() {
   return (
-    <div className='about'>
+    <div className='home'>
       <div className='row'>
         <div className='col-md-3'>
           <h1>

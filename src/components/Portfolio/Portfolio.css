@@ -1,0 +1,12 @@
+/* ControlledCarousel.css */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+}
+
+.custom-carousel {
+    max-width: 50%;
+    margin: 0 auto;
+}
