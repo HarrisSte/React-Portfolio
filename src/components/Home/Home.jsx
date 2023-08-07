@@ -6,33 +6,35 @@ export default function Home() {
     <div className='home'>
       <div className='row'>
         <div className='col-md-3'>
-          <h1>
-            Welcome!
-          </h1>
+          <h1>Welcome!</h1>
         </div>
         <div className='col-md-8'>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            tenetur maiores, dolor iusto dolorum ullam, natus deleniti
-            blanditiis impedit suscipit sed magnam alias in, repellat expedita
-            hic explicabo architecto soluta. About us Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit. Velit voluptate exercitationem
-            quaerat pariatur mollitia, excepturi, voluptatem eveniet a dolor
-            nobis ex veniam totam nostrum temporibus ad omnis nam rerum
-            eligendi.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            tenetur maiores, dolor iusto dolorum ullam, natus deleniti
-            blanditiis impedit suscipit sed magnam alias in, repellat expedita
-            hic explicabo architecto soluta. About us Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit. Velit voluptate exercitationem
-            quaerat pariatur mollitia, excepturi, voluptatem eveniet a dolor
-            nobis ex veniam totam nostrum temporibus ad omnis nam rerum
-            eligendi.
+            👋 Welcome to my profile!
+            <br></br>
+            <br></br>I am thrilled to have you here! Feel free to explore and
+            navigate through the different sections using the user-friendly
+            navigation bar above. Whether you are interested in checking out my
+            projects, learning more about my skills and experiences, or
+            downloading my resume, you are in the right place.
+            <br></br>
+            <br></br>
+            Scroll through to dive into the exciting projects I have completed.
+            Each project showcases my passion, creativity, and dedication. If
+            you have any questions or want to connect, do not hesitate to reach
+            out using the contact tab above, or either linked image below. Your
+            feedback and insights are always valuable to me.
+            <br></br>
+            <br></br>
+            Thank you for visiting, and enjoy taking a look through my profile!
+            <br></br>
+            <br></br>
+            Best regards,
+            <br></br>
+            Stephanie
           </p>
         </div>
       </div>
-     </div>
+    </div>
   );
 }
