@@ -1,7 +1,6 @@
-// import React from 'react';
 import '../Home/Home.css';
 
-// About section.
+// Homepage/Welcome section.
 export default function Home() {
   return (
     <div className='home'>

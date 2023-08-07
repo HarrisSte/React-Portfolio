@@ -1,4 +1,3 @@
-// import React from 'react';
 import '../About/About.css';
 
 // About section.
@@ -16,7 +15,7 @@ export default function About() {
             Over the past ten years, my heart and soul have been dedicated to
             shaping young minds in middle school education. It has been an
             incredible journey, witnessing the growth and progress of my
-            students, and knowing I've made a difference in their lives.
+            students, and knowing I have made a difference in their lives.
             However, life had a fascinating twist for me, leading me to explore
             my passion for web development. Embracing the unknown, I decided to
             pursue this new frontier and immerse myself in coding, design, and
@@ -24,7 +23,7 @@ export default function About() {
             experience in education taught me the value of perseverance and hard
             work. I dove into online courses, coding boot camps, and self-guided
             projects, constantly seeking to improve my skills and understanding.
-            As I move forward, I'm eager to continue making a positive impact
+            As I move forward, I am eager to continue making a positive impact
             and embracing new adventures in education and technology.
           </p>
         </div>
