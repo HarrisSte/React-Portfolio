@@ -1,18 +1,18 @@
 .about h1 {
     margin: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    padding-top: 75px;
+    padding-left: 4rem;
+    color: black;
+    font-size: 3rem;
+}
+
+.about p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     align-items: center;
     padding-top: 75px;
     padding-left: 3rem;
     color: black;
-    font-size: 3rem;
-}
-.about p {
-    margin: 0;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        align-items: center;
-        padding-top: 75px;
-        padding-left: 3rem;
-        color: black;
-        font-size: 1rem;
+    font-size: 18px;
 }

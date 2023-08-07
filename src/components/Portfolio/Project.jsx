@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from '../../assets/Wildflowers.jpg';
+import ExampleCarouselImage from '../../assets/Wildflowers.jpg'; // Placeholder for now
+import ZooImg from '../../assets/Project1SS.jpg';
+import DiscDevs from '../../assets/DiscDevs.jpg';
 import '../Portfolio/Portfolio.css';
 
 function ControlledCarousel() {
@@ -10,6 +12,29 @@ function ControlledCarousel() {
     setIndex(selectedIndex);
   };
 
+  // Update images for projects
+  // Make sure all fit well and are cleaned up.
+  const projects = [
+    {
+      title: 'Zooquarium',
+      description: 'Description of Project 1.',
+      image: ZooImg,
+      link: 'https://caitlinramsey.github.io/zoos-and-aquariums/',
+    },
+    {
+      title: 'DiscoverDevs',
+      description: 'Description of Project 2.',
+      image: DiscDevs,
+      link: '',
+    },
+    {
+      title: 'Project 3',
+      description: 'Description of Project 3.',
+      image: ExampleCarouselImage,
+      link: 'https://project3url.com',
+    },
+  ];
+
   return (
     <div className='carousel-container'>
       <h1>Portfolio</h1>
@@ -18,41 +43,21 @@ function ControlledCarousel() {
         onSelect={handleSelect}
         className='custom-carousel'
       >
-        <Carousel.Item>
-          <img
-            className='d-block w-100'
-            src={ExampleCarouselImage}
-            alt='First slide'
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className='d-block w-100'
-            src={ExampleCarouselImage}
-            alt='Second slide'
-          />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className='d-block w-100'
-            src={ExampleCarouselImage}
-            alt='Third slide'
-          />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+        {projects.map((project, idx) => (
+          <Carousel.Item key={idx}>
+            <a href={project.link} target='_blank' rel='noopener noreferrer'>
+              <img
+                className='d-block w-100'
+                src={project.image}
+                alt={`${project.title} slide`}
+              />
+              <Carousel.Caption>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+              </Carousel.Caption>
+            </a>
+          </Carousel.Item>
+        ))}
       </Carousel>
     </div>
   );
