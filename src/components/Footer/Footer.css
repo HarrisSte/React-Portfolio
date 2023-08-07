@@ -1,11 +1,12 @@
 .footer {
-    padding-top: 6rem;
-    padding-left: 35rem;
+    padding-top: 4rem;
+    padding-left: 4rem;
     text-align: center;
     font-size: 0.9rem;
-    position: absolute;
     bottom: 0;
-   
+    padding-bottom: 40px;
+    z-index: 1;
+    width: 100%;
 }
 
 .footer a {

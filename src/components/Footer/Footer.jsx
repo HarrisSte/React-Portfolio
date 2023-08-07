@@ -1,7 +1,5 @@
-// Here we are importing a CSS file as a dependency
-// import React from 'react';
+// Importing a CSS file as a dependency
 import '../Footer/Footer.css';
-// import 'bootstrap-icons/';
 
 function Footer() {
   return (
