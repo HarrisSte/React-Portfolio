@@ -9,6 +9,11 @@ export default function About() {
           <h1>
             About<br></br>Stephanie
           </h1>
+          <img
+            src='../../../src/assets/AboutPhoto.jpg'
+            alt='Picture of Stephanie'
+            className='profile-image'
+          />
         </div>
         <div className='col-md-8'>
           <p>
@@ -16,16 +21,24 @@ export default function About() {
             shaping young minds in middle school education. It has been an
             incredible journey, witnessing the growth and progress of my
             students, and knowing I have made a difference in their lives.
+            <br></br>
+            <br></br>
             However, life had a fascinating twist for me, leading me to explore
             my passion for web development. Embracing the unknown, I decided to
             pursue this new frontier and immerse myself in coding, design, and
-            technology. The transition was challenging, but my decade of
-            experience in education taught me the value of perseverance and hard
-            work. I dove into online courses, coding boot camps, and self-guided
-            projects, constantly seeking to improve my skills and understanding.
-            As I move forward, I am eager to continue making a positive impact
-            and embracing new adventures in education and technology.
+            technology.
+            <br></br>
+            <br></br>
+            The transition was challenging, but my decade of experience in
+            education taught me the value of perseverance and hard work. I dove
+            into online courses, coding boot camps, and self-guided projects,
+            constantly seeking to improve my skills and understanding.
+            <br></br>
+            <br></br>
+            As I move forward, I am eager to continue making a positive
+            impact and embracing new adventures in education and technology.
           </p>
+          <p></p>
         </div>
       </div>
     </div>

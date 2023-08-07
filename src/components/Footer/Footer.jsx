@@ -1,4 +1,4 @@
-// Importing a CSS file as a dependency
+// Importing the CSS file as a dependency
 import '../Footer/Footer.css';
 
 function Footer() {
@@ -6,12 +6,12 @@ function Footer() {
     <footer className='footer'>
       <a
         className='bi bi-github'
-        href='https://www.github.com'
+        href='https://github.com/HarrisSte'
         target='blank'
       ></a>
       <a
         className='bi bi-linkedin'
-        href='https://www.linkedin.com'
+        href='https://www.linkedin.com/in/stephanie-harris-5069aa224/'
         target='blank'
       ></a>
     </footer>

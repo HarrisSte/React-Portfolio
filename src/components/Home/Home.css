@@ -1,10 +1,16 @@
+/* Default styles for larger screens */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
 .home h1 {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    align-items: center;
-    margin-top: 75px;
-    padding-left: 4rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
+    flex: 0 0 100%;
     color: black;
     font-size: 3rem;
     border-bottom: 4px solid palevioletred;
@@ -12,10 +18,18 @@
 
 .home p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    align-items: center;
-    padding-top: 75px;
-    padding-left: 3rem;
+    padding: 1rem;
+    flex: 0 0 100%;
     color: black;
     font-size: 18px;
-    
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+
+    .home h1,
+    .home p {
+        padding: 1rem;
+        text-align: center;
+    }
 }
