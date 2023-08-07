@@ -7,16 +7,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* opacity: 0.9; */
     border-bottom: 4px solid palevioletred;
 }
 
 .header h1 {
-    margin: 0;
-    /* padding-top: 2rem; */
+    margin: 1rem;
+    font-family: 'Cedarville Cursive', cursive;
     text-align: center;
+    background-color: #F5B7B1;
+    border-radius: 2rem;
     color: white;
     font-size: 3rem;
+    padding: 1rem;
 }
 
 .profile {

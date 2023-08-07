@@ -16,12 +16,12 @@
 .carousel-container h1 {
     margin: 0;
     margin-right: 2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Cedarville Cursive', cursive;
     align-items: center;
     margin-top: 75px;
     padding-left: 2rem;
     padding-bottom: 1rem;
-    color: black;
+    color: #922f44;
     font-size: 3rem;
     border-bottom: 4px solid palevioletred;
 }
@@ -38,6 +38,7 @@
     font-size: 22px;
     color: #555;
     margin-right: 2rem;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* Media query to stack containers on smaller screens */
