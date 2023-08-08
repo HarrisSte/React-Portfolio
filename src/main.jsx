@@ -16,15 +16,15 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '', // Empty path for the root route
-        element: <About />, // Render the About component
+        path: '',
+        element: <About />,
       },
       {
         path: '/about',
         element: <About />,
       },
       {
-        path: '/portfolio',
+        // path: '/portfolio',
         element: <Portfolio />,
       },
       {
