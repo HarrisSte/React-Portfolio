@@ -5,10 +5,10 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App.jsx';
-import About from './components/About/About';
-import Portfolio from './components/Portfolio/Project';
-import Resume from './components/Resume/Resume';
-import Contact from './components/Contact/Contact';
+import About from './components/About/About.jsx';
+import Portfolio from './components/Portfolio/Project.jsx';
+import Resume from './components/Resume/Resume.jsx';
+import Contact from './components/Contact/Contact.jsx';
 
 const router = createBrowserRouter([
   {
