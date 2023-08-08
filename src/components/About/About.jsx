@@ -11,7 +11,7 @@ export default function About() {
             About<br></br>Stephanie
           </h1>
           <img
-            src='../../../src/assets/AboutPhoto.jpg'
+            src='../src/assets/AboutPhoto.jpg'
             alt='Picture of Stephanie'
             className='profile-image'
           />

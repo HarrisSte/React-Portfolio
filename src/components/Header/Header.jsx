@@ -7,7 +7,7 @@ function Header() {
     <header id='container' className='header'>
       <div className='profileImg'>
         <img
-          src='../../src/assets/profileImg.jpg'
+          src='../src/assets/profileImg.jpg'
           alt='Profile image'
           className='img-fluid rounded-circle profile-image'
         />
