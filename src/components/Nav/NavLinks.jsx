@@ -27,8 +27,8 @@ const linkStyle = (link) => ({
 
   return (
     <>
-      <Nav className='justify-content-center' activeKey='/'>
-        <Nav.Item>
+      <Nav className='justify-content-center' activeKey='about'>
+        {/* <Nav.Item>
           <Nav.Link
             href='/'
             style={linkStyle('/')}
@@ -37,7 +37,7 @@ const linkStyle = (link) => ({
           >
             Home
           </Nav.Link>
-        </Nav.Item>
+        </Nav.Item> */}
         <Nav.Item>
           <Nav.Link
             href='about'
