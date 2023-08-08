@@ -1,7 +1,6 @@
-import React from 'react';
+// Importing necessary styles and files.
 import './About.css';
-
-import aboutPhoto from '../../assets/AboutPhoto.jpg'; // Import the image
+import aboutPhoto from '../../assets/AboutPhoto.jpg';
 
 export default function About() {
   return (

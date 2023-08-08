@@ -1,6 +1,5 @@
-import React from 'react';
+// Importing necessary styles and files.
 import './Header.css';
-
 import profileImg from '../../assets/profileImg.jpg';
 
 function Header() {

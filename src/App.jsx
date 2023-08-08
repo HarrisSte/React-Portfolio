@@ -1,8 +1,6 @@
 // Render only single instances of Header, Footer, and Navbar
 // These are the components that will stay stationary on the app.
 
-// import React from 'react';
-
 import { Outlet } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './components/Nav/NavLinks';
