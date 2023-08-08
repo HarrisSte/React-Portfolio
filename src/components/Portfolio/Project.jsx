@@ -82,7 +82,14 @@ function ControlledCarousel() {
     <div className='carousel-container'>
       <h1>Portfolio</h1>
       <h2>
-        Here you can scroll through my various projects that I have worked on; both front-end & back-end. For my front-end projects, you will find that there are links to both the GitHub repositories, as well as links to the deployed applications. You can also view you will find links to the GitHub Repository and/or the deployed application below the image.
+        Here you can scroll through my various projects that I have worked on;
+        both front-end & back-end.
+        <br></br>
+        <br></br>
+        For my front-end projects, you will find that there are links
+        to both the GitHub repositories, as well as links to the deployed
+        applications. You can also view you will find links to the GitHub
+        Repository and/or the deployed application below the image.
       </h2>
 
       <Carousel
@@ -93,9 +100,9 @@ function ControlledCarousel() {
         {projects.map((project, idx) => (
           <Carousel.Item key={idx}>
             <a
-              // href={project.deployedLink}
-              // target='_blank'
-              // rel='noopener noreferrer'
+            // href={project.deployedLink}
+            // target='_blank'
+            // rel='noopener noreferrer'
             >
               <img
                 className='d-block w-100'
@@ -107,7 +114,7 @@ function ControlledCarousel() {
                 <p>{project.description}</p>
               </Carousel.Caption>
             </a>
-            
+
             <div className='link-section'>
               {project.githubLink && (
                 <a
