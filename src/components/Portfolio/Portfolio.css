@@ -1,11 +1,32 @@
 /* Styles for the 'About' section. */
 /* Projects carousel */
 .carousel-container {
-    margin-top: 5rem;
+    margin-top: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 25rem;
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 1rem;   
+    border-radius: 2rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: palevioletred;
+    border-radius: 2rem;
 }
 
 .custom-carousel {
@@ -40,6 +61,29 @@
     font-size: 22px;
     color: #555;
     font-family: 'Quicksand', sans-serif;
+}
+
+.link-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-bottom: 3rem;
+
+}
+
+.project-link {
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 24px;
+    font-family: 'Cedarville Cursive', cursive;
+    background-color: #922f44;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.project-link:hover {
+    color: palevioletred;
 }
 
 /* Media query to stack containers on smaller screens */

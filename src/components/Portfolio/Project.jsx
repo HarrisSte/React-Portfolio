@@ -30,37 +30,47 @@ function ControlledCarousel() {
       description:
         'Zooquarium is a interactive application where users can search for their favorite animals & local zoos.',
       image: ZooImg,
-      link: 'https://caitlinramsey.github.io/zoos-and-aquariums/',
+      githubLink: 'https://github.com/yourusername/zoos-and-aquariums',
+      deployedLink: 'https://caitlinramsey.github.io/zoos-and-aquariums/',
     },
     {
       title: 'DiscoverDevs',
-      description: 'Description of Project 2.',
+      description:
+        'An app connecting employers with newly graduated developers. This repository contains the code for seamless matching, showcasing skills, and streamlining hiring processes. Join the community and bridge the gap in the tech industry.',
       image: DiscDevs,
-      link: '',
+      githubLink: 'https://www.github.com',
+      deployedLink: 'https://github.com',
     },
     {
-      title: 'Project 3',
-      description: 'Description of Project 3.',
+      title: 'Just Another Text Editor',
+      description:
+        'JATE is A single-page application that meets the PWA criteria. It features a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser as well as in the case of being offline.',
       image: ExampleCarouselImage,
-      link: 'https://project3url.com',
+      githubLink: 'https://github.com/HarrisSte/Just-Another-Text-Editor',
+      deployedLink: 'https://just-anthr-txt-editor-b5f1347fd808.herokuapp.com/',
     },
     {
-      title: 'Project 4',
-      description: 'Description of Project 3.',
+      title: 'Note-Taker',
+      description:
+        'A note-taker application that allows users to easily enter, save, and remove notes.',
       image: ExampleCarouselImage,
-      link: 'https://project3url.com',
+      githubLink: 'https://github.com/HarrisSte/Note-Taker',
+      deployedLink: 'https://pacific-inlet-29502.herokuapp.com/',
     },
     {
-      title: 'Project 5',
-      description: 'Description of Project 3.',
+      title: 'Coding Quiz',
+      description:
+        'A short coding quiz to test your knowledge of HTML, CSS, and JavaScript.',
       image: ExampleCarouselImage,
-      link: 'https://project3url.com',
+      githubLink: 'https://github.com/HarrisSte/Coding-Quiz',
+      deployedLink: 'https://harrisste.github.io/Coding-Quiz/',
     },
     {
       title: 'Project 6',
       description: 'Description of Project 3.',
       image: ExampleCarouselImage,
-      link: 'https://project3url.com',
+      githubLink: 'https://www.github.com',
+      deployedLink: 'https://github.com',
     },
   ];
 
@@ -68,7 +78,7 @@ function ControlledCarousel() {
     <div className='carousel-container'>
       <ProjectDescription
         title='Portfolio'
-        description='Scroll left or right to look through my different projects. If you want to access the deployed application, go ahead and click on the image.'
+        description='Scroll left or right to look through my different projects. You will find the corresponding GitHub and deployed application links at the bottom of each image.'
       />
 
       <Carousel
@@ -78,7 +88,11 @@ function ControlledCarousel() {
       >
         {projects.map((project, idx) => (
           <Carousel.Item key={idx}>
-            <a href={project.link} target='_blank' rel='noopener noreferrer'>
+            <a
+              href={project.deployedLink}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <img
                 className='d-block w-100'
                 src={project.image}
@@ -89,6 +103,28 @@ function ControlledCarousel() {
                 <p>{project.description}</p>
               </Carousel.Caption>
             </a>
+            <div className='link-section'>
+              {project.githubLink && (
+                <a
+                  href={project.githubLink}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='project-link'
+                >
+                  GitHub
+                </a>
+              )}
+              {project.deployedLink && (
+                <a
+                  href={project.deployedLink}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='project-link'
+                >
+                  Deployed App
+                </a>
+              )}
+            </div>
           </Carousel.Item>
         ))}
       </Carousel>
