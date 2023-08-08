@@ -1,6 +1,4 @@
-// Bringing in the required imports from 'react-router-dom' to set up application routing behavior.
 import ReactDOM from 'react-dom/client';
-// import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import './index.css';
@@ -18,7 +16,10 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        index: true,
+        path: '', // Empty path for the root route
+        element: <About />, // Render the About component
+      },
+      {
         path: '/about',
         element: <About />,
       },
