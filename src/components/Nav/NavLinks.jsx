@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom'; // Import useLocation
 import Nav from 'react-bootstrap/Nav';
 
 function NavLinks() {
+  const location = useLocation(); // Get the current location
+
   const [hoveredLink, setHoveredLink] = useState(null);
 
   const handleMouseEnter = (link) => {
@@ -14,7 +17,11 @@ function NavLinks() {
 
   const linkStyle = (link) => ({
     fontSize: hoveredLink === link ? '22px' : '18px',
-    color: hoveredLink === link ? 'white' : '#922f44',
+    color:
+      location.pathname === '/' + link ||
+      (hoveredLink === link && location.pathname !== '/')
+        ? 'white'
+        : '#922f44',
     transition: 'all 0.3s',
   });
 
