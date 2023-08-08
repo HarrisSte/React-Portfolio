@@ -32,7 +32,7 @@ const linkStyle = (link) => ({
       <Nav className='justify-content-center' activeKey='about'>
         <Nav.Item>
           <Nav.Link
-            href='about'
+            href='/About'
             style={linkStyle('about')}
             onMouseEnter={() => handleMouseEnter('about')}
             onMouseLeave={handleMouseLeave}
@@ -42,7 +42,7 @@ const linkStyle = (link) => ({
         </Nav.Item>
         <Nav.Item>
           <Nav.Link
-            href='portfolio'
+            href='/Portfolio'
             style={linkStyle('portfolio')}
             onMouseEnter={() => handleMouseEnter('portfolio')}
             onMouseLeave={handleMouseLeave}
@@ -52,7 +52,7 @@ const linkStyle = (link) => ({
         </Nav.Item>
         <Nav.Item>
           <Nav.Link
-            href='resume'
+            href='/Resume'
             style={linkStyle('resume')}
             onMouseEnter={() => handleMouseEnter('resume')}
             onMouseLeave={handleMouseLeave}
@@ -62,7 +62,7 @@ const linkStyle = (link) => ({
         </Nav.Item>
         <Nav.Item>
           <Nav.Link
-            href='contact'
+            href='/Contact'
             style={linkStyle('contact')}
             onMouseEnter={() => handleMouseEnter('contact')}
             onMouseLeave={handleMouseLeave}
