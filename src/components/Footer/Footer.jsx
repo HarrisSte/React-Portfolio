@@ -28,6 +28,23 @@ function Footer() {
               rel='noopener noreferrer'
             ></a>
           </Col>
+
+          <Col
+            xs='auto'
+            className={`text-center ${
+              hoveredIcon === 'twitter' ? 'hovered' : ''
+            }`}
+            onMouseEnter={() => handleIconHover('twitter')}
+            onMouseLeave={() => setHoveredIcon(null)}
+          >
+            <a
+              className='bi bi-twitter'
+              href='https://twitter.com/HexleLich'
+              target='_blank'
+              rel='noopener noreferrer'
+            ></a>
+          </Col>
+
           <Col
             xs='auto'
             className={`text-center ${
