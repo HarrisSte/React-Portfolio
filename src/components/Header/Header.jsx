@@ -1,13 +1,14 @@
-// Importing CSS dependency.
-// import React from 'react';
-import '../Header/Header.css';
+import React from 'react';
+import './Header.css';
+
+import profileImg from '../../assets/profileImg.jpg';
 
 function Header() {
   return (
     <header id='container' className='header'>
-      <div className='profileImg'>
+      <div className='profile'>
         <img
-          src='../src/assets/profileImg.jpg'
+          src={profileImg}
           alt='Profile image'
           className='img-fluid rounded-circle profile-image'
         />

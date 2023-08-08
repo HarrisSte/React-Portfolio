@@ -1,7 +1,8 @@
 import React from 'react';
-import '../About/About.css';
+import './About.css';
 
-// About section.
+import aboutPhoto from '../../assets/AboutPhoto.jpg'; // Import the image
+
 export default function About() {
   return (
     <div className='about'>
@@ -11,7 +12,7 @@ export default function About() {
             About<br></br>Stephanie
           </h1>
           <img
-            src='../src/assets/AboutPhoto.jpg'
+            src={aboutPhoto}
             alt='Picture of Stephanie'
             className='profile-image'
           />
@@ -39,7 +40,6 @@ export default function About() {
             As I move forward, I am eager to continue making a positive impact
             and embracing new adventures in education and technology.
           </p>
-          <p></p>
         </div>
       </div>
     </div>
