@@ -27,7 +27,8 @@ function ControlledCarousel() {
   const projects = [
     {
       title: 'Zooquarium',
-      description: 'Zooquarium is a interactive application where users can search for their favorite animals & local zoos.',
+      description:
+        'Zooquarium is a interactive application where users can search for their favorite animals & local zoos.',
       image: ZooImg,
       link: 'https://caitlinramsey.github.io/zoos-and-aquariums/',
     },
@@ -39,6 +40,24 @@ function ControlledCarousel() {
     },
     {
       title: 'Project 3',
+      description: 'Description of Project 3.',
+      image: ExampleCarouselImage,
+      link: 'https://project3url.com',
+    },
+    {
+      title: 'Project 4',
+      description: 'Description of Project 3.',
+      image: ExampleCarouselImage,
+      link: 'https://project3url.com',
+    },
+    {
+      title: 'Project 5',
+      description: 'Description of Project 3.',
+      image: ExampleCarouselImage,
+      link: 'https://project3url.com',
+    },
+    {
+      title: 'Project 6',
       description: 'Description of Project 3.',
       image: ExampleCarouselImage,
       link: 'https://project3url.com',
