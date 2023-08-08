@@ -1,74 +1,68 @@
-/* Styles for the 'About' section. */
-/* Projects carousel */
+/* Styles for the 'About' section & carousel of projects. */
+
+.carousel-container h2,
+.carousel-contatiner p,
+.description-text {
+    font-family: 'Quicksand', sans-serif;
+    color: #555;
+    padding-bottom: 3rem;
+    font-size: 22px;
+}
+
 .carousel-container {
-    margin-top: 8rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 25rem;
     position: relative;
+    padding: 0 1rem;
+}
+
+.carousel-container h2 {
+    padding-left: 3rem;
 }
 
 .carousel-caption {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    padding: 1rem;   
+    padding: 1rem;
     border-radius: 2rem;
     text-align: center;
     z-index: 1;
+    background-color: palevioletred;
 }
 
 .carousel-caption h3,
 .carousel-caption p {
     margin: 0;
     padding: 0.5rem;
-    background-color: palevioletred;
     border-radius: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
 }
 
 .custom-carousel {
-    max-width: 55%;
+    max-width: 50%;
     margin: 0 auto;
-    margin-right: 1rem;
 }
 
 .carousel-container h1 {
-    margin: 4rem;
+    margin: 4rem 0 1rem;
     font-family: 'Cedarville Cursive', cursive;
-    align-items: center;
-    margin-top: 75px;
-    margin-left: 6rem;
     padding-left: 2rem;
-    padding-bottom: 1rem;
     color: #922f44;
     font-size: 3rem;
     border-bottom: 4px solid palevioletred;
 }
 
-.project-description-inner {
-    text-align: center;
-    position: relative;
-    margin-right: 2rem;
-    margin-bottom: 20px;
-}
-
-.description-text {
-    margin: 4rem;
-    text-align: center;
-    font-size: 22px;
-    color: #555;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.link-section {
+.link-section  {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     padding-bottom: 3rem;
-
 }
 
 .project-link {
@@ -89,8 +83,6 @@
 /* Media query to stack containers on smaller screens */
 @media (max-width: 768px) {
     .carousel-container {
-        flex-direction: column;
-        align-items: center;
         height: auto;
     }
 
@@ -104,11 +96,15 @@
         margin-right: 0;
     }
 
-    .project-description-inner {
-        margin-right: 0;
+    .carousel-caption {
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0.5rem;
     }
 
-    .description-text {
-        margin-right: 0;
+    .carousel-caption h3,
+    .carousel-caption p {
+        padding: 0.15rem;
     }
 }

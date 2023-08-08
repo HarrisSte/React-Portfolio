@@ -1,21 +1,24 @@
 // Importing necessary items for the 'Portfolio' section.
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from '../../assets/Wildflowers.jpg'; // Placeholder for now
 import ZooImg from '../../assets/Project1SS.jpg';
 import DiscDevs from '../../assets/DiscDevs.jpg';
+import JATE from '../../assets/JATE.jpg';
+import NoteTaker from '../../assets/notetaker.jpg';
+import CodeQuiz from '../../assets/codingquiz.jpg';
+import PwGen from '../../assets/PWGen.jpg';
 import '../Portfolio/Portfolio.css';
 
-function ProjectDescription({ title, description }) {
-  return (
-    <div className='project-description'>
-      <div className='project-description-inner'>
-        <h1>{title}</h1>
-        <p className='description-text'>{description}</p>
-      </div>
-    </div>
-  );
-}
+// function ProjectDescription({ title, description }) {
+//   return (
+//     <div className='project-description'>
+//       <div className='project-description-inner'>
+//         <h1>{title}</h1>
+//         <p className='description-text'>{description}</p>
+//       </div>
+//     </div>
+//   );
+// }
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -28,7 +31,7 @@ function ControlledCarousel() {
     {
       title: 'Zooquarium',
       description:
-        'Zooquarium is a interactive application where users can search for their favorite animals & local zoos.',
+        'Search for your favorite animals & local zoos.',
       image: ZooImg,
       githubLink: 'https://github.com/yourusername/zoos-and-aquariums',
       deployedLink: 'https://caitlinramsey.github.io/zoos-and-aquariums/',
@@ -36,50 +39,51 @@ function ControlledCarousel() {
     {
       title: 'DiscoverDevs',
       description:
-        'An app connecting employers with newly graduated developers. This repository contains the code for seamless matching, showcasing skills, and streamlining hiring processes. Join the community and bridge the gap in the tech industry.',
+        'Connecting employers with newly graduated developers.',
       image: DiscDevs,
-      githubLink: 'https://www.github.com',
-      deployedLink: 'https://github.com',
+      githubLink: 'https://github.com/Prototype1309/DiscoverDevs',
+      deployedLink: 'https://discoverdevs-2aa18af2a0dc.herokuapp.com/',
     },
     {
-      title: 'Just Another Text Editor',
+      title: 'JATE',
       description:
-        'JATE is A single-page application that meets the PWA criteria. It features a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser as well as in the case of being offline.',
-      image: ExampleCarouselImage,
+        'Just another text editor that meets PWA criteria.',
+      image: JATE,
       githubLink: 'https://github.com/HarrisSte/Just-Another-Text-Editor',
       deployedLink: 'https://just-anthr-txt-editor-b5f1347fd808.herokuapp.com/',
     },
     {
       title: 'Note-Taker',
       description:
-        'A note-taker application that allows users to easily enter, save, and remove notes.',
-      image: ExampleCarouselImage,
+        'Easily enter, save, and remove notes.',
+      image: NoteTaker,
       githubLink: 'https://github.com/HarrisSte/Note-Taker',
       deployedLink: 'https://pacific-inlet-29502.herokuapp.com/',
     },
     {
       title: 'Coding Quiz',
       description:
-        'A short coding quiz to test your knowledge of HTML, CSS, and JavaScript.',
-      image: ExampleCarouselImage,
+        'Test your knowledge of HTML, CSS, and JavaScript.',
+      image: CodeQuiz,
       githubLink: 'https://github.com/HarrisSte/Coding-Quiz',
       deployedLink: 'https://harrisste.github.io/Coding-Quiz/',
     },
     {
-      title: 'Project 6',
-      description: 'Description of Project 3.',
-      image: ExampleCarouselImage,
-      githubLink: 'https://www.github.com',
-      deployedLink: 'https://github.com',
+      title: 'Password Generator',
+      description:
+        'An application that will generate passwords for users. Note: These passwords are NOT secure.',
+      image: PwGen,
+      githubLink: 'https://github.com/HarrisSte/Password-Generator',
+      deployedLink: 'https://harrisste.github.io/Password-Generator/',
     },
   ];
 
   return (
     <div className='carousel-container'>
-      <ProjectDescription
-        title='Portfolio'
-        description='Scroll left or right to look through my different projects. You will find the corresponding GitHub and deployed application links at the bottom of each image.'
-      />
+      <h1>Portfolio</h1>
+      <h2>
+        Here you can scroll through my various projects that I have worked on; both front-end & back-end. For my front-end projects, you will find that there are links to both the GitHub repositories, as well as links to the deployed applications. You can also view you will find links to the GitHub Repository and/or the deployed application below the image.
+      </h2>
 
       <Carousel
         activeIndex={index}
@@ -89,9 +93,9 @@ function ControlledCarousel() {
         {projects.map((project, idx) => (
           <Carousel.Item key={idx}>
             <a
-              href={project.deployedLink}
-              target='_blank'
-              rel='noopener noreferrer'
+              // href={project.deployedLink}
+              // target='_blank'
+              // rel='noopener noreferrer'
             >
               <img
                 className='d-block w-100'
@@ -103,6 +107,7 @@ function ControlledCarousel() {
                 <p>{project.description}</p>
               </Carousel.Caption>
             </a>
+            
             <div className='link-section'>
               {project.githubLink && (
                 <a

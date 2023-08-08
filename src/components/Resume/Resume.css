@@ -1,0 +1,36 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12 {
+    flex: 0 0 calc(100% / 3);
+    padding: 10px;
+}
+
+.col-6 {
+    flex: 0 0 calc(100% / 3);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-6 p {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 32px;
+}
+
+.col-6 ul {
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 26px;
+}

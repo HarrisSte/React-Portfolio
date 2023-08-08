@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Resume/Resume.css';
 
 function handleDownload() {
   const link = document.createElement('a');
@@ -11,34 +12,40 @@ export default function Resume() {
   return (
     <div className='about'>
       <div className='row'>
-        <div className='col-12 col-lg-3'>
+        <div className='col-12'>
           <h1>
             Resume & <br />
             Proficiencies
           </h1>
         </div>
-        <div className='col-12 col-lg-8'>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            tenetur maiores, dolor iusto dolorum ullam, natus deleniti
-            blanditiis impedit suscipit sed magnam alias in, repellat expedita
-            hic explicabo architecto soluta. About us Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit. Velit voluptate exercitationem
-            quaerat pariatur mollitia, excepturi, voluptatem eveniet a dolor
-            nobis ex veniam totam nostrum temporibus ad omnis nam rerum
-            eligendi.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            tenetur maiores, dolor iusto dolorum ullam, natus deleniti
-            blanditiis impedit suscipit sed magnam alias in, repellat expedita
-            hic explicabo architecto soluta. About us Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit. Velit voluptate exercitationem
-            quaerat pariatur mollitia, excepturi, voluptatem eveniet a dolor
-            nobis ex veniam totam nostrum temporibus ad omnis nam rerum
-            eligendi.
-          </p>
-          <button onClick={handleDownload}>Download Resume</button>
+        <div className='col-6'>
+          <p>Front-End Proficiencies</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>JQuery</li>
+            <li>Responsive design</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div className='col-6'>
+          <p>Back-End Proficiencies</p>
+          <ul>
+            <li>APIs</li>
+            <li>Node</li>
+            <li>Express</li>
+            <li>MySQL, Sequelize</li>
+            <li>MongoDB, Mongoose</li>
+            <li>REST</li>
+            <li>GraphQL</li>
+          </ul>
+        </div>
+        <div className='button'>
+          <div className='center-button'>
+            <button onClick={handleDownload}>Download Resume</button>
+          </div>
         </div>
       </div>
     </div>
