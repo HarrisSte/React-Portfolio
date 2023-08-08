@@ -57,7 +57,7 @@ const linkStyle = (link) => ({
             onMouseEnter={() => handleMouseEnter('resume')}
             onMouseLeave={handleMouseLeave}
           >
-            Resume
+            Resume & Proficiencies
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>

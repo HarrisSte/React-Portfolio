@@ -1,8 +1,12 @@
 // Bringing in the required imports from 'react-router-dom' to set up application routing behavior.
 import ReactDOM from 'react-dom/client';
+// import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import './index.css';
-import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import App from './App.jsx';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Project';
 import Resume from './components/Resume/Resume';
