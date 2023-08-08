@@ -1,19 +1,49 @@
-export default function Contact() {
+import React from 'react';
+import '../Contact/Contact.css';
+
+const ContactForm = () => {
+  const [formStatus, setFormStatus] = React.useState('Send');
+  const onSubmit = (e) => {
+    e.preventDefault();
+    setFormStatus('Submitting...');
+    const { name, email, message } = e.target.elements;
+    let conFom = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    console.log(conFom);
+  };
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Rubber cheese dolcelatte cheese slices. Halloumi stinking bishop st.
-        agur blue cheese red leicester airedale emmental hard cheese camembert
-        de normandie. Cut the cheese macaroni cheese who moved my cheese gouda
-        parmesan squirty cheese bavarian bergkase cheese on toast. Roquefort.
-        Boursin blue castello goat. Everyone loves pecorino blue castello
-        parmesan monterey jack cheesecake danish fontina stilton. Cheddar cheese
-        triangles parmesan blue castello halloumi melted cheese cheese and wine
-        cottage cheese. Macaroni cheese caerphilly everyone loves ricotta st.
-        agur blue cheese airedale hard cheese smelly cheese. Rubber cheese
-        paneer emmental babybel.
+    <div className='container mt-5'>
+      <h2 className='mb-3 contactTitle'>Contact</h2>
+      <p className='mb-3 contactDesc'>
+        Please reach out should you have any questions or comments!
       </p>
+      <form onSubmit={onSubmit}>
+        <div className='mb-3'>
+          <label className='form-label' htmlFor='name'>
+            Name
+          </label>
+          <input className='form-control' type='text' id='name' required />
+        </div>
+        <div className='mb-3'>
+          <label className='form-label' htmlFor='email'>
+            Email
+          </label>
+          <input className='form-control' type='email' id='email' required />
+        </div>
+        <div className='mb-3'>
+          <label className='form-label' htmlFor='message'>
+            Message
+          </label>
+          <textarea className='form-control' id='message' required />
+        </div>
+        <button className='btn btn-danger' type='submit'>
+          {formStatus}
+        </button>
+      </form>
     </div>
   );
-}
+};
+export default ContactForm;

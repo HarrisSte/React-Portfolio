@@ -1,0 +1,19 @@
+.contactTitle {
+    margin: 0;
+    font-family: 'Cedarville Cursive', cursive;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+    color: #922f44;
+    font-size: 3rem;
+    border-bottom: 4px solid palevioletred;
+}
+
+.contactDesc {
+    font-family: 'Quicksand', sans-serif;
+    align-items: center;
+    color: #555;
+    font-size: 22px;
+}
