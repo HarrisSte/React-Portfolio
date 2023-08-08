@@ -15,15 +15,15 @@ function NavLinks() {
     setHoveredLink(null);
   };
 
-  const linkStyle = (link) => ({
-    fontSize: hoveredLink === link ? '22px' : '18px',
-    color:
-      location.pathname === '/' + link ||
-      (hoveredLink === link && location.pathname !== '/')
-        ? 'white'
-        : '#922f44',
-    transition: 'all 0.3s',
-  });
+const linkStyle = (link) => ({
+  fontSize: hoveredLink === link ? '22px' : '18px',
+  color:
+    (location.pathname === '/' && link === '/') ||
+    (location.pathname === '/' + link && location.pathname !== '/')
+      ? 'white'
+      : '#922f44',
+  transition: 'all 0.3s',
+});
 
   return (
     <>

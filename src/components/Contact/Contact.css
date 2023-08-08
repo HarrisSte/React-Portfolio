@@ -1,5 +1,5 @@
 .contactTitle {
-    margin: 0;
+    margin: 4rem;
     font-family: 'Cedarville Cursive', cursive;
     align-items: center;
     margin-top: 75px;
@@ -13,7 +13,6 @@
 
 .contactDesc {
     font-family: 'Quicksand', sans-serif;
-    align-items: center;
     color: #555;
     font-size: 22px;
 }

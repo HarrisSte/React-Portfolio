@@ -1,15 +1,23 @@
-// import React from 'react';
-import '../Resume/Resume.css';
+import React from 'react';
 
-// About section.
+function handleDownload() {
+  const link = document.createElement('a');
+  link.href = '../../../public/SHarris_Resume.pdf';
+  link.download = 'SHarris_Resume.pdf';
+  link.click();
+}
+
 export default function Resume() {
   return (
     <div className='about'>
       <div className='row'>
-        <div className='col-md-3'>
-          <h1>Resume</h1>
+        <div className='col-12 col-lg-3'>
+          <h1>
+            Resume & <br />
+            Proficiencies
+          </h1>
         </div>
-        <div className='col-md-8'>
+        <div className='col-12 col-lg-8'>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
             tenetur maiores, dolor iusto dolorum ullam, natus deleniti
@@ -30,6 +38,7 @@ export default function Resume() {
             nobis ex veniam totam nostrum temporibus ad omnis nam rerum
             eligendi.
           </p>
+          <button onClick={handleDownload}>Download Resume</button>
         </div>
       </div>
     </div>

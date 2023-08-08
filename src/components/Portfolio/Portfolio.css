@@ -15,8 +15,7 @@
 }
 
 .carousel-container h1 {
-    margin: 0;
-    margin-right: 2rem;
+    margin: 4rem;
     font-family: 'Cedarville Cursive', cursive;
     align-items: center;
     margin-top: 75px;
@@ -36,11 +35,10 @@
 }
 
 .description-text {
+    margin: 4rem;
     text-align: center;
     font-size: 22px;
     color: #555;
-    margin-right: 2rem;
-    margin-left: 6rem;
     font-family: 'Quicksand', sans-serif;
 }
 
