@@ -1,4 +1,5 @@
-// Here we are importing a CSS file as a dependency
+// Importing CSS dependency.
+import React from 'react';
 import '../Header/Header.css';
 
 function Header() {

@@ -1,3 +1,4 @@
+import React from 'react';
 import '../About/About.css';
 
 // About section.
@@ -35,8 +36,8 @@ export default function About() {
             constantly seeking to improve my skills and understanding.
             <br></br>
             <br></br>
-            As I move forward, I am eager to continue making a positive
-            impact and embracing new adventures in education and technology.
+            As I move forward, I am eager to continue making a positive impact
+            and embracing new adventures in education and technology.
           </p>
           <p></p>
         </div>

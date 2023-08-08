@@ -1,4 +1,5 @@
 // Importing necessary items for the 'Portfolio' section.
+import React from 'react';
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import ZooImg from '../../assets/Project1SS.jpg';
@@ -8,17 +9,6 @@ import NoteTaker from '../../assets/notetaker.jpg';
 import CodeQuiz from '../../assets/codingquiz.jpg';
 import PwGen from '../../assets/PWGen.jpg';
 import '../Portfolio/Portfolio.css';
-
-// function ProjectDescription({ title, description }) {
-//   return (
-//     <div className='project-description'>
-//       <div className='project-description-inner'>
-//         <h1>{title}</h1>
-//         <p className='description-text'>{description}</p>
-//       </div>
-//     </div>
-//   );
-// }
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -30,40 +20,35 @@ function ControlledCarousel() {
   const projects = [
     {
       title: 'Zooquarium',
-      description:
-        'Search for your favorite animals & local zoos.',
+      description: 'Search for your favorite animals & local zoos.',
       image: ZooImg,
       githubLink: 'https://github.com/yourusername/zoos-and-aquariums',
       deployedLink: 'https://caitlinramsey.github.io/zoos-and-aquariums/',
     },
     {
       title: 'DiscoverDevs',
-      description:
-        'Connecting employers with newly graduated developers.',
+      description: 'Connecting employers with newly graduated developers.',
       image: DiscDevs,
       githubLink: 'https://github.com/Prototype1309/DiscoverDevs',
       deployedLink: 'https://discoverdevs-2aa18af2a0dc.herokuapp.com/',
     },
     {
       title: 'JATE',
-      description:
-        'Just another text editor that meets PWA criteria.',
+      description: 'Just another text editor that meets PWA criteria.',
       image: JATE,
       githubLink: 'https://github.com/HarrisSte/Just-Another-Text-Editor',
       deployedLink: 'https://just-anthr-txt-editor-b5f1347fd808.herokuapp.com/',
     },
     {
       title: 'Note-Taker',
-      description:
-        'Easily enter, save, and remove notes.',
+      description: 'Easily enter, save, and remove notes.',
       image: NoteTaker,
       githubLink: 'https://github.com/HarrisSte/Note-Taker',
       deployedLink: 'https://pacific-inlet-29502.herokuapp.com/',
     },
     {
       title: 'Coding Quiz',
-      description:
-        'Test your knowledge of HTML, CSS, and JavaScript.',
+      description: 'Test your knowledge of HTML, CSS, and JavaScript.',
       image: CodeQuiz,
       githubLink: 'https://github.com/HarrisSte/Coding-Quiz',
       deployedLink: 'https://harrisste.github.io/Coding-Quiz/',
@@ -86,10 +71,10 @@ function ControlledCarousel() {
         both front-end & back-end.
         <br></br>
         <br></br>
-        For my front-end projects, you will find that there are links
-        to both the GitHub repositories, as well as links to the deployed
-        applications. You can also view you will find links to the GitHub
-        Repository and/or the deployed application below the image.
+        For my front-end projects, you will find that there are links to both
+        the GitHub repositories, as well as links to the deployed applications.
+        You can also view you will find links to the GitHub Repository and/or
+        the deployed application below the image.
       </h2>
 
       <Carousel
