@@ -37,9 +37,7 @@ Thank you for visiting my portfolio – a testament to my passion and dedication
 **Contact:**
 
 ## Deployed Application
-[GitHub Pages](https://harrisste.github.io/React-Portfolio/)
-<br>
-[Netlify](https://genuine-syrniki-b2b29d.netlify.app)
+[Netlify](https://harrisste.netlify.app)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
