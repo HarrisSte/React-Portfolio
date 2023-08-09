@@ -1,3 +1,7 @@
+h1{
+margin-right: 4rem;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -16,13 +20,14 @@
 }
 
 .col-6 p {
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: 32px;
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
 }
 
 .col-6 ul {
-    font-size: 22px;
-    font-family: 'Quicksand', sans-serif;
+    font-size: 32px;
+    font-family: 'Lato', sans-serif;
+    padding-right: 5rem;
 }
 
 
@@ -31,6 +36,18 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Lato', sans-serif;
     font-size: 26px;
+}
+
+/* Media query for responsive layout */
+@media (max-width: 768px) {
+    .col-6 {
+        flex: 0 0 100%;
+        padding-left: 10px;
+    }
+
+    .col-12 {
+        flex: 0 0 100%;
+    }
 }

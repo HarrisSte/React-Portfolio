@@ -18,7 +18,7 @@ function NavLinks() {
   };
 
 const linkStyle = (link) => ({
-  fontSize: hoveredLink === link ? '22px' : '18px',
+  fontSize: hoveredLink === link ? '30px' : '24px',
   color:
     (location.pathname === '/' && link === '/') ||
     (location.pathname === '/' + link && location.pathname !== '/')

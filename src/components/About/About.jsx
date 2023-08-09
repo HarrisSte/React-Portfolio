@@ -8,7 +8,7 @@ export default function About() {
       <div className='row'>
         <div id='about' className='col-md-3'>
           <h1>
-            About<br></br>Stephanie
+            About Me
           </h1>
           <img
             src={aboutPhoto}

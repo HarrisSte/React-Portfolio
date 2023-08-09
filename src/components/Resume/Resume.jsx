@@ -1,4 +1,3 @@
-import React from 'react';
 import '../Resume/Resume.css';
 
 function handleDownload() {
