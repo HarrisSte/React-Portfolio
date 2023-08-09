@@ -30,11 +30,20 @@ Thank you for visiting my portfolio – a testament to my passion and dedication
 - [License](#license)
 - [Contributors](#contributors)
 - [Contact](#contact)
+  
 ## Screenshots
 **About:**
+![About](https://github.com/HarrisSte/React-Portfolio/assets/126029841/f11291d2-6adb-42c4-80de-5748666ae15c)
+
 **Portfolio:**
+![portfolio](https://github.com/HarrisSte/React-Portfolio/assets/126029841/86c35ac5-4871-4dd9-ba04-956eea43c67a)
+
 **Proficiencies/Resume:**
+![resume](https://github.com/HarrisSte/React-Portfolio/assets/126029841/b3052b86-20e1-425a-b259-066acf54a79b)
+
 **Contact:**
+![contact](https://github.com/HarrisSte/React-Portfolio/assets/126029841/1cb6450f-78ab-4379-bf5f-d4c5c6a68909)
+
 
 ## Deployed Application
 [Netlify](https://harrisste.netlify.app)
@@ -43,7 +52,7 @@ Thank you for visiting my portfolio – a testament to my passion and dedication
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contributors
-A great deal of research, reading, and learning occurred while working on this project. First, I started by accessing the materials that were provided by my instructor, TAs, and the boot camp itself. I worked through previous recordings of lessons and utilized office hours to debug issues. 
+A great deal of research, reading, and learning occurred while working on this project. First, I started by accessing the materials that were provided by my instructor, TAs, and the boot camp itself. I worked through previous recordings of lessons to debug issues. I also conferred with a colleague of mine, Andrew to debug an issue with rendering on Netlify.
 <br>
 <br>
 Outside sources came from both React and Bootstrap documentation to understand further how the two can work together and how to implement components in my application seamlessly. I also read through several articles provided by Medium, web.dev, Stackoverflow, and W3Schools. 
