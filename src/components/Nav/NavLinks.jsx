@@ -1,5 +1,5 @@
 //NavLinks to display at top of page. When selected, they will highlight a different color.
-import React from 'react';
+
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
@@ -29,12 +29,12 @@ const linkStyle = (link) => ({
 
   return (
     <>
-      <Nav className='justify-content-center' activeKey='about'>
+      <Nav className='justify-content-center' activeKey='About'>
         <Nav.Item>
           <Nav.Link
             href='/About'
-            style={linkStyle('about')}
-            onMouseEnter={() => handleMouseEnter('about')}
+            style={linkStyle('About')}
+            onMouseEnter={() => handleMouseEnter('About')}
             onMouseLeave={handleMouseLeave}
           >
             About
@@ -43,8 +43,8 @@ const linkStyle = (link) => ({
         <Nav.Item>
           <Nav.Link
             href='/Portfolio'
-            style={linkStyle('portfolio')}
-            onMouseEnter={() => handleMouseEnter('portfolio')}
+            style={linkStyle('Portfolio')}
+            onMouseEnter={() => handleMouseEnter('Portfolio')}
             onMouseLeave={handleMouseLeave}
           >
             Portfolio
@@ -53,8 +53,8 @@ const linkStyle = (link) => ({
         <Nav.Item>
           <Nav.Link
             href='/Resume'
-            style={linkStyle('resume')}
-            onMouseEnter={() => handleMouseEnter('resume')}
+            style={linkStyle('Resume')}
+            onMouseEnter={() => handleMouseEnter('Resume')}
             onMouseLeave={handleMouseLeave}
           >
             Resume & Proficiencies
@@ -63,8 +63,8 @@ const linkStyle = (link) => ({
         <Nav.Item>
           <Nav.Link
             href='/Contact'
-            style={linkStyle('contact')}
-            onMouseEnter={() => handleMouseEnter('contact')}
+            style={linkStyle('Contact')}
+            onMouseEnter={() => handleMouseEnter('Contact')}
             onMouseLeave={handleMouseLeave}
           >
             Contact

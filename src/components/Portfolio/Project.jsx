@@ -22,7 +22,7 @@ function ControlledCarousel() {
       title: 'Zooquarium',
       description: 'Search for your favorite animals & local zoos.',
       image: ZooImg,
-      githubLink: 'https://github.com/yourusername/zoos-and-aquariums',
+      githubLink: 'https://github.com/caitlinramsey/zoos-and-aquariums',
       deployedLink: 'https://caitlinramsey.github.io/zoos-and-aquariums/',
     },
     {
