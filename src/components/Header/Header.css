@@ -12,14 +12,14 @@
 }
 
 .header h1 {
-    margin: 1rem;
+    margin: 0.5rem;
     font-family: 'Alegreya', serif;
     text-align: center;
     background-color: #F5B7B1;
-    border-radius: 2rem;
-    color: white;
+    border-radius: 1rem;
+    color: #922f44;
     font-size: 3rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .profile {
@@ -35,4 +35,18 @@
     object-fit: cover;
     border: 3px solid #fff;
     margin-bottom: 10px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
 }

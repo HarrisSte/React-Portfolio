@@ -1,4 +1,4 @@
-import React from 'react';
+//Importing necessary files for the footer.
 import { useState } from 'react';
 import '../Footer/Footer.css';
 import { Row, Col } from 'react-bootstrap';
@@ -76,6 +76,7 @@ function Footer() {
               rel='noopener noreferrer'
             ></a>
           </Col>
+          <div className='copyright'>&copy; Stephanie Harris 2023</div>
         </Row>
       </div>
     </footer>

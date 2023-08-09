@@ -1,6 +1,8 @@
+//Importing necessary files for the contact section.
 import React from 'react';
 import '../Contact/Contact.css';
 
+//Contact form that will error when fields are left blank.
 const ContactForm = () => {
   const [formStatus, setFormStatus] = React.useState('Send');
   const onSubmit = (e) => {

@@ -1,5 +1,4 @@
 // Importing necessary items for the 'Portfolio' section.
-import React from 'react';
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import ZooImg from '../../assets/Project1SS.jpg';
@@ -10,6 +9,7 @@ import CodeQuiz from '../../assets/codingquiz.jpg';
 import PwGen from '../../assets/PWGen.jpg';
 import '../Portfolio/Portfolio.css';
 
+//Function for carousel component in portfolio section.
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
 
@@ -55,26 +55,19 @@ function ControlledCarousel() {
     },
     {
       title: 'Password Generator',
-      description:
-        'An application that will generate passwords for users. Note: These passwords are NOT secure.',
+      description: 'An application that will generate passwords for users.',
       image: PwGen,
       githubLink: 'https://github.com/HarrisSte/Password-Generator',
       deployedLink: 'https://harrisste.github.io/Password-Generator/',
     },
   ];
 
+  // Content for the portfolio section.
   return (
     <div className='carousel-container'>
       <h1>Portfolio</h1>
       <h2>
-        Here you can scroll through my various projects that I have worked on;
-        both front-end & back-end.
-        <br></br>
-        <br></br>
-        For my front-end projects, you will find that there are links to both
-        the GitHub repositories, as well as links to the deployed applications.
-        You can also view you will find links to the GitHub Repository and/or
-        the deployed application below the image.
+        Check out what I have worked on below! You can easily navigate through past projects and find their corresponding links to my repository and deployed applications.
       </h2>
 
       <Carousel
@@ -84,11 +77,7 @@ function ControlledCarousel() {
       >
         {projects.map((project, idx) => (
           <Carousel.Item key={idx}>
-            <a
-            // href={project.deployedLink}
-            // target='_blank'
-            // rel='noopener noreferrer'
-            >
+            <a>
               <img
                 className='d-block w-100'
                 src={project.image}

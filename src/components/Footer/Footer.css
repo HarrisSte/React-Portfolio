@@ -1,12 +1,16 @@
+.content-container {
+    margin-bottom: 4rem;
+    /* Adjust this value as needed */
+}
+
 .footer {
-    padding-top: 4rem;
-    padding-left: 4rem;
-    text-align: center;
-    font-size: 0.9rem;
-    bottom: 0;
-    padding-bottom: 40px;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
     width: 100%;
+    bottom: 0;
+    z-index: 1;
 }
 
 .footer a {
@@ -19,4 +23,15 @@
 .footer a:hover {
     color: white;
     transform: scale(1.2);
+}
+
+.copyright {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
 }

@@ -1,3 +1,4 @@
+/* Styling for the about section.*/
 .about h1 {
     font-family:'Lato', sans-serif;
     align-items: center;
@@ -19,8 +20,8 @@
 }
 
 .profile-image {
-    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
+    object-fit: contain;
 }

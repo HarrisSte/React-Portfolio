@@ -1,5 +1,7 @@
+// Importing necessary files for the Resume section.
 import '../Resume/Resume.css';
 
+//Allows resume to be downloaded on user click.
 function handleDownload() {
   const link = document.createElement('a');
   link.href = '../../../public/SHarris_Resume.pdf';
@@ -7,18 +9,20 @@ function handleDownload() {
   link.click();
 }
 
+//Content for the resume section.
 export default function Resume() {
   return (
     <div className='about'>
       <div className='row'>
-        <div className='col-12'>
+        <div className='col-10'>
           <h1>
             Resume & <br />
             Proficiencies
           </h1>
         </div>
+
         <div className='col-6'>
-          <p>Front-End Proficiencies</p>
+          <p>Front-End</p>
           <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -30,21 +34,19 @@ export default function Resume() {
           </ul>
         </div>
         <div className='col-6'>
-          <p>Back-End Proficiencies</p>
+          <p>Back-End</p>
           <ul>
             <li>APIs</li>
             <li>Node</li>
             <li>Express</li>
-            <li>MySQL, Sequelize</li>
-            <li>MongoDB, Mongoose</li>
+            <li>MySQL and Sequelize</li>
+            <li>MongoDB and Mongoose</li>
             <li>REST</li>
             <li>GraphQL</li>
           </ul>
         </div>
-        <div className='button'>
-          <div className='center-button'>
-            <button onClick={handleDownload}>Download Resume</button>
-          </div>
+        <div className='center-button'>
+          <button onClick={handleDownload}>Download Resume</button>
         </div>
       </div>
     </div>

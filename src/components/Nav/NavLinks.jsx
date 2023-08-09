@@ -1,5 +1,4 @@
 //NavLinks to display at top of page. When selected, they will highlight a different color.
-
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
@@ -27,6 +26,7 @@ const linkStyle = (link) => ({
   transition: 'all 0.3s',
 });
 
+// Content and styling for the navigation bar.
   return (
     <>
       <Nav className='justify-content-center' activeKey='About'>
