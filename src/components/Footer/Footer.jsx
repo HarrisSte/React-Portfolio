@@ -71,7 +71,7 @@ function Footer() {
           >
             <a
               className='bi bi-linkedin'
-              href='https://www.linkedin.com/in/stephanie-harris-5069aa224/'
+              href='https://www.linkedin.com/in/harrisste9/'
               target='_blank'
               rel='noopener noreferrer'
             ></a>

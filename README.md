@@ -66,6 +66,6 @@ The styling inspiration came from the banner photo that I took myself. From ther
 ## Contact
 [GitHub](https://github.com/HarrisSte)
 <br>
-[LinkedIn](https://www.linkedin.com/in/stephanie-harris-5069aa224/)
+[LinkedIn](https://www.linkedin.com/in/harrisste9/)
 <br>
 [Email](mailto:st3phanie.harris@gmail.com)
