@@ -7,6 +7,7 @@ import JATE from '../../assets/JATE.jpg';
 import NoteTaker from '../../assets/notetaker.jpg';
 import CodeQuiz from '../../assets/codingquiz.jpg';
 import PwGen from '../../assets/PWGen.jpg';
+import SingleGame from '../../assets/SingleGame.jpg';
 import '../Portfolio/Portfolio.css';
 
 //Function for carousel component in portfolio section.
@@ -60,6 +61,14 @@ function ControlledCarousel() {
       githubLink: 'https://github.com/HarrisSte/Password-Generator',
       deployedLink: 'https://harrisste.github.io/Password-Generator/',
     },
+    {
+      title: 'BUGBytes',
+      description:
+        'A gaming hub to connect, collaborate, and conquer together.',
+      image: SingleGame,
+      githubLink: 'https://github.com/HarrisSte/BUGbytes',
+      deployedLink: 'https://bugbytes-eea33095845f.herokuapp.com/',
+    },
   ];
 
   // Content for the portfolio section.
@@ -67,7 +76,9 @@ function ControlledCarousel() {
     <div className='carousel-container'>
       <h1>Portfolio</h1>
       <h2>
-        Check out what I have worked on below! You can easily navigate through past projects and find their corresponding links to my repository and deployed applications.
+        Check out what I have worked on below! You can easily navigate through
+        past projects and find their corresponding links to my repository and
+        deployed applications.
       </h2>
 
       <Carousel
