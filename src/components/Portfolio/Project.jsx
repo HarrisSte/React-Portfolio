@@ -16,18 +16,21 @@ import '../Portfolio/Portfolio.css';
 function AutoLayoutExample() {
   return (
     <Container>
-      <Row>
+      <Row className='projects'>
         <Col>
           <Card style={{ width: '18rem' }}>
             <Card.Img variant='top' src={ZooImg} />
             <Card.Body>
               <Card.Title>Zooquarium</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Search for your favorite animals & local accredited zoos!
               </Card.Text>
-              <Button variant='primary'>Deployed Application</Button>
-              <Button variant='primary'>GitHub Repository</Button>
+              <Button href='https://caitlinramsey.github.io/zoos-and-aquariums/'>
+                <span>Deployed Application</span>
+              </Button>
+              <Button href='https://github.com/caitlinramsey/zoos-and-aquariums'>
+                <span>GitHub Repository</span>
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -37,11 +40,14 @@ function AutoLayoutExample() {
             <Card.Body>
               <Card.Title>DiscoverDevs</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Connecting employers with newly graduated developers.
               </Card.Text>
-              <Button variant='primary'>Deployed Application</Button>
-              <Button variant='primary'>GitHub Repository</Button>
+              <Button href='https://discoverdevs-2aa18af2a0dc.herokuapp.com/'>
+                <span>Deployed Application</span>
+              </Button>
+              <Button href='https://github.com/Prototype1309/DiscoverDevs'>
+                <span>GitHub Repository</span>
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -51,11 +57,14 @@ function AutoLayoutExample() {
             <Card.Body>
               <Card.Title>BUGBytes</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                A gaming hub to connect, collaborate, and conquer together.
               </Card.Text>
-              <Button variant='primary'>Deployed Application</Button>
-              <Button variant='primary'>GitHub Repository</Button>
+              <Button href='https://bugbytes-eea33095845f.herokuapp.com/'>
+                <span>Deployed Application</span>
+              </Button>
+              <Button href='https://github.com/HarrisSte/BUGbytes'>
+                <span>GitHub Repository</span>
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -66,12 +75,13 @@ function AutoLayoutExample() {
             <Card.Img variant='top' src={NoteTaker} />
             <Card.Body>
               <Card.Title>Note-Taker</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Button variant='primary'>Deployed Application</Button>
-              <Button variant='primary'>GitHub Repository</Button>
+              <Card.Text>Easily enter, save, and remove notes.</Card.Text>
+              <Button href='https://pacific-inlet-29502.herokuapp.com/'>
+                <span>Deployed Application</span>
+              </Button>
+              <Button href='https://github.com/HarrisSte/Note-Taker'>
+                <span>GitHub Repository</span>
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -81,11 +91,14 @@ function AutoLayoutExample() {
             <Card.Body>
               <Card.Title>Coding Quiz</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Test your knowledge of HTML, CSS, and JavaScript.
               </Card.Text>
-              <Button variant='primary'>Deployed Application</Button>
-              <Button variant='primary'>GitHub Repository</Button>
+              <Button href='https://harrisste.github.io/Coding-Quiz/'>
+                <span>Deployed Application</span>
+              </Button>
+              <Button href='https://github.com/HarrisSte/Coding-Quiz'>
+                <span>GitHub Repository</span>
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -93,13 +106,19 @@ function AutoLayoutExample() {
           <Card style={{ width: '18rem' }}>
             <Card.Img variant='top' src={PwGen} />
             <Card.Body>
-              <Card.Title>Password Generator</Card.Title>
+              <Card.Title>
+                <h3>Password Generator</h3>
+              </Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                An application that will generate passwords for users.
               </Card.Text>
-              <Button variant='primary'>Deployed Application</Button>
-              <Button variant='primary'>GitHub Repository</Button>
+
+              <Button href='https://harrisste.github.io/Password-Generator/'>
+                <span>Deployed Application</span>
+              </Button>
+              <Button href='https://github.com/HarrisSte/Password-Generator'>
+                <span>GitHub Repository</span>
+              </Button>
             </Card.Body>
           </Card>
         </Col>
