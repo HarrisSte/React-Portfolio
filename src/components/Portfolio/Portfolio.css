@@ -18,8 +18,8 @@
     margin: 5px;
 }
 
-.btn-primary:hover{
-background-color: purple;
+.btn-primary:hover {
+    background-color: #A06071ff;
 }
 
 .btn span {
