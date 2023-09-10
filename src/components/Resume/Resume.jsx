@@ -53,9 +53,6 @@ function Resume() {
               <li>Handlebars</li>
             </ul>
           </div>
-          <div className='back-end'>
-            <ul></ul>
-          </div>
         </Col>
       </Row>
     </Container>

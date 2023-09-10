@@ -1,23 +1,27 @@
-// Importing necessary styles and files.
-import './About.css';
-import aboutPhoto from '../../assets/AboutPhoto.jpg';
+// Importing necessary files for the Resume section.
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-export default function About() {
+import aboutPhoto from '../../assets/AboutPhoto.jpg';
+import './About.css';
+
+function About() {
   return (
-    <div className='about'>
-      <div className='row'>
-        <div id='about' className='col-md-3'>
-          <h1>
-            About Me
-          </h1>
-          <img
-            src={aboutPhoto}
-            alt='Picture of Stephanie'
-            className='profile-image'
-          />
-        </div>
-        <div className='col-md-8'>
-          <p>
+    <Container>
+      <Row>
+        <Col>
+          <div className='about'>
+            <h1>A little about Stephanie</h1>
+            <img
+              src={aboutPhoto}
+              alt='Picture of Stephanie'
+              className='profile-image'
+            />
+          </div>
+        </Col>
+        <Col>
+          <div className='about-info'>
             Over the past ten years, my heart and soul have been dedicated to
             shaping young minds in middle school education. It has been an
             incredible journey, witnessing the growth and progress of my
@@ -31,16 +35,18 @@ export default function About() {
             <br></br>
             <br></br>
             The transition was challenging, but my decade of experience in
-            education taught me the value of perseverance and hard work. I dove
-            into online courses, coding boot camps, and self-guided projects,
-            constantly seeking to improve my skills and understanding.
+            education taught me the value of perseverance and hard work. I
+            doveinto online courses, coding boot camps, and self-guided
+            projects, constantly seeking to improve my skills and understanding.
             <br></br>
             <br></br>
             As I move forward, I am eager to continue making a positive impact
             and embracing new adventures in education and technology.
-          </p>
-        </div>
-      </div>
-    </div>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
+
+export default About;
