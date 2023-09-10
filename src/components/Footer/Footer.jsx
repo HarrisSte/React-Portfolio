@@ -1,7 +1,7 @@
 //Importing necessary files for the footer.
 import { useState } from 'react';
-import '../Footer/Footer.css';
 import { Row, Col } from 'react-bootstrap';
+import '../Footer/Footer.css';
 
 function Footer() {
   const [hoveredIcon, setHoveredIcon] = useState(null);
@@ -25,22 +25,6 @@ function Footer() {
             <a
               className='bi bi-envelope'
               href='mailto:st3phanie.harris@gmail.com'
-              target='_blank'
-              rel='noopener noreferrer'
-            ></a>
-          </Col>
-
-          <Col
-            xs='auto'
-            className={`text-center ${
-              hoveredIcon === 'twitter' ? 'hovered' : ''
-            }`}
-            onMouseEnter={() => handleIconHover('twitter')}
-            onMouseLeave={() => setHoveredIcon(null)}
-          >
-            <a
-              className='bi bi-twitter'
-              href='https://twitter.com/HexleLich'
               target='_blank'
               rel='noopener noreferrer'
             ></a>

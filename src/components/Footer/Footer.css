@@ -20,12 +20,13 @@
 }
 
 .footer a:hover {
-    color: #1F5742;
+    color: #37aa88;
     transform: scale(1.2);
 }
 
 .copyright {
     font-size: 1rem;
+    color: #244941;
     display: flex;
     justify-content: center;
     align-items: center;
