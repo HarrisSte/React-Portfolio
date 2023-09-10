@@ -13,7 +13,7 @@ import PwGen from '../../assets/PWGen.jpg';
 import SingleGame from '../../assets/SingleGame.jpg';
 import '../Portfolio/Portfolio.css';
 
-function AutoLayoutExample() {
+function Portfolio() {
   return (
     <Container>
       <Row className='projects'>
@@ -75,7 +75,7 @@ function AutoLayoutExample() {
           </Card>
         </Col>
       </Row>
-      <Row>
+      <Row className='projects'>
         <Col>
           <Card style={{ width: '18rem' }}>
             <Card.Img variant='top' src={NoteTaker} />
@@ -137,4 +137,4 @@ function AutoLayoutExample() {
   );
 }
 
-export default AutoLayoutExample;
+export default Portfolio;
