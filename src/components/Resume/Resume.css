@@ -1,80 +1,65 @@
-/*Styling for items in the resume section. */
-h1 {
-    margin-right: 4rem;
-}
-
 ul {
     list-style: none;
 }
 
-ul li:before {
-    content: '✓';
+.subtitle {
+    margin-top: 5rem;
+    border-radius: 55% 22% 26% 56% / 28% 24% 28% 45%;
+    background-color: #1B4D3E;
+    width: 450px;
+    height: 400px;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
+.subtitle h1 {
+    font-size: 3.5rem;
+    padding-top: 3rem;
+    color: #37aa88;
+    text-align: center;
 }
 
-.col-10 {
-    flex: 0 0 calc(100% / 3);
-    padding: 10px;
+.front-end {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #37aa88;
+    background-color: #1B4D3E;
+    border-radius: 53% 47% 62% 38% / 29% 77% 23% 71%;
+    width: 400px;
+    height: 350px;
 }
 
-.col-10 p {
-    font-family: 'Lato', sans-serif;
-    font-size: 28px;
+.back-end {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color: #37aa88;
+    text-align: center;
+    background-color: #1B4D3E;
+    border-radius: 53% 47% 62% 38% / 29% 77% 23% 71%;
+    width: 400px;
+    height: 350px;
 }
 
-.col-6 {
-    flex: 0 0 calc(100% / 3);
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.col-6 p {
-    font-family: 'Lato', sans-serif;
-    font-size: 36px;
-}
-
-.col-6 ul {
-    font-size: 32px;
-    font-family: 'Lato', sans-serif;
-    padding-right: 5rem;
-}
-
-.center-button {
+.resume-button {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
 }
 
-.center-button button {
-    background-color: #922f44;
+.resume-button button {
+    background-color: #41745Bff;
     color: white;
     border: none;
     padding: 10px 20px;
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 26px;
     cursor: pointer;
-    border-radius: 2rem;
+    border-radius: 53% 47% 62% 38% / 56% 77% 23% 44%;
 }
 
-.center-button button:hover {
-    color: #922f44;
-    background-color: white;
-}
-
-/* Media query for responsive layout */
-@media (max-width: 768px) {
-    .col-6 {
-        flex: 0 0 100%;
-        padding-left: 10px;
-    }
-
-    .col-12 {
-        flex: 0 0 100%;
-    }
+.resume-button button:hover {
+    background-color: #37aa88;
+    color: white;
 }

@@ -1,4 +1,8 @@
 // Importing necessary files for the Resume section.
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 import '../Resume/Resume.css';
 
 //Allows resume to be downloaded on user click.
@@ -9,46 +13,61 @@ function handleDownload() {
   link.click();
 }
 
-//Content for the resume section.
-export default function Resume() {
+function Resume() {
   return (
-    <div className='about'>
-      <div className='row'>
-        <div className='col-10'>
-          <h1>
-            Resume & <br />
-            Proficiencies
-          </h1>
-        </div>
-
-        <div className='col-6'>
-          <p>Front-End</p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>JQuery</li>
-            <li>Responsive design</li>
-            <li>React</li>
-            <li>Bootstrap</li>
-          </ul>
-        </div>
-        <div className='col-6'>
-          <p>Back-End</p>
-          <ul>
-            <li>APIs</li>
-            <li>Node</li>
-            <li>Express</li>
-            <li>MySQL and Sequelize</li>
-            <li>MongoDB and Mongoose</li>
-            <li>REST</li>
-            <li>GraphQL</li>
-          </ul>
-        </div>
-        <div className='center-button'>
-          <button onClick={handleDownload}>Download Resume</button>
-        </div>
-      </div>
-    </div>
+    <Container>
+      <Row>
+        <Col>
+          <div className='subtitle'>
+            <h1>Resume & Proficiencies</h1>
+            <div className='resume-button'>
+              <button onClick={handleDownload}>Download Resume</button>
+            </div>
+          </div>
+        </Col>
+        <Col>
+          <div className='front-end'>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>JQuery</li>
+              <li>Responsive design</li>
+              <li>React</li>
+              <li>React Bootstrap</li>
+            </ul>
+          </div>
+          <div className='back-end'>
+            <ul>
+              <li>APIs</li>
+              <li>Node</li>
+              <li>Express</li>
+              <li>MySQL and Sequelize</li>
+              <li>MongoDB and Mongoose</li>
+              <li>REST</li>
+              <li>GraphQL</li>
+            </ul>
+          </div>
+        </Col>
+       
+       
+       
+        <Col>
+          <div className='back-end'>
+            <ul>
+              <li>APIs</li>
+              <li>Node</li>
+              <li>Express</li>
+              <li>MySQL and Sequelize</li>
+              <li>MongoDB and Mongoose</li>
+              <li>REST</li>
+              <li>GraphQL</li>
+            </ul>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
+
+export default Resume;
