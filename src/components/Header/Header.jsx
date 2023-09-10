@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container'
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-// import profileImg from '../../assets/profileImg.jpg';
 
 function Header() {
     const location = useLocation();
@@ -32,17 +31,9 @@ function Header() {
 
   return (
     <header id='container' className='header'>
-      {/* <div className='profile'>
-        <img
-          src={profileImg}
-          alt='Profile image'
-          className='img-fluid rounded-circle profile-image'
-        />
-      </div> */}
       <h1 className='header-name'>Stephanie Harris</h1>
       <Navbar className='navbar'>
         <Container>
-          {/* <Navbar.Brand href='#home'>Stephanie Harris</Navbar.Brand> */}
           <Nav>
             <Nav.Link
               href='/About'
