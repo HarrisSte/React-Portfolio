@@ -11,6 +11,7 @@ import NoteTaker from '../../assets/notetaker.jpg';
 import CodeQuiz from '../../assets/codingquiz.jpg';
 import PwGen from '../../assets/PWGen.jpg';
 import SingleGame from '../../assets/SingleGame.jpg';
+import Regex from '../../assets/regex.jpg';
 import '../Portfolio/Portfolio.css';
 
 function Portfolio() {
@@ -76,7 +77,7 @@ function Portfolio() {
         </Col>
         <Col>
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant='top' src={ZooImg} />
+            <Card.Img variant='top' src={Regex} />
             <Card.Body>
               <Card.Title>
                 <h3>Gist: Regex Tutorial: Hex Values </h3>
