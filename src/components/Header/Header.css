@@ -38,7 +38,10 @@
 
 .navbar {
     background-color: #244941;
-    border-radius: 53% 47% 62% 38% / 29% 77% 23% 71%;
+    width: 475px;
+    height: 75px;
+    padding-left: 2rem;
+    border-radius: 53% 47% 62% 8% / 29% 77% 23% 71%;
 }
 
 .nav-link {

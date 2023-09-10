@@ -2,12 +2,19 @@ ul {
     list-style: none;
 }
 
+p {
+    color: white;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+
 .subtitle {
     margin-top: 5rem;
-    border-radius: 55% 22% 26% 56% / 28% 24% 28% 45%;
+    border-radius: 55% 36% 35% 56% / 28% 24% 28% 45%;
     background-color: #1B4D3E;
-    width: 450px;
-    height: 400px;
+    width: 485px;
+    height: 420px;
 }
 
 .subtitle h1 {
@@ -17,28 +24,17 @@ ul {
     text-align: center;
 }
 
-.front-end {
+.tech-skills {
     margin-top: 3rem;
     padding-top: 2rem;
     text-align: center;
     font-size: 1.5rem;
+    font-family: 'Lato';
     color: #37aa88;
     background-color: #1B4D3E;
-    border-radius: 53% 47% 62% 38% / 29% 77% 23% 71%;
-    width: 400px;
-    height: 350px;
-}
-
-.back-end {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    font-size: 1.5rem;
-    color: #37aa88;
-    text-align: center;
-    background-color: #1B4D3E;
-    border-radius: 53% 47% 62% 38% / 29% 77% 23% 71%;
-    width: 400px;
-    height: 350px;
+    border-radius: 53% 47% 62% 38% / 29% 40% 23% 71%;
+    width: 425px;
+    height: 725px;
 }
 
 .resume-button {

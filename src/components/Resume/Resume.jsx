@@ -20,49 +20,41 @@ function Resume() {
         <Col>
           <div className='subtitle'>
             <h1>Resume & Proficiencies</h1>
+            <p>
+              I am continuously pushing myself to learn and grow. <br></br>Need
+              a certain language or framework? <br></br>Let me know so I can add
+              it to my skillset!
+            </p>
             <div className='resume-button'>
               <button onClick={handleDownload}>Download Resume</button>
             </div>
           </div>
         </Col>
         <Col>
-          <div className='front-end'>
+          <div className='tech-skills'>
             <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>JQuery</li>
+              <li>JavaScript ES6+</li>
+              <li>CSS3</li>
+              <li>HTML5</li>
+              <li>SQL</li>
+              <li>NoSQL</li>
+              <li>jQuery</li>
+              <li>GitHub</li>
+              <li>MongoDB and Mongoose</li>
+              <li>MySQL and Sequelize</li>
               <li>Responsive design</li>
               <li>React</li>
               <li>React Bootstrap</li>
-            </ul>
-          </div>
-          <div className='back-end'>
-            <ul>
               <li>APIs</li>
               <li>Node</li>
               <li>Express</li>
-              <li>MySQL and Sequelize</li>
-              <li>MongoDB and Mongoose</li>
               <li>REST</li>
               <li>GraphQL</li>
+              <li>Handlebars</li>
             </ul>
           </div>
-        </Col>
-       
-       
-       
-        <Col>
           <div className='back-end'>
-            <ul>
-              <li>APIs</li>
-              <li>Node</li>
-              <li>Express</li>
-              <li>MySQL and Sequelize</li>
-              <li>MongoDB and Mongoose</li>
-              <li>REST</li>
-              <li>GraphQL</li>
-            </ul>
+            <ul></ul>
           </div>
         </Col>
       </Row>

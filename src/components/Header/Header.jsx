@@ -30,10 +30,10 @@ function Header() {
     });
 
   return (
-    <header id='container' className='header'>
+    <header className='header'>
       <h1 className='header-name'>Stephanie Harris</h1>
-      <Navbar className='navbar'>
-        <Container>
+      <Navbar>
+        <Container className='navbar'>
           <Nav>
             <Nav.Link
               href='/About'
