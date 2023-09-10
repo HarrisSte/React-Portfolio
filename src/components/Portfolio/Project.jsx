@@ -74,6 +74,23 @@ function Portfolio() {
             </Card.Body>
           </Card>
         </Col>
+        <Col>
+          <Card style={{ width: '18rem' }}>
+            <Card.Img variant='top' src={ZooImg} />
+            <Card.Body>
+              <Card.Title>
+                <h3>Gist: Regex Tutorial: Hex Values </h3>
+              </Card.Title>
+              <Card.Text>
+                A detailed regex tutorial providing information on how to
+                understand hex values.
+              </Card.Text>
+              <Button href='https://gist.github.com/HarrisSte/de01a81758dfe8f8afdbe5334a015eb7'>
+                <span>GitHub Gist</span>
+              </Button>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
       <Row className='projects'>
         <Col>
@@ -122,11 +139,29 @@ function Portfolio() {
               <Card.Text>
                 An application that will generate passwords for users.
               </Card.Text>
-
               <Button href='https://harrisste.github.io/Password-Generator/'>
                 <span>Deployed Application</span>
               </Button>
               <Button href='https://github.com/HarrisSte/Password-Generator'>
+                <span>GitHub Repository</span>
+              </Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card style={{ width: '18rem' }}>
+            <Card.Img variant='top' src={JATE} />
+            <Card.Body>
+              <Card.Title>
+                <h3>J.A.T.E.</h3>
+              </Card.Title>
+              <Card.Text>
+                A note-taking application that meets PWA criteria.
+              </Card.Text>
+              <Button href='https://just-anthr-txt-editor-b5f1347fd808.herokuapp.com/'>
+                <span>Deployed Application</span>
+              </Button>
+              <Button href='https://github.com/HarrisSte/Just-Another-Text-Editor'>
                 <span>GitHub Repository</span>
               </Button>
             </Card.Body>
