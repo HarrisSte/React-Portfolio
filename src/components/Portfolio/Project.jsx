@@ -28,10 +28,10 @@ function Portfolio() {
               <Card.Text>
                 Search for your favorite animals & local accredited zoos!
               </Card.Text>
-              <Button href='https://caitlinramsey.github.io/zoos-and-aquariums/'>
+              <Button href='https://caitlinramsey.github.io/zooquarium/'>
                 <span>Deployed Application</span>
               </Button>
-              <Button href='https://github.com/caitlinramsey/zoos-and-aquariums'>
+              <Button href='https://github.com/caitlinramsey/zooquarium/'>
                 <span>GitHub Repository</span>
               </Button>
             </Card.Body>
