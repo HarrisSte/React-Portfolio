@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
 import emailjs from 'emailjs-com';
 import './Contact.css';
 
@@ -69,12 +70,12 @@ const Contact = () => {
               <button className='contact-submit' onClick={submit}>
                 Send my message!
               </button>
-              <span className='email-sent fs-5 fw-bold'>
-                {emailSent
-                  ? "Awesome, your message is sent and I'll be in touch soon!"
-                  : ''}
-              </span>
             </div>
+            <span className='msg-sent'>
+              {emailSent
+                ? "Awesome, I'll be in touch soon!"
+                : ''}
+            </span>
           </Col>
         </Row>
       </Container>
