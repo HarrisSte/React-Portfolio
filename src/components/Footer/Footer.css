@@ -1,6 +1,5 @@
 .content-container {
     margin-bottom: 4rem;
-    /* Adjust this value as needed */
 }
 
 .footer {
@@ -15,13 +14,13 @@
 
 .footer a {
     margin: 0;
-    color: #922f44;
+    color: #41745Bff;
     font-size: 2.5rem;
     transition: color 0.3s, transform 0.3s;
 }
 
 .footer a:hover {
-    color: white;
+    color: #1F5742;
     transform: scale(1.2);
 }
 

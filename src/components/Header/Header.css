@@ -1,23 +1,25 @@
 /* Main styles for the header display & profile image. */
 .header {
-    background-image: url('../../assets/Wildflowers.jpg');
+   /* opacity: 75%; */
+   background-color: #41745Bff;
+    /* background-image: url('../../assets/leaves.jpg'); */
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 4px solid palevioletred;
+    border-bottom: 4px solid;
 }
 
-.header h1 {
+.header-name {
     margin: 0.5rem;
     font-family: 'Alegreya', serif;
     text-align: center;
-    background-color: #F5B7B1;
+    /* background-color: #F1FBF3ff; */
     border-radius: 1rem;
-    color: #922f44;
+    color: #BCDDCDff;
     font-size: 3rem;
     padding: 0.5rem 1rem;
 }
@@ -27,14 +29,23 @@
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
-}
+} 
 
-.profile-image {
+ .profile-image {
     width: 200px;
     height: auto;
     object-fit: cover;
     border: 3px solid #fff;
     margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: #244941;
+    border-radius: 53% 47% 62% 38% / 29% 77% 23% 71%;
+}
+
+.nav-link {
+    font-family: 'Lato';
 }
 
 /* Media query for screens smaller than 768px */

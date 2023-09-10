@@ -21,7 +21,9 @@ function AutoLayoutExample() {
           <Card style={{ width: '18rem' }}>
             <Card.Img variant='top' src={ZooImg} />
             <Card.Body>
-              <Card.Title>Zooquarium</Card.Title>
+              <Card.Title>
+                <h3>Zooquarium</h3>
+              </Card.Title>
               <Card.Text>
                 Search for your favorite animals & local accredited zoos!
               </Card.Text>
@@ -38,7 +40,9 @@ function AutoLayoutExample() {
           <Card style={{ width: '18rem' }}>
             <Card.Img variant='top' src={DiscDevs} />
             <Card.Body>
-              <Card.Title>DiscoverDevs</Card.Title>
+              <Card.Title>
+                <h3>DiscoverDevs</h3>
+              </Card.Title>
               <Card.Text>
                 Connecting employers with newly graduated developers.
               </Card.Text>
@@ -55,7 +59,9 @@ function AutoLayoutExample() {
           <Card style={{ width: '18rem' }}>
             <Card.Img variant='top' src={SingleGame} />
             <Card.Body>
-              <Card.Title>BUGBytes</Card.Title>
+              <Card.Title>
+                <h3>BUGBytes</h3>
+              </Card.Title>
               <Card.Text>
                 A gaming hub to connect, collaborate, and conquer together.
               </Card.Text>
@@ -74,7 +80,9 @@ function AutoLayoutExample() {
           <Card style={{ width: '18rem' }}>
             <Card.Img variant='top' src={NoteTaker} />
             <Card.Body>
-              <Card.Title>Note-Taker</Card.Title>
+              <Card.Title>
+                <h3>Note-Taker</h3>
+              </Card.Title>
               <Card.Text>Easily enter, save, and remove notes.</Card.Text>
               <Button href='https://pacific-inlet-29502.herokuapp.com/'>
                 <span>Deployed Application</span>
@@ -89,7 +97,9 @@ function AutoLayoutExample() {
           <Card style={{ width: '18rem' }}>
             <Card.Img variant='top' src={CodeQuiz} />
             <Card.Body>
-              <Card.Title>Coding Quiz</Card.Title>
+              <Card.Title>
+                <h3>Coding Quiz</h3>
+              </Card.Title>
               <Card.Text>
                 Test your knowledge of HTML, CSS, and JavaScript.
               </Card.Text>
