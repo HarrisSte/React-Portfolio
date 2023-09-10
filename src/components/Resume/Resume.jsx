@@ -9,7 +9,7 @@ import '../Resume/Resume.css';
 function handleDownload() {
   const link = document.createElement('a');
   link.href = '../../../public/SHarris_Resume.pdf';
-  link.download = 'SHarris_Resume.pdf';
+  link.download = 'SHarris || Resume.pdf';
   link.click();
 }
 
