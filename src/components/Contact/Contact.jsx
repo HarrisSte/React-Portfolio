@@ -66,7 +66,7 @@ const Contact = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
-              <button className='contact-submit p-3' onClick={submit}>
+              <button className='contact-submit' onClick={submit}>
                 Send my message!
               </button>
               <span className='email-sent fs-5 fw-bold'>
