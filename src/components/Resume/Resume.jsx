@@ -7,10 +7,10 @@ import '../Resume/Resume.css';
 
 //Allows resume to be downloaded on user click.
 function handleDownload() {
-  const link = document.createElement('a');
-  link.href = '../../../public/SHarris_Resume.pdf';
-  link.download = 'SHarris || Resume.pdf';
-  link.click();
+  const alink = document.createElement('a');
+  alink.href = '/SHarris_Resume.pdf';
+  alink.download = 'SHarris_Resume.pdf';
+  alink.click();
 }
 
 function Resume() {
