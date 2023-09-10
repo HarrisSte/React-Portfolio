@@ -1,19 +1,122 @@
-/* Styles for the contact section.*/
-.contactTitle {
-    margin: 4rem;
-    font-family: 'Lato', sans-serif;
-    align-items: center;
-    margin-top: 75px;
-    margin-bottom: 2rem;
-    padding-left: 4rem;
-    padding-bottom: 1rem;
-    color: #922f44;
-    font-size: 3rem;
-    border-bottom: 4px solid palevioletred;
+:root {
+    --submit-background: hotpink;
+    --submit-hover: #F0FFFF;
+    --submit-fill: pink;
+    --submit-text: black;
+    --submit-border: deeppink;
+    --submit-error: red;
 }
 
-.contactDesc {
+.contact-subtitle {
+    color: purple;
+    background-color: green;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin: auto;
+    padding-bottom: 15rem;
+}
+
+.contact-form {
+    width: 40vw;
+    margin: auto;
+}
+
+.contact-submit {
+    margin-top: 0.5rem;
+    display: inline-block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--submit-text);
+    background-color: ;
+    border-radius: 0.5rem;
     font-family: 'Lato', sans-serif;
-    color: #555;
-    font-size: 26px;
+    width: 10rem;
+}
+
+.contact-submit:hover {
+    background-color: var(--submit-hover);
+    cursor: pointer;
+}
+
+.email-sent {
+    padding-left: 2rem;
+}
+
+input::placeholder {
+    color: var(--submit-text);
+    font-family: "Preahvihear", sans-serif;
+    font-size: 1rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--submit-background);
+    resize: none;
+    background-color: var(--submit-fill);
+}
+
+textarea {
+    padding-bottom: 6.5rem;
+}
+
+textarea::placeholder {
+    color: var(--submit-text);
+    font-family: "Preahvihear", sans-serif;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1440px) {
+    .contact-container {
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .email-sent {
+        display: block;
+        width: 80vw;
+        padding-left: 0;
+        padding-top: .5rem;
+    }
+
+    .contact-options {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container.contact-container {
+        margin-left: auto;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    input::placeholder {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    input::placeholder {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    input::placeholder {
+        font-size: .5rem;
+    }
 }

@@ -1,51 +1,85 @@
-//Importing necessary files for the contact section.
-import React from 'react';
-import '../Contact/Contact.css';
+import { useState } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import emailjs from 'emailjs-com';
+import './contact.css';
 
-//Contact form that will error when fields are left blank.
-const ContactForm = () => {
-  const [formStatus, setFormStatus] = React.useState('Send');
-  const onSubmit = (e) => {
-    e.preventDefault();
-    setFormStatus('Submitting...');
-    const { name, email, message } = e.target.elements;
-    let conFom = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    console.log(conFom);
+const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [emailSent, setEmailSent] = useState(false);
+
+  const submit = () => {
+    if (name && email && message) {
+      const serviceId = 'service_sbh5mln';
+      const templateId = 'template_20ys677';
+      const userId = 'q7cA_ga5eGF1FNubN';
+      const templateParams = {
+        name,
+        email,
+        message,
+      };
+
+      emailjs
+        .send(serviceId, templateId, templateParams, userId)
+        .then((response) => console.log(response))
+        .then((error) => console.log(error));
+
+      setName('');
+      setEmail('');
+      setMessage('');
+      setEmailSent(true);
+    } else {
+      alert('Oops, all fields are required!');
+    }
   };
+
   return (
-    <div className='container mt-5'>
-      <h2 className='mb-3 contactTitle'>Contact</h2>
-      <p className='mb-3 contactDesc'>
-        Please reach out should you have any questions or comments!
-      </p>
-      <form onSubmit={onSubmit}>
-        <div className='mb-3'>
-          <label className='form-label' htmlFor='name'>
-            Name
-          </label>
-          <input className='form-control' type='text' id='name' required />
-        </div>
-        <div className='mb-3'>
-          <label className='form-label' htmlFor='email'>
-            Email
-          </label>
-          <input className='form-control' type='email' id='email' required />
-        </div>
-        <div className='mb-3'>
-          <label className='form-label' htmlFor='message'>
-            Message
-          </label>
-          <textarea className='form-control' id='message' required />
-        </div>
-        <button className='btn btn-danger' type='submit'>
-          {formStatus}
-        </button>
-      </form>
+    <div>
+      <Container>
+        <Row>
+          <Col>
+            <h2 className='contact-subtitle'>
+              Please reach out should you have any questions or comments!
+            </h2>
+          </Col>
+          <Col>
+            <div className='contact-form'>
+              <input
+                className='name mb-1'
+                type='text'
+                placeholder='First and Last Name'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <input
+                className='email mb-1'
+                type='email'
+                placeholder='Your email address'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <textarea
+                placeholder='Leave your message here!'
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              ></textarea>
+              <button className='contact-submit p-3' onClick={submit}>
+                Send my message!
+              </button>
+              <span className='email-sent fs-5 fw-bold'>
+                {emailSent
+                  ? "Awesome, your message is sent and I'll be in touch soon!"
+                  : ''}
+              </span>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
-export default ContactForm;
+
+export default Contact;
