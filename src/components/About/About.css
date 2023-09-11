@@ -37,3 +37,24 @@
     margin-bottom: 10px;
     border-radius: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+    .about {
+        width: 100%;
+        height: auto;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about-info {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .profile-image {
+        width: 100%;
+    }
+}
