@@ -1,19 +1,10 @@
-.content-container {
-    margin-bottom: 4rem;
-}
-
 .footer {
-    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    width: 100%;
-    bottom: 0;
-    z-index: 1;
+    padding: 15rem;
 }
 
 .footer a {
-    margin: 0;
     color: #41745Bff;
     font-size: 2.5rem;
     transition: color 0.3s, transform 0.3s;
@@ -29,9 +20,5 @@
     color: #244941;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 1rem;
-    width: 100%;
-    bottom: 0;
-    z-index: 1;
 }

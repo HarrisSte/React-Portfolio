@@ -11,9 +11,9 @@ function Footer() {
   };
 
   return (
-    <footer className='footer'>
-      <div className='container'>
-        <Row className='justify-content-center'>
+    <footer >
+      <div>
+        <Row className='footer'>
           <Col
             xs='auto'
             className={`text-center ${
@@ -29,7 +29,6 @@ function Footer() {
               rel='noopener noreferrer'
             ></a>
           </Col>
-
           <Col
             xs='auto'
             className={`text-center ${
