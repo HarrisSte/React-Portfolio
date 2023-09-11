@@ -1,8 +1,5 @@
 // Importing necessary files for the Resume section.
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
+import {Container, Row, Col} from 'react-bootstrap';
 import aboutPhoto from '../../assets/AboutPhoto.jpg';
 import './About.css';
 
