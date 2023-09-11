@@ -33,16 +33,16 @@ Thank you for visiting my portfolio – a testament to my passion and dedication
   
 ## Screenshots
 **About:**
-![About](https://github.com/HarrisSte/React-Portfolio/assets/126029841/f11291d2-6adb-42c4-80de-5748666ae15c)
+![about page](assets/About.JPG)
 
 **Portfolio:**
-![portfolio](https://github.com/HarrisSte/React-Portfolio/assets/126029841/86c35ac5-4871-4dd9-ba04-956eea43c67a)
+![portfolio](assets/portfolio.JPG)
 
 **Proficiencies/Resume:**
-![resume](https://github.com/HarrisSte/React-Portfolio/assets/126029841/b3052b86-20e1-425a-b259-066acf54a79b)
+![resume and proficiencies](assets/portfolio.JPG)
 
 **Contact:**
-![contact](https://github.com/HarrisSte/React-Portfolio/assets/126029841/1cb6450f-78ab-4379-bf5f-d4c5c6a68909)
+![contact page](assets/contact.JPG)
 
 
 ## Deployed Application
