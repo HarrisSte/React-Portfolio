@@ -36,7 +36,7 @@ function About() {
             <br></br>
             The transition was challenging, but my decade of experience in
             education taught me the value of perseverance and hard work. I
-            doveinto online courses, coding boot camps, and self-guided
+            dove into online courses, coding boot camps, and self-guided
             projects, constantly seeking to improve my skills and understanding.
             <br></br>
             <br></br>
