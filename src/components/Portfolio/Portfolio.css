@@ -4,10 +4,11 @@ h3 {
 }
 
 .projects {
-    margin-bottom: 1rem;
+    margin: 1rem;
     margin-top: 3rem;
     font-family: 'Lato', sans-serif;
     text-align: center;
+    
 }
 
 .card-text {
