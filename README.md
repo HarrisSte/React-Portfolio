@@ -13,7 +13,7 @@ Welcome to my single-page React application portfolio! Here, you'll find a glimp
  - The "Portfolio" section showcases several of my applications. Each project is presented with a title, accompanied by links to both the deployed applications and their corresponding GitHub repositories.
 
 **Get in Touch**
- - For any inquiries or collaboration opportunities, the "Contact" section features a user-friendly form. Fill in your name, email address, and message. 
+ - For any inquiries or collaboration or employment opportunities, the "Contact" section features a user-friendly form. Fill in your name, email address, and message. 
 
 **Resume and Proficiencies**
  - In the "Resume" section, you'll find a link to download my comprehensive resume. Additionally, a list of my professional proficiencies is available to provide insight into my skills and expertise.
@@ -21,7 +21,6 @@ Welcome to my single-page React application portfolio! Here, you'll find a glimp
 **Footer Links**
  - Connecting with me is easy! The footer offers quick links to myGitHub and LinkedIn profiles. You can also explore my presence on Twitter or find another way to send me an email, ensuring you stay updated with my contributions.
 
-  
 Thank you for visiting my portfolio – a testament to my passion and dedication in the world of web development. Explore, engage, and let's connect!
   
 ## Table of Contents
