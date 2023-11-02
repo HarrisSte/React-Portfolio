@@ -1,5 +1,15 @@
 /* Main styles for the header display & profile image. */
-.header {
+img {
+    margin-right: 1.5rem;
+}
+
+.navbar-brand p {
+    color: darkgreen;
+    font-size: 1rem;
+    font-family: Lato;
+}   
+
+/* .header {
     background: linear-gradient(16deg, rgba(79, 162, 133, 1) 4%, rgba(67, 166, 134, 1) 30%, rgba(31, 87, 66, 1) 68%, rgba(36, 73, 65, 1) 91%);
     background-size: cover;
     background-position: center;
@@ -9,9 +19,9 @@
     justify-content: center;
     align-items: center;
     border-bottom: 3px solid #18453B;
-}
+} */
 
-.header-name {
+/* .header-name {
     margin: 0.5rem;
     font-family: 'Lato';
     text-align: center;
@@ -19,15 +29,12 @@
     color: #BCDDCDff;
     font-size: 3rem;
     padding: 0.5rem 1rem;
-}
+} */
 
-.navbar {
-    background-color: #244941;
-    width: 475px;
-    height: 75px;
-    padding-left: 2rem;
-    border-radius: 53% 47% 62% 8% / 29% 77% 23% 71%;
-}
+.nav-bar {
+        background-color: #f8f5f2;
+        padding-left: 2rem;
+    }
 
 .nav-link {
     font-family: 'Lato';
