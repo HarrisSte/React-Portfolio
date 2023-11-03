@@ -16,7 +16,7 @@ function Header() {
             <img src={Initials} width={120} height={120} />
           </a>
         </div>
-        <Navbar.Brand href='/home'>
+        <Navbar.Brand href='/'>
           Stephanie Harris <br></br>
           <p>Full-Stack Web Developer</p>
         </Navbar.Brand>
@@ -25,7 +25,6 @@ function Header() {
           <Nav className='ml-auto'>
             <Nav.Link href='/'>Welcome</Nav.Link>
             <Nav.Link href='/about'>About</Nav.Link>
-            <Nav.Link href='/resume'>Resume</Nav.Link>
             <Nav.Link href='/portfolio'>Portfolio</Nav.Link>
             <Nav.Link href='/contact'>Contact</Nav.Link>
             <NavDropdown title='Social Media' id='basic-nav-dropdown'>

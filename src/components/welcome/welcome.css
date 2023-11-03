@@ -1,5 +1,6 @@
 h1 {
     padding-top: 5rem;
+    padding-bottom: 1rem;
 
 }
 
@@ -8,9 +9,21 @@ h2 {
     font-size: 3rem;
 }
 
+p {
+    font-size: 2rem;
+}
+
+
+h3:hover {
+
+    color: white;
+
+}
+
 .resume-button {
     height: 100px;
     width: 300px;
+    color: white;
     border: none;
     background: none;
     position: relative;
@@ -48,7 +61,7 @@ h2 {
 .resume-button:hover::before {
     left: -10px;
     box-shadow: 318px 0 lightgreen;
-    
+
 }
 
 .resume-button:hover::after {
@@ -64,6 +77,6 @@ h2 {
     transition: background-size 0.25s ease-in;
 
     &:hover {
-        background-size: 100% 88%;
+        background-size: 100% 90%;
     }
 }

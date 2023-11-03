@@ -9,7 +9,6 @@ import App from './App';
 import Welcome from './components/welcome/welcome';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Project';
-import Resume from './components/Resume/Resume';
 import Contact from './components/Contact/Contact';
 
 const router = createBrowserRouter([
@@ -28,10 +27,6 @@ const router = createBrowserRouter([
       {
         path: '/Portfolio',
         element: <Portfolio />,
-      },
-      {
-        path: '/Resume',
-        element: <Resume />,
       },
       {
         path: '/Contact',

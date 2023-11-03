@@ -5,10 +5,10 @@ import Col from 'react-bootstrap/Col';
 import './welcome.css';
 
 function handleDownload() {
-  const alink = document.createElement('a');
-  alink.href = '/SHarris_Resume.pdf';
-  alink.download = 'SHarris_Resume.pdf';
-  alink.click();
+  const link = document.createElement('a');
+  link.href = '/SHarris_Resume.pdf';
+  link.download = 'SHarris_Resume.pdf';
+  link.click();
 }
 
 function Welcome() {
@@ -23,16 +23,26 @@ function Welcome() {
             based in Raleigh, NC.
           </h2>
         </Col>
-        {/* <Col>
-          <h1>Stephanie Harris</h1>
-          <p>Full-Stack Web Developer</p>
-        </Col> */}
       </Row>
       <Row>
         <Col>
-          <h1>Technologies & Proficiencies</h1>
-          <p>Full-Stack Web Developer</p>
+          <h1>Front-End Development</h1>
+          <h3 className='bi bi-bookmark-check-fill'> HTML5</h3>
+          <h3 className='bi bi-bookmark-check-fill'> CSS3</h3>
+          <h3 className='bi bi-bookmark-check-fill'> JavaScript ES6+</h3>
+          <h3 className='bi bi-bookmark-check-fill'> HandlebarsJS</h3>
+          <h3 className='bi bi-bookmark-check-fill'> Bootstrap</h3>
+          <h3 className='bi bi-bookmark-check-fill'> ReactJS</h3>
         </Col>
+        <Col>
+          <h1>Back-End Development</h1>
+          <h3 className='bi bi-bookmark-check-fill'> NodeJS</h3>
+          <h3 className='bi bi-bookmark-check-fill'> ExpressJS</h3>
+          <h3 className='bi bi-bookmark-check-fill'> GraphQL</h3>
+          <h3 className='bi bi-bookmark-check-fill'> MySQL & Sequelize</h3>
+          <h3 className='bi bi-bookmark-check-fill'> MongoDB & Mongoose</h3>
+        </Col>
+
         <Col>
           <div>
             <button onClick={handleDownload} className='resume-button'>
@@ -46,35 +56,3 @@ function Welcome() {
 }
 
 export default Welcome;
-
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-
-// import './welcome.css';
-
-// function Welcome() {
-//   return (
-//     <Container>
-//       <Row>
-//         <Col sm={4}>
-//           <h1>Stephanie Harris</h1>
-//         </Col>
-//         <Col sm={8}>
-//           <h2>
-//             Hey there! My name is Stephanie and I am a full-stack web developer
-//             based in Raleigh, NC.
-//           </h2>
-//         </Col>
-//       </Row>
-//       <Row>
-//         <Col sm={8}>
-//           <p>Full-Stack Web <br></br>Developer</p>
-//         </Col>
-//         <Col sm={4}>sm=4</Col>
-//       </Row>
-//     </Container>
-//   );
-// }
-
-// export default Welcome;
