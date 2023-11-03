@@ -46,7 +46,7 @@ function Welcome() {
         <Col>
           <div>
             <button onClick={handleDownload} className='resume-button'>
-              Download Resume
+              Download Cover Letter & Resume
             </button>
           </div>
         </Col>

@@ -12,7 +12,7 @@ function Footer() {
 
   return (
     <footer >
-      <div>
+     
         <Row className='footer'>
           <Col
             xs='auto'
@@ -61,7 +61,7 @@ function Footer() {
           </Col>
           <div className='copyright'>&copy; Stephanie Harris 2023</div>
         </Row>
-      </div>
+  
     </footer>
   );
 }
