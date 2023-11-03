@@ -6,6 +6,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App';
+import Welcome from './components/welcome/welcome';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Project';
 import Resume from './components/Resume/Resume';
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: '/About',
         element: <About />,
+      },
+      {
+        path: '/',
+        element: <Welcome />,
       },
       {
         path: '/Portfolio',

@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import Initials from '../../assets/ReactPortfolioINITIALS.png';
 
-function BasicExample() {
+function Header() {
   return (
     <Navbar expand='lg' className='nav-bar'>
       <Container>
@@ -23,8 +23,9 @@ function BasicExample() {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ml-auto'>
-            <Nav.Link href='#home'>Home</Nav.Link>
+            <Nav.Link href='/'>Welcome</Nav.Link>
             <Nav.Link href='/about'>About</Nav.Link>
+            <Nav.Link href='/resume'>Resume</Nav.Link>
             <Nav.Link href='/portfolio'>Portfolio</Nav.Link>
             <Nav.Link href='/contact'>Contact</Nav.Link>
             <NavDropdown title='Social Media' id='basic-nav-dropdown'>
@@ -42,7 +43,7 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Header;
 
 // import {Nav, Navbar, Container} from 'react-bootstrap';
 

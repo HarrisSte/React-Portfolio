@@ -1,4 +1,4 @@
-ul {
+/* ul {
     list-style: none;
 }
 
@@ -36,26 +36,4 @@ p {
     width: 425px;
     height: 725px;
 }
-
-.resume-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2rem;
-}
-
-.resume-button button {
-    background-color: #41745Bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-family: 'Lato', sans-serif;
-    font-size: 26px;
-    cursor: pointer;
-    border-radius: 53% 47% 62% 38% / 56% 77% 23% 44%;
-}
-
-.resume-button button:hover {
-    background-color: #37aa88;
-    color: white;
-}
+ */

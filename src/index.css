@@ -1,43 +1,16 @@
 /* Main styles for application. */
-html,
 body {
-    min-height: 100%;
+    min-width: 320px;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
+    background: rgb(79, 162, 133);
+    background: linear-gradient(16deg, rgba(79, 162, 133, 1) 4%, rgba(67, 166, 134, 0.6278886554621849) 30%, rgba(31, 87, 66, 1) 68%, rgba(36, 73, 65, 1) 91%);
 }
 
-#root {
+/* #root {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('./assets/headerleaves.jpg');
-    background-size: cover;
-}
-
-@media screen and (max-width: 768px) {
-
-    html,
-    body {
-        min-height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .page {
-        display: block;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-    .content {
-        width: 100%;
-    }
-
-    #root {
-        display: block;
-        flex-direction: column;
-        min-height: 100vh;
-        background-image: url('./assets/headerleaves.jpg');
-        background-size: cover;
-    }
-}
+    
+} */
