@@ -11,13 +11,23 @@ function About() {
           2013 with a dual Bachelors degree; one in Education and the other in
           Advanced Literature. I taught in South Carolina for the span of ten
           years, eventually finding myself in North Carolina. <br></br>
-          <br></br>I have always had a passion for web developement and all that comes with the field - particularily reading documentation into the night. I decided to complete a six-month full stack bootcamp
-          through UNC - Chapel Hill. <br></br>
+          <br></br>I have always had a{' '}
+          <span className='underline--magical'>
+            {' '}
+            passion for web developement{' '}
+          </span>{' '}
+          and all that comes with the field - particularily reading
+          documentation into the night. 🙃 I decided to complete a six-month
+          full stack bootcamp through UNC - Chapel Hill. As of August 2023, I
+          earned my certificate and I am eager to continue growing.<br></br>
           <br></br>
           My experiences have given me exceptional skills in{' '}
           <span className='underline--magical'> leadership</span>,
           <span className='underline--magical'> collaboration</span>, and
-          <span className='underline--magical'> problem-solving</span>. I have a natural drive to organize, meet deadlines, and overcome challenges. It has always so satisfying to fix a bug or have my work make others happy.
+          <span className='underline--magical'> problem-solving</span>. I have a
+          natural drive to organize, meet deadlines, and overcome challenges. It
+          has always so satisfying to fix a bug or have my work make others
+          happy.
         </Col>
         <Col>
           <img
@@ -27,8 +37,6 @@ function About() {
           />
         </Col>
       </Row>
-
-      <Row></Row>
     </Container>
   );
 }

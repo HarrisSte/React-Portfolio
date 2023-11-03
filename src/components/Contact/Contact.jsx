@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import emailjs from 'emailjs-com';
 import './Contact.css';
@@ -8,7 +8,6 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [emailSent, setEmailSent] = useState(false);
 
   const submit = () => {
     if (name && email && message) {
@@ -29,55 +28,51 @@ const Contact = () => {
       setName('');
       setEmail('');
       setMessage('');
-      setEmailSent(true);
     } else {
       alert('Oops, all fields are required!');
     }
   };
 
   return (
-    <div>
-      <Container>
-        <Row>
-          <Col>
-            <h2 className='contact-subtitle'>
-              Please reach out should you have any questions or comments!
-            </h2>
-          </Col>
-          <Col>
-            <div className='contact-form'>
-              <input
-                className='name mb-1'
-                type='text'
-                placeholder='First and Last Name'
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-              <input
-                className='email mb-1'
-                type='email'
-                placeholder='Your email address'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <textarea
-                placeholder='Leave your message here!'
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              ></textarea>
-              <button className='contact-submit' onClick={submit}>
-                Send my message!
-              </button>
-            </div>
-            <span className='msg-sent'>
-              {emailSent
-                ? "Awesome, I'll be in touch soon!"
-                : ''}
-            </span>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+    <Container>
+      <Row>
+        <Col>
+          <div className='contact-form'>
+            <a href='https://www.linkedin.com/in/harrisste9/'>
+              <i className='bi bi-linkedin'></i>
+            </a>
+            <a href='https://www.github.com/HarrisSte'>
+              <i className='bi bi-github'></i>
+            </a>
+
+            <h2>Want to get in touch?</h2>
+            <h5>Drop me a line!</h5>
+            <input
+              className='name mb-1'
+              type='text'
+              placeholder='First and Last Name'
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              className='email mb-1'
+              type='email'
+              placeholder='Your email address'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <textarea
+              placeholder='Leave your message here!'
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+            <button className='contact-submit' onClick={submit}>
+              Send my message!
+            </button>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

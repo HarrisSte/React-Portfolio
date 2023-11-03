@@ -15,7 +15,7 @@ function Welcome() {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col className='welcome'>
           <h2>
             Hey there! My name is{' '}
             <span className='underline--magical'>Stephanie</span> and I am a{' '}
