@@ -1,5 +1,4 @@
 .projects h3 {
-
     color: #004953;
 }
 
@@ -17,10 +16,9 @@
 
 .btn {
     --b: 0.1em;
-    --c: purple;
-
-    
+    --c: #00467F;
     color: #0000;
+    border-color: #8fd3f4;
     text-align: center;
     font-size: 1rem;
     padding: 20px;
@@ -38,8 +36,10 @@
 .btn:hover {
     --_p: 100%;
     --_s: .3s;
-  background-color: pink;
-  border: none;
+    color: #004953;
+    background-color: #84fab0;
+    border-style: solid;
+    border-image: linear-gradient(to right, #84fab0, #8fd3f4) 1;
 }
 
 @media screen and (max-width: 768px) {

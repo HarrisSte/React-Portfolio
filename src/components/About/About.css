@@ -3,7 +3,9 @@
     padding: 1.5rem;
     font-size: 1.2rem;
     background-color: #f8f5f2;
-    border-radius: 1rem;
+    border-width: .5rem;
+    border-style: solid;
+    border-image: linear-gradient(to right, #84fab0, #8fd3f4) 1;
 }
 
 .about-skills {
