@@ -25,7 +25,7 @@ function Welcome() {
         </Col>
       </Row>
       <Row>
-        <Col >
+        <Col>
           <h1>Front-End Development</h1>
           <h3 className='bi bi-bookmark-check-fill'> HTML5</h3>
           <h3 className='bi bi-bookmark-check-fill'> CSS3</h3>

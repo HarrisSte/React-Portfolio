@@ -175,9 +175,7 @@ function Portfolio() {
               <Card.Title>
                 <h3>The Kitchen Witch</h3>
               </Card.Title>
-              <Card.Text>
-                *UNDER DEVELOPMENT*
-              </Card.Text>
+              <Card.Text>*UNDER DEVELOPMENT*</Card.Text>
               <Button href='https://just-anthr-txt-editor-b5f1347fd808.herokuapp.com/'>
                 Deployed Application
               </Button>
