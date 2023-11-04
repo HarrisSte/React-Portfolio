@@ -1,16 +1,17 @@
-h1 {
-    padding-top: 5rem;
-    padding-bottom: 1rem;
-
-}
-
 p {
     font-size: 2rem;
 }
 
+h1 {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
 
 h3:hover {
-    color: white;
+    background: -webkit-linear-gradient(#00467F 0%,
+            #A5CC82 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .welcome h2 {
@@ -21,7 +22,7 @@ h3:hover {
 .resume-button {
     height: 100px;
     width: 300px;
-    color: white;
+    color: darkcyan;
     border: none;
     background: none;
     position: relative;
@@ -31,6 +32,10 @@ h3:hover {
     font: 1.5rem Lato;
     cursor: pointer;
     will-change: transform;
+}
+
+.resume-button:hover {
+    color: lightblue;
 }
 
 .resume-button::before,

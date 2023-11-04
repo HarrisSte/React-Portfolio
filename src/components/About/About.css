@@ -19,7 +19,10 @@
 }
 
 .about-skills ul:hover {
-    color: #f8f5f2;
+    background: -webkit-linear-gradient(#00467F 0%,
+            #A5CC82 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .about-certs {
@@ -40,7 +43,10 @@
 }
 
 .about-certs ul:hover {
-    color: #f8f5f2;
+    background: -webkit-linear-gradient(#00467F 0%,
+            #A5CC82 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .profile-image {

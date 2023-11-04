@@ -5,13 +5,13 @@
 }
 
 .footer a {
-    color: #41745Bff;
+    color: #f8f5f2;
     font-size: 1.7rem;
     transition: color 0.3s, transform 0.3s;
 }
 
 .footer a:hover {
-    color: white;
+    color: #51aebf;
     transform: scale(1.2);
 }
 
