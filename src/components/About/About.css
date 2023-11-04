@@ -1,24 +1,52 @@
 .about-info {
-   margin-top: 6rem;
-   padding: 1.5rem;
-   font-size: 1.2rem;
-   background-color: #f8f5f2;
-   border-radius: 1rem;
+    margin-top: 6rem;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    background-color: #f8f5f2;
+    border-radius: 1rem;
 }
 
+.about-skills {
+    padding-bottom: 2rem;
+}
 
-.about {
-    margin-top: 5rem;
-    border-radius: 55% 36% 35% 56% / 28% 24% 28% 45%;
-    background-color: #1B4D3E;
-    width: 485px;
-    height: 420px;
+.about-skills p {
+    font-size: 1.3rem;
+}
+
+.about-skills h4 {
+    margin-top: 7rem;
+}
+
+.about-skills ul:hover {
+    color: #f8f5f2;
+}
+
+.about-certs {
+    border-top: solid black;
+}
+
+.about-certs h1 {
+    text-align: right;
+}
+
+.about-certs p {
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+.about-certs h4 {
+    margin-top: 7rem;
+}
+
+.about-certs ul:hover {
+    color: #f8f5f2;
 }
 
 .profile-image {
     display: block;
     margin: 0 auto;
-    width: 350px;
+    width: 425px;
     object-fit: cover;
     padding-top: 5rem;
     border-radius: 59% 41% 72% 28% / 34% 75% 25% 66%;

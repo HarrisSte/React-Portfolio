@@ -24,7 +24,7 @@ function Footer() {
           >
             <a
               className='bi bi-envelope'
-              href='mailto:st3phanie.harris@gmail.com'
+              href='mailto:harrisste9@gmail.com'
               target='_blank'
               rel='noopener noreferrer'
             ></a>
