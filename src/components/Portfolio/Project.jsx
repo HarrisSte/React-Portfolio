@@ -16,7 +16,7 @@ const projects = [
   {
     img: ZooImg,
     title: 'Zooquarium',
-    description: 'Search for your favorite animals & local accredited zoos!',
+    description: 'Search for  local accredited zoos & their animals!',
     deployedURL: 'https://caitlinramsey.github.io/zooquarium/',
     githubURL: 'https://github.com/caitlinramsey/zooquarium/',
   },
@@ -36,9 +36,8 @@ const projects = [
   },
   {
     img: Regex,
-    title: 'Gist: Regex Tutorial: Hex Values',
-    description:
-      'A detailed regex tutorial providing information on how to understand hex values.',
+    title: 'Regex Tutorial: Hex Values',
+    description: 'A regex tutorial providing information on hex values.',
     deployedURL:
       'https://gist.github.com/HarrisSte/de01a81758dfe8f8afdbe5334a015eb7',
   },
@@ -73,7 +72,8 @@ const projects = [
   {
     img: kitchWitch,
     title: 'The Kitchen Witch',
-    description: '-- UNDER DEVELOPMENT -- Future site where users can find recipes & YouTube tutorials.',
+    description:
+      '-- UNDER DEVELOPMENT -- Future site where users can find recipes & YouTube tutorials.',
     deployedURL: 'https://thekitchenwitch.netlify.com',
     githubURL: 'https://github.com/HarrisSte/HexleLich-The-Kitchen-Witch',
   },

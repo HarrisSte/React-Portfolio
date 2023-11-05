@@ -70,3 +70,14 @@
     padding-top: 5rem;
     border-radius: 59% 41% 72% 28% / 34% 75% 25% 66%;
 }
+
+@media only screen and (max-width: 768px) {
+  .profile-image {
+    display: block;
+    margin: 0 auto;
+    width: 325px;
+    object-fit: cover;
+    padding-top: 5rem;
+    border-radius: 59% 41% 72% 28% / 34% 75% 25% 66%;
+}
+}
