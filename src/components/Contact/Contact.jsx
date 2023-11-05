@@ -29,7 +29,7 @@ const Contact = () => {
       setEmail('');
       setMessage('');
     } else {
-      alert('Oops, all fields are required!');
+      alert('You rebel! All fields are required.');
     }
   };
 
@@ -45,8 +45,11 @@ const Contact = () => {
               <i className='bi bi-github'></i>
             </a>
 
-            <h2>Want to get in touch?</h2>
-            <h5>Drop me a line!</h5>
+            <h2>Want to get in touch? Let's connect!</h2>
+            <h5>
+              Drop me a line or find me on my social media accounts! <br></br>
+              I'll be sure to get back to you as soon as possible.
+            </h5>
             <input
               className='name mb-1'
               type='text'

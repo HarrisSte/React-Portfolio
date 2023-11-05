@@ -4,7 +4,6 @@
     font-size: 1.2rem;
     font-family: 'Raleway', sans-serif;
     background-color: #f8f5f2;
-    border-width: .5rem;
     border-style: solid;
     border-image: linear-gradient(to right, #84fab0, #8fd3f4) 1;
 }

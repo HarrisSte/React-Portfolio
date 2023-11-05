@@ -1,5 +1,4 @@
-import Container from 'react-bootstrap/Container';
-import { Row, Col, Button, Card } from 'react-bootstrap';
+import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 
 import ZooImg from '../../assets/Project1SS.jpg';
 import DiscDevs from '../../assets/DiscDevs.jpg';
