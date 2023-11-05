@@ -1,6 +1,4 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import './welcome.css';
 
@@ -24,7 +22,7 @@ function Welcome() {
           </h2>
         </Col>
       </Row>
-      <Row>
+      <Row className='tech-skills'>
         <Col>
           <h1>Front-End Development</h1>
           <h3 className='bi bi-bookmark-check-fill'> HTML5</h3>
@@ -42,13 +40,10 @@ function Welcome() {
           <h3 className='bi bi-bookmark-check-fill'> MySQL & Sequelize</h3>
           <h3 className='bi bi-bookmark-check-fill'> MongoDB & Mongoose</h3>
         </Col>
-
         <Col>
-          <div>
-            <button onClick={handleDownload} className='resume-button'>
-              Download Cover Letter & Resume
-            </button>
-          </div>
+          <button onClick={handleDownload} className='resume-button'>
+            Download Cover Letter & Resume
+          </button>
         </Col>
       </Row>
     </Container>

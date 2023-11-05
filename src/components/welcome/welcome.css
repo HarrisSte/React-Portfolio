@@ -1,13 +1,16 @@
-p {
-    font-size: 2rem;
-}
-
-h1 {
+.tech-skills h1 {
     padding-top: 5rem;
     padding-bottom: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
 }
 
-h3:hover {
+.tech-skills h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.tech-skills h3:hover {
+    font-size: 2rem;
     background: -webkit-linear-gradient(#00467F 0%,
             #A5CC82 100%);
     -webkit-background-clip: text;
@@ -15,8 +18,9 @@ h3:hover {
 }
 
 .welcome h2 {
-    padding-top: 10rem;
+    padding-top: 4rem;
     font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .resume-button {
@@ -25,11 +29,10 @@ h3:hover {
     color: darkcyan;
     border: none;
     background: none;
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font: 1.5rem Lato;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
     cursor: pointer;
     will-change: transform;
 }
