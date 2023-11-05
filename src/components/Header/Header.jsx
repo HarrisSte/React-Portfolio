@@ -1,11 +1,7 @@
-// Importing necessary styles and files.
-import './Header.css';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import Initials from '../../assets/ReactPortfolioINITIALS.png';
+
+import './Header.css';
 
 function Header() {
   return (
@@ -20,14 +16,14 @@ function Header() {
           Stephanie Harris <br></br>
           <p>Full-Stack Web Developer</p>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
+        <Navbar.Toggle />
+        <Navbar.Collapse>
           <Nav className='ml-auto'>
             <Nav.Link href='/'>Welcome</Nav.Link>
             <Nav.Link href='/about'>About</Nav.Link>
             <Nav.Link href='/portfolio'>Portfolio</Nav.Link>
             <Nav.Link href='/contact'>Contact</Nav.Link>
-            <NavDropdown title='Social Media' id='basic-nav-dropdown'>
+            <NavDropdown title='Social Media'>
               <NavDropdown.Item href='https://www.linkedin.com/in/harrisste9/'>
                 LinkedIn
               </NavDropdown.Item>
