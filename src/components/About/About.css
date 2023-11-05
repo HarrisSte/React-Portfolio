@@ -2,6 +2,7 @@
     margin-top: 6rem;
     padding: 1.5rem;
     font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
     background-color: #f8f5f2;
     border-width: .5rem;
     border-style: solid;
@@ -10,6 +11,11 @@
 
 .about-skills {
     padding-bottom: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.about-skills h1 {
+    margin-top: 5rem;
 }
 
 .about-skills p {
@@ -18,9 +24,11 @@
 
 .about-skills h4 {
     margin-top: 7rem;
+    font-weight: bold;
 }
 
 .about-skills ul:hover {
+    font-size: 1.6rem;
     background: -webkit-linear-gradient(#00467F 0%,
             #A5CC82 100%);
     -webkit-background-clip: text;
@@ -28,11 +36,13 @@
 }
 
 .about-certs {
-    border-top: solid black;
+    border-top: solid #09516c;
+    font-family: 'Raleway', sans-serif;
 }
 
 .about-certs h1 {
     text-align: right;
+    margin-top: 5rem;
 }
 
 .about-certs p {
@@ -42,9 +52,11 @@
 
 .about-certs h4 {
     margin-top: 7rem;
+    font-weight: bold;
 }
 
 .about-certs ul:hover {
+    font-size: 1.6rem;
     background: -webkit-linear-gradient(#00467F 0%,
             #A5CC82 100%);
     -webkit-background-clip: text;

@@ -1,5 +1,4 @@
 import { Container, Row, Col } from 'react-bootstrap';
-
 import aboutPhoto from '../../assets/AboutPhoto.jpg';
 
 import './About.css';
@@ -9,8 +8,8 @@ function About() {
     <Container>
       <Row>
         <Col className='about-info'>
-          Originally from Upstate New York, I graduated from the SUNY Oswego in
-          2013 with a dual bachelor's degree; one in Education and the other in
+          Originally from Upstate New York, I graduated from SUNY Oswego in 2013
+          with a dual bachelor's degree; one in Education and the other in
           Advanced Literature. I taught in South Carolina for ten years,
           eventually finding myself in North Carolina. <br></br>
           <br></br>I have always had a{' '}
@@ -21,7 +20,7 @@ function About() {
           and all that comes with the field - particularly reading documentation
           into the night. 🙃 I decided to complete a six-month full stack boot
           camp through UNC-Chapel Hill. As of August 2023, I earned my
-          certificate and I am eager to continue growing.<br></br>
+          certificate and I am excited to shift my career path.<br></br>
           <br></br>
           My experiences have given me exceptional skills in{' '}
           <span className='underline--magical'> leadership</span>,
@@ -43,15 +42,19 @@ function About() {
         <Col>
           <h1>My career, so far...</h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
-            harum blanditiis illo ducimus, veniam aliquam porro ut asperiores
-            corporis sint aliquid magnam mollitia, molestiae perspiciatis
-            dolorem eligendi facilis temporibus pariatur!
+            My time working within the field of education granted me
+            opportunities to work with a variety of stakeholders & develop a
+            strong skill set. These skills give me an upper hand when working on
+            a team & gives me the discipline to continue my own personal growth.
+            Because of this, I am consistently seeking information in order to
+            better my craft.
           </p>
         </Col>
         <Col md='auto'>
           <h4>
-            <ul>Planning & Organization</ul>
+            <ul>
+              Planning &<br></br> Organization
+            </ul>
             <ul>Communication</ul>
             <ul>Problem-solving</ul>
             <ul>Adaptability</ul>
@@ -63,6 +66,7 @@ function About() {
             <ul>Teamwork</ul>
             <ul>Leadership</ul>
             <ul>Creativity</ul>
+            <ul>Life-long Learner</ul>
           </h4>
         </Col>
       </Row>
