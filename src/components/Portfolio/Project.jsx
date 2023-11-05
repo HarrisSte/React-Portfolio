@@ -86,7 +86,7 @@ function Portfolio() {
         {projects.map((project, index) => (
           <Col key={index}>
             <Card style={{ width: '16rem' }}>
-              <Card.Img variant='top' src={project.img} />
+              <Card.Img variant='top' src={project.img} alt={project.description}/>
               <Card.Body>
                 <Card.Title>
                   <h3>{project.title}</h3>
