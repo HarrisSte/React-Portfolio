@@ -8,182 +8,108 @@ import CodeQuiz from '../../assets/codingquiz.jpg';
 import PwGen from '../../assets/PWGen.jpg';
 import SingleGame from '../../assets/SingleGame.jpg';
 import Regex from '../../assets/regex.jpg';
+import kitchWitch from '../../assets/theKitchWitch.jpg';
 
 import '../Portfolio/Portfolio.css';
 
+const projects = [
+  {
+    img: ZooImg,
+    title: 'Zooquarium',
+    description: 'Search for your favorite animals & local accredited zoos!',
+    deployedURL: 'https://caitlinramsey.github.io/zooquarium/',
+    githubURL: 'https://github.com/caitlinramsey/zooquarium/',
+  },
+  {
+    img: DiscDevs,
+    title: 'DiscoverDevs',
+    description: 'Connecting employers with newly graduated developers.',
+    deployedURL: 'https://discoverdevs-2aa18af2a0dc.herokuapp.com/',
+    githubURL: 'https://github.com/Prototype1309/DiscoverDevs',
+  },
+  {
+    img: SingleGame,
+    title: 'BUGBytes',
+    description: 'A gaming hub to connect, collaborate, & conquer together.',
+    deployedURL: 'https://bugbytes-eea33095845f.herokuapp.com/',
+    githubURL: 'https://github.com/HarrisSte/BUGbytes',
+  },
+  {
+    img: Regex,
+    title: 'Gist: Regex Tutorial: Hex Values',
+    description:
+      'A detailed regex tutorial providing information on how to understand hex values.',
+    deployedURL:
+      'https://gist.github.com/HarrisSte/de01a81758dfe8f8afdbe5334a015eb7',
+  },
+  {
+    img: NoteTaker,
+    title: 'Note-Taker',
+    description: 'Easily enter, save, & remove notes.',
+    deployedURL: 'https://pacific-inlet-29502.herokuapp.com/',
+    githubURL: 'https://github.com/HarrisSte/Note-Taker',
+  },
+  {
+    img: CodeQuiz,
+    title: 'Coding Quiz',
+    description: 'Test your knowledge of HTML, CSS, & JavaScript.',
+    deployedURL: 'https://harrisste.github.io/Coding-Quiz/',
+    githubURL: 'https://github.com/HarrisSte/Coding-Quiz',
+  },
+  {
+    img: PwGen,
+    title: 'Password Generator',
+    description: 'An application that will generate passwords for users.',
+    deployedURL: 'https://harrisste.github.io/Password-Generator/',
+    githubURL: 'https://github.com/HarrisSte/Password-Generator',
+  },
+  {
+    img: JATE,
+    title: 'J.A.T.E.',
+    description: 'A note-taking application that meets PWA criteria.',
+    deployedURL: 'https://just-anthr-txt-editor-b5f1347fd808.herokuapp.com/',
+    githubURL: 'https://github.com/HarrisSte/Just-Another-Text-Editor',
+  },
+  {
+    img: kitchWitch,
+    title: 'The Kitchen Witch',
+    description: '-- UNDER DEVELOPMENT -- Future site where users can find recipes & YouTube tutorials.',
+    deployedURL: 'https://thekitchenwitch.netlify.com',
+    githubURL: 'https://github.com/HarrisSte/HexleLich-The-Kitchen-Witch',
+  },
+];
+
 function Portfolio() {
   return (
-    <Container>
-      <Row className='projects'>
-        <Col>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant='top' src={ZooImg} />
-            <Card.Body>
-              <Card.Title>
-                <h3>Zooquarium</h3>
-              </Card.Title>
-              <Card.Text>
-                Search for your favorite animals & local accredited zoos!
-              </Card.Text>
-              <Button href='https://caitlinramsey.github.io/zooquarium/'>
-                Deployed Application
-              </Button>
-              <Button href='https://github.com/caitlinramsey/zooquarium/'>
-                GitHub Repository
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant='top' src={DiscDevs} />
-            <Card.Body>
-              <Card.Title>
-                <h3>DiscoverDevs</h3>
-              </Card.Title>
-              <Card.Text>
-                Connecting employers with newly graduated developers.
-              </Card.Text>
-              <Button href='https://discoverdevs-2aa18af2a0dc.herokuapp.com/'>
-                Deployed Application
-              </Button>
-              <Button href='https://github.com/Prototype1309/DiscoverDevs'>
-                GitHub Repository
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant='top' src={SingleGame} />
-            <Card.Body>
-              <Card.Title>
-                <h3>BUGBytes</h3>
-              </Card.Title>
-              <Card.Text>
-                A gaming hub to connect, collaborate, and conquer together.
-              </Card.Text>
-              <Button href='https://bugbytes-eea33095845f.herokuapp.com/'>
-                Deployed Application
-              </Button>
-              <Button href='https://github.com/HarrisSte/BUGbytes'>
-                GitHub Repository
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant='top' src={Regex} />
-            <Card.Body>
-              <Card.Title>
-                <h3>Gist: Regex Tutorial: Hex Values </h3>
-              </Card.Title>
-              <Card.Text>
-                A detailed regex tutorial providing information on how to
-                understand hex values.
-              </Card.Text>
-              <Button href='https://gist.github.com/HarrisSte/de01a81758dfe8f8afdbe5334a015eb7'>
-                GitHub Gist
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row className='projects'>
-        <Col>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant='top' src={NoteTaker} />
-            <Card.Body>
-              <Card.Title>
-                <h3>Note-Taker</h3>
-              </Card.Title>
-              <Card.Text>Easily enter, save, and remove notes.</Card.Text>
-              <Button href='https://pacific-inlet-29502.herokuapp.com/'>
-                Deployed Application
-              </Button>
-              <Button href='https://github.com/HarrisSte/Note-Taker'>
-                GitHub Repository
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant='top' src={CodeQuiz} />
-            <Card.Body>
-              <Card.Title>
-                <h3>Coding Quiz</h3>
-              </Card.Title>
-              <Card.Text>
-                Test your knowledge of HTML, CSS, and JavaScript.
-              </Card.Text>
-              <Button href='https://harrisste.github.io/Coding-Quiz/'>
-                Deployed Application
-              </Button>
-              <Button href='https://github.com/HarrisSte/Coding-Quiz'>
-                GitHub Repository
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant='top' src={PwGen} />
-            <Card.Body>
-              <Card.Title>
-                <h3>Password Generator</h3>
-              </Card.Title>
-              <Card.Text>
-                An application that will generate passwords for users.
-              </Card.Text>
-              <Button href='https://harrisste.github.io/Password-Generator/'>
-                Deployed Application{' '}
-              </Button>
-              <Button href='https://github.com/HarrisSte/Password-Generator'>
-                GitHub Repository
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant='top' src={JATE} />
-            <Card.Body>
-              <Card.Title>
-                <h3>J.A.T.E.</h3>
-              </Card.Title>
-              <Card.Text>
-                A note-taking application that meets PWA criteria.
-              </Card.Text>
-              <Button href='https://just-anthr-txt-editor-b5f1347fd808.herokuapp.com/'>
-                Deployed Application
-              </Button>
-              <Button href='https://github.com/HarrisSte/Just-Another-Text-Editor'>
-                GitHub Repository
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row className='projects'>
-        <Col>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant='top' src={JATE} />
-            <Card.Body>
-              <Card.Title>
-                <h3>The Kitchen Witch</h3>
-              </Card.Title>
-              <Card.Text>*UNDER DEVELOPMENT*</Card.Text>
-              <Button href='https://just-anthr-txt-editor-b5f1347fd808.herokuapp.com/'>
-                Deployed Application
-              </Button>
-              <Button href='https://github.com/HarrisSte/Just-Another-Text-Editor'>
-                GitHub Repository
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
+    <Container className='projects'>
+      <Row xs={1} md={2} lg={4} className='g-4'>
+        {projects.map((project, index) => (
+          <Col key={index}>
+            <Card style={{ width: '16rem' }}>
+              <Card.Img variant='top' src={project.img} />
+              <Card.Body>
+                <Card.Title>
+                  <h3>{project.title}</h3>
+                </Card.Title>
+                <Card.Text>{project.description}</Card.Text>
+                <Button
+                  href={project.deployedURL}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Deployed Application
+                </Button>
+                <Button
+                  href={project.githubURL}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  GitHub Repository
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
       </Row>
     </Container>
   );

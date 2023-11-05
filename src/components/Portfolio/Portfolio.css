@@ -1,26 +1,31 @@
-.projects h3 {
-    color: #004953;
-}
-
 .card-text {
     font-size: 1rem;
     color: #004953;
+    font-family: 'Raleway', sans-serif;
 }
 
 .projects {
-    margin: 1rem;
     margin-top: 3rem;
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
 
+.projects h3 {
+    color: #004953;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
 .btn {
     --b: 0.1em;
     --c: #00467F;
-    color: #0000;
+    color: #09516c;
     border-color: #8fd3f4;
     text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
     padding: 20px;
     width: 200px;
     margin: 5px;
@@ -37,9 +42,8 @@
     --_p: 100%;
     --_s: .3s;
     color: #004953;
-    background-color: #84fab0;
-    border-style: solid;
-    border-image: linear-gradient(to right, #84fab0, #8fd3f4) 1;
+    background-color: #a5fac488;
+    border: solid white;
 }
 
 @media screen and (max-width: 768px) {
