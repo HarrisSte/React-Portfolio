@@ -14,11 +14,6 @@
     min-height: 420px;
 }
 
-/* .skills-list ul {
-    min-height:252px;
-    min-height: 375px;
-} */
-
 .about-skills h1 {
     margin-top: 5rem;
 }
@@ -43,6 +38,7 @@
 .about-certs {
     border-top: solid #09516c;
     font-family: 'Raleway', sans-serif;
+    min-height: 400px;
 }
 
 .about-certs h1 {

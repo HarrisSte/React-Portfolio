@@ -71,7 +71,7 @@ function About() {
         </Col>
       </Row>
       <Row className='about-certs'>
-        <Col md='auto'>
+        <Col xs lg='3'>
           <h4>
             <ul>
               Full-Stack Web <br></br>Development
