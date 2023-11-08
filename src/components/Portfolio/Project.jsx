@@ -104,7 +104,7 @@ function Portfolio() {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  GitHub Repository
+                  GitHub <br></br>Repository
                 </Button>
               </Card.Body>
             </Card>

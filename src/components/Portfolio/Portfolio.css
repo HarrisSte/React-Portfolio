@@ -29,6 +29,7 @@
     padding: 20px;
     width: 200px;
     margin: 5px;
+    min-height: 58px;
     padding-block: var(--b);
     background:
         linear-gradient(var(--c) 50%, #000 0) 0% calc(100% - var(--_p, 0%))/100% 200%,
@@ -44,6 +45,7 @@
     color: #004953;
     background-color: #a5fac488;
     border: solid white;
+    
 }
 
 @media screen and (max-width: 768px) {
