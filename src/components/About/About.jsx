@@ -15,7 +15,7 @@ function About() {
           <br></br>I have always had a{' '}
           <span className='underline--magical'>
             {' '}
-            passion for web development{' '}
+            passion for software development{' '}
           </span>{' '}
           and all that comes with the field - particularly reading documentation
           into the night. 🙃 I decided to complete a six-month full stack boot

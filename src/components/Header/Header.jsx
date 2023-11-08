@@ -14,7 +14,7 @@ function Header() {
         </div>
         <Navbar.Brand href='/'>
           Stephanie Harris <br></br>
-          <p>Full-Stack Web Developer</p>
+          <p>Full-Stack Software Developer</p>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
