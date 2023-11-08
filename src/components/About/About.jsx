@@ -50,7 +50,7 @@ function About() {
             better my craft.
           </p>
         </Col>
-        <Col md='auto'>
+        <Col xs lg='3'>
           <h4>
             <ul>
               Planning &<br></br> Organization

@@ -11,7 +11,13 @@
 .about-skills {
     padding-bottom: 2rem;
     font-family: 'Raleway', sans-serif;
+    min-height: 420px;
 }
+
+/* .skills-list ul {
+    min-height:252px;
+    min-height: 375px;
+} */
 
 .about-skills h1 {
     margin-top: 5rem;
@@ -72,12 +78,12 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .profile-image {
-    display: block;
-    margin: 0 auto;
-    width: 325px;
-    object-fit: cover;
-    padding-top: 5rem;
-    border-radius: 59% 41% 72% 28% / 34% 75% 25% 66%;
-}
+    .profile-image {
+        display: block;
+        margin: 0 auto;
+        width: 325px;
+        object-fit: cover;
+        padding-top: 5rem;
+        border-radius: 59% 41% 72% 28% / 34% 75% 25% 66%;
+    }
 }
