@@ -44,6 +44,7 @@
 
 .resume-button:hover {
     color: #09516c;
+    font-weight: bold;
 }
 
 .resume-button::before,
