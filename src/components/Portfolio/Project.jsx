@@ -9,6 +9,7 @@ import PwGen from '../../assets/PWGen.jpg';
 import SingleGame from '../../assets/SingleGame.jpg';
 import Regex from '../../assets/regex.jpg';
 import kitchWitch from '../../assets/theKitchWitch.jpg';
+import jennsCupcakes from '../../assets/logo.png';
 
 import '../Portfolio/Portfolio.css';
 
@@ -74,8 +75,16 @@ const projects = [
     title: 'The Kitchen Witch',
     description:
       '-- UNDER DEVELOPMENT -- Future site where users can find recipes & YouTube tutorials.',
-    deployedURL: 'https://thekitchenwitch.netlify.com',
-    githubURL: 'https://github.com/HarrisSte/HexleLich-The-Kitchen-Witch',
+    // deployedURL: 'https://thekitchenwitch.netlify.com',
+    // githubURL: 'https://github.com/HarrisSte/HexleLich-The-Kitchen-Witch',
+  },
+  {
+    img: jennsCupcakes,
+    title: 'Cupcakes by Jenn',
+    description:
+      '-- UNDER DEVELOPMENT -- Future site for Cupcakes by Jenn. A bakery based in Iowa',
+    // deployedURL: '',
+    // githubURL: '',
   },
 ];
 
