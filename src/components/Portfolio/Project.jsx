@@ -75,16 +75,16 @@ const projects = [
     title: 'The Kitchen Witch',
     description:
       '-- UNDER DEVELOPMENT -- Future site where users can find recipes & YouTube tutorials.',
-    // deployedURL: 'https://thekitchenwitch.netlify.com',
-    // githubURL: 'https://github.com/HarrisSte/HexleLich-The-Kitchen-Witch',
+    deployedURL: 'https://thekitchenwitch.netlify.com',
+    githubURL: 'https://github.com/HarrisSte/HexleLich-The-Kitchen-Witch',
   },
   {
     img: jennsCupcakes,
     title: 'Cupcakes by Jenn',
     description:
-      '-- UNDER DEVELOPMENT -- Future site for Cupcakes by Jenn. A bakery based in Iowa',
-    // deployedURL: '',
-    // githubURL: '',
+      '-- UNDER DEVELOPMENT -- Future site for Cupcakes by Jenn. An emerging, award-winning, bakery based in Iowa.',
+    deployedURL: 'https://jennscupcakes.netlify.com',
+    githubURL: '',
   },
 ];
 
