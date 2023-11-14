@@ -9,11 +9,19 @@ import PwGen from '../../assets/PWGen.jpg';
 import SingleGame from '../../assets/SingleGame.jpg';
 import Regex from '../../assets/regex.jpg';
 import kitchWitch from '../../assets/theKitchWitch.jpg';
-import jennsCupcakes from '../../assets/cupcakes.jpg';
+import jennsCupcakes from '../../assets/jennscupcakes.jpg';
 
 import './Portfolio.css';
 
 const projects = [
+  {
+    img: jennsCupcakes,
+    title: 'Cupcakes by Jenn',
+    description:
+      'Cupcakes by Jenn; an emerging, award-winning, bakery based in Iowa.',
+    deployedURL: 'https://jennas-cupcakes.netlify.app',
+    githubURL: 'https://github.com/HarrisSte/Cupcakes-by-Jenn',
+  },
   {
     img: ZooImg,
     title: 'Zooquarium',
@@ -78,14 +86,6 @@ const projects = [
     deployedURL: 'https://thekitchenwitch.netlify.com',
     githubURL: 'https://github.com/HarrisSte/HexleLich-The-Kitchen-Witch',
   },
-  {
-    img: jennsCupcakes,
-    title: 'Cupcakes by Jenn',
-    description:
-      '-- UNDER DEVELOPMENT -- Future site for Cupcakes by Jenn. An emerging, award-winning, bakery based in Iowa.',
-    deployedURL: 'https://jennas-cupcakes.netlify.app',
-    githubURL: '',
-  },
 ];
 
 function Portfolio() {
@@ -95,7 +95,11 @@ function Portfolio() {
         {projects.map((project, index) => (
           <Col key={index}>
             <Card style={{ width: '16rem' }}>
-              <Card.Img variant='top' src={project.img} alt={project.description}/>
+              <Card.Img
+                variant='top'
+                src={project.img}
+                alt={project.description}
+              />
               <Card.Body>
                 <Card.Title>
                   <h3>{project.title}</h3>
