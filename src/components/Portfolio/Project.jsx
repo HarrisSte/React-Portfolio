@@ -11,7 +11,7 @@ import Regex from '../../assets/regex.jpg';
 import kitchWitch from '../../assets/theKitchWitch.jpg';
 import jennsCupcakes from '../../assets/Cupcakes.jpg';
 
-import '../Portfolio/Portfolio.css';
+import './Portfolio.css';
 
 const projects = [
   {
