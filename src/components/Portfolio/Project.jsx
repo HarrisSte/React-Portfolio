@@ -9,7 +9,7 @@ import PwGen from '../../assets/PWGen.jpg';
 import SingleGame from '../../assets/SingleGame.jpg';
 import Regex from '../../assets/regex.jpg';
 import kitchWitch from '../../assets/theKitchWitch.jpg';
-import jennsCupcakes from '../../assets/cupcakes.jpg';
+import jennsCupcakes from '../../assets/Cupcakes.jpg';
 
 import '../Portfolio/Portfolio.css';
 
