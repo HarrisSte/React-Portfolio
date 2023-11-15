@@ -19,7 +19,7 @@ const projects = [
     title: 'Cupcakes by Jenn',
     description:
       'Cupcakes by Jenn; an emerging, award-winning, bakery based in Iowa.',
-    deployedURL: 'https://jennas-cupcakes.netlify.app',
+    deployedURL: 'https://cupcakesbyjenn.netlify.app/',
     githubURL: 'https://github.com/HarrisSte/Cupcakes-by-Jenn',
   },
   {
