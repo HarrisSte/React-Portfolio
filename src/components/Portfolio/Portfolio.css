@@ -49,7 +49,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    h3 {
-        font-size: 1.5rem;
+    .projects {
+        width: 65vw;
     }
 }
