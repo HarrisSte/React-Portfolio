@@ -26,3 +26,9 @@
     font-family: 'Raleway', sans-serif;
     font-size: 1.2rem;
 }
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        margin-left: 78px;
+    }
+}
