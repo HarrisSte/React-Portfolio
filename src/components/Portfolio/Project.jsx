@@ -23,6 +23,14 @@ const projects = [
     githubURL: 'https://github.com/HarrisSte/Cupcakes-by-Jenn',
   },
   {
+    img: kitchWitch,
+    title: 'The Kitchen Witch',
+    description:
+      '-- UNDER DEVELOPMENT -- Future site where users can find recipes & YouTube tutorials.',
+    deployedURL: 'https://thekitchenwitch.netlify.com',
+    githubURL: 'https://github.com/HarrisSte/HexleLich-The-Kitchen-Witch',
+  },
+  {
     img: ZooImg,
     title: 'Zooquarium',
     description: 'Search for  local accredited zoos & their animals!',
@@ -77,14 +85,6 @@ const projects = [
     description: 'A note-taking application that meets PWA criteria.',
     deployedURL: 'https://just-anthr-txt-editor-b5f1347fd808.herokuapp.com/',
     githubURL: 'https://github.com/HarrisSte/Just-Another-Text-Editor',
-  },
-  {
-    img: kitchWitch,
-    title: 'The Kitchen Witch',
-    description:
-      '-- UNDER DEVELOPMENT -- Future site where users can find recipes & YouTube tutorials.',
-    deployedURL: 'https://thekitchenwitch.netlify.com',
-    githubURL: 'https://github.com/HarrisSte/HexleLich-The-Kitchen-Witch',
   },
 ];
 
