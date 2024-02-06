@@ -17,7 +17,9 @@ function Welcome() {
           <h2>
             Hey there! My name is{' '}
             <span className='underline--magical'>Stephanie</span> and I am a{' '}
-            <span className='underline--magical'>full-stack software developer</span>{' '}
+            <span className='underline--magical'>
+              full-stack software developer
+            </span>{' '}
             based in Raleigh, NC.
           </h2>
         </Col>

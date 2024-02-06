@@ -1,94 +1,92 @@
 .tech-skills {
-    min-height: 500px;
+  min-height: 500px;
 }
 
 .tech-skills h1 {
-    padding-top: 5rem;
-    padding-bottom: 1rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
 }
 
 .tech-skills h3 {
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .tech-skills h3:hover {
-    font-size: 2rem;
-    background: -webkit-linear-gradient(#00467F 0%,
-            #A5CC82 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  background: -webkit-linear-gradient(#00467f 0%, #a5cc82 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .welcome h2 {
-    padding-top: 4rem;
-    font-size: 3rem;
-    font-family: 'Raleway', sans-serif;
-    min-height: 200px;
+  padding-top: 4rem;
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  min-height: 200px;
 }
 
 .resume-button {
-    height: 100px;
-    width: 300px;
-    color: darkcyan;
-    border: none;
-    background: none;
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    font-family: 'Raleway', sans-serif;
-    cursor: pointer;
-    will-change: transform;
+  height: 100px;
+  width: 300px;
+  color: darkcyan;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  will-change: transform;
 }
 
 .resume-button:hover {
-    color: #09516c;
-    font-weight: bold;
+  color: #09516c;
+  font-weight: bold;
 }
 
 .resume-button::before,
 .resume-button::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    display: block;
-    background-color: lightgreen;
-    transition: all 250ms ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background-color: lightgreen;
+  transition: all 250ms ease-in-out;
 }
 
 .resume-button::before {
-    width: 2px;
-    height: 100px;
-    box-shadow: 298px 0 lightgreen;
+  width: 2px;
+  height: 100px;
+  box-shadow: 298px 0 lightgreen;
 }
 
 .resume-button::after {
-    height: 2px;
-    width: 300px;
-    box-shadow: 0 98px lightgreen;
+  height: 2px;
+  width: 300px;
+  box-shadow: 0 98px lightgreen;
 }
 
 .resume-button:hover::before {
-    left: -10px;
-    box-shadow: 318px 0 lightgreen;
-
+  left: -10px;
+  box-shadow: 318px 0 lightgreen;
 }
 
 .resume-button:hover::after {
-    top: -10px;
-    box-shadow: 0 118px lightgreen;
+  top: -10px;
+  box-shadow: 0 118px lightgreen;
 }
 
 .underline--magical {
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 88%;
-    transition: background-size 0.25s ease-in;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
 
-    &:hover {
-        background-size: 100% 90%;
-    }
+  &:hover {
+    background-size: 100% 90%;
+  }
 }

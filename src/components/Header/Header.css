@@ -1,34 +1,34 @@
 .active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .logo img {
-    margin-right: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .navbar-brand {
-    font-size: 2.5rem;
-    font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
 }
 
 .navbar-brand p {
-    color: #09516c;
-    font-size: 1.2rem;
-    font-family: 'Raleway', sans-serif;
+  color: #09516c;
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
 }
 
 .nav-bar {
-    background: #f8f5f2;
-    padding-left: 2rem;
+  background: #f8f5f2;
+  padding-left: 2rem;
 }
 
 .nav-link {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
-    .logo img {
-        margin-left: 78px;
-    }
+  .logo img {
+    margin-left: 78px;
+  }
 }
