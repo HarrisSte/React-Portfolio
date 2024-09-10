@@ -22,13 +22,6 @@ const projects = [
     githubURL: 'https://github.com/HarrisSte/Cupcakes-by-Jenn',
   },
   {
-    img: kitchWitch,
-    title: 'The Kitchen Witch',
-    description:
-      '-- UNDER DEVELOPMENT -- Future site where users can find recipes & YouTube tutorials.',
-    githubURL: 'https://github.com/HarrisSte/HexleLich-The-Kitchen-Witch',
-  },
-  {
     img: ZooImg,
     title: 'Zooquarium',
     description: 'Search for  local accredited zoos & their animals!',
