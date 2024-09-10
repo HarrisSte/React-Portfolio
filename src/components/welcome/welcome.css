@@ -1,16 +1,18 @@
 .welcome {
-    text-align: center;
-    padding-top: 4rem;
+    margin: 2rem auto 0;
+    width: 100%;
     font-size: 3rem;
     font-family: 'Raleway', sans-serif;
     min-height: 200px;
+    background-color: white;
+    color: grey;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .welcome h1 {
-    font-size: 6rem;
-}
-
-.resume-btn {
+    font-size: 8rem;
     text-align: center;
 }
 
@@ -34,28 +36,29 @@
     top: 0;
     left: 0;
     height: 100%;
-    border-radius: 100%;
     width: 100%;
+    border-radius: 50%;
     box-shadow: 0 0 1px 1px #fff;
-    transition: 0.3s linear;
+    transition: transform 0.3s linear;
 }
 
 .btn__white-circle {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
     width: 56px;
     height: 56px;
-    border-radius: 100%;
+    border-radius: 50%;
     background: #ffffff;
     display: flex;
-    transition: 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease-in-out;
 }
 
 .btn__white-circle svg {
     width: 24px;
     height: 24px;
-    margin: auto;
 }
 
 .btn__text {
@@ -63,8 +66,10 @@
     transform: translateY(-50%);
     white-space: nowrap;
     z-index: 2;
-    padding: 24px 8px;
-    transition: 0.3s linear;
+    padding: 8px;
+    background-color: grey;
+    border-radius: 1rem;
+    transition: transform 0.3s linear;
 }
 
 .btn:hover .btn__circle {
@@ -84,6 +89,16 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.underline--magical {
+    background: linear-gradient(90deg, rgba(45, 120, 166, 1) 0%, rgba(49, 141, 163, 1) 32%, rgba(95, 203, 151, 1) 69%, rgba(94, 251, 197, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+}
+
+.underline--magical:hover {
+    background-size: 110% 95%;
 }

@@ -15,14 +15,16 @@ function Welcome() {
     <Container>
       <Row>
         <Col className='welcome'>
-        <h1>Hey there!</h1>
+          <h1>
+             <span className='underline--magical'>Hey there!</span>
+          </h1>
           <h2>
-            My name is{' '}
-            <span className='underline--magical'>Stephanie</span> and I’ve spent
-            over ten years designing & managing effective learning programs and
-            am passionate about creating engaging digital experiences. I’ve led
-            curriculum projects and used data to make sure teaching is
-            impactful. I love using tech to help people learn and grow.
+            My name is <span className='underline--magical'>Stephanie</span> and
+            I’ve spent over ten years designing & managing effective learning
+            programs and am passionate about creating engaging digital
+            experiences. I’ve led curriculum projects and used data to make sure
+            teaching is impactful. I love using tech to help people learn and
+            grow.
           </h2>
         </Col>
       </Row>
