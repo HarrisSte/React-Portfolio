@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import './welcome.css';
@@ -14,36 +15,33 @@ function Welcome() {
     <Container>
       <Row>
         <Col className='welcome'>
+        <h1>Hey there!</h1>
           <h2>
-            Hey there! My name is{' '}
-            <span className='underline--magical'>Stephanie</span> and I am a{' '}
-            <span className='underline--magical'>full-stack software developer</span>{' '}
-            based in Raleigh, NC.
+            My name is{' '}
+            <span className='underline--magical'>Stephanie</span> and I’ve spent
+            over ten years designing & managing effective learning programs and
+            am passionate about creating engaging digital experiences. I’ve led
+            curriculum projects and used data to make sure teaching is
+            impactful. I love using tech to help people learn and grow.
           </h2>
         </Col>
       </Row>
-      <Row className='tech-skills'>
+
+      <Row className='resume-btn'>
         <Col>
-          <h1>Front-End Development</h1>
-          <h3 className='bi bi-bookmark-check-fill'> HTML5</h3>
-          <h3 className='bi bi-bookmark-check-fill'> CSS3</h3>
-          <h3 className='bi bi-bookmark-check-fill'> JavaScript ES6+</h3>
-          <h3 className='bi bi-bookmark-check-fill'> HandlebarsJS</h3>
-          <h3 className='bi bi-bookmark-check-fill'> Bootstrap</h3>
-          <h3 className='bi bi-bookmark-check-fill'> ReactJS</h3>
-        </Col>
-        <Col>
-          <h1>Back-End Development</h1>
-          <h3 className='bi bi-bookmark-check-fill'> NodeJS</h3>
-          <h3 className='bi bi-bookmark-check-fill'> ExpressJS</h3>
-          <h3 className='bi bi-bookmark-check-fill'> GraphQL</h3>
-          <h3 className='bi bi-bookmark-check-fill'> MySQL & Sequelize</h3>
-          <h3 className='bi bi-bookmark-check-fill'> MongoDB & Mongoose</h3>
-        </Col>
-        <Col>
-          <button onClick={handleDownload} className='resume-button'>
-            Download Cover Letter & Resume
-          </button>
+          <a href='#' onClick={handleDownload} className='btn'>
+            <span className='btn__circle'></span>
+            <span className='btn__white-circle'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                id='icon-arrow-right'
+                viewBox='0 0 21 12'
+              >
+                <path d='M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z'></path>
+              </svg>
+            </span>
+            <span className='btn__text'>Download Resume</span>
+          </a>
         </Col>
       </Row>
     </Container>

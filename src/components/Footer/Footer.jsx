@@ -1,7 +1,7 @@
 //Importing necessary files for the footer.
 import { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import '../Footer/Footer.css';
+import './Footer.css';
 
 function Footer() {
   const [hoveredIcon, setHoveredIcon] = useState(null);

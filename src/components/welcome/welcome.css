@@ -1,94 +1,89 @@
-.tech-skills {
-    min-height: 500px;
-}
-
-.tech-skills h1 {
-    padding-top: 5rem;
-    padding-bottom: 1rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
-}
-
-.tech-skills h3 {
-    font-family: 'Raleway', sans-serif;
-}
-
-.tech-skills h3:hover {
-    font-size: 2rem;
-    background: -webkit-linear-gradient(#00467F 0%,
-            #A5CC82 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.welcome h2 {
+.welcome {
+    text-align: center;
     padding-top: 4rem;
     font-size: 3rem;
     font-family: 'Raleway', sans-serif;
     min-height: 200px;
 }
 
-.resume-button {
-    height: 100px;
-    width: 300px;
-    color: darkcyan;
-    border: none;
-    background: none;
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    font-family: 'Raleway', sans-serif;
-    cursor: pointer;
-    will-change: transform;
+.welcome h1 {
+    font-size: 6rem;
 }
 
-.resume-button:hover {
-    color: #09516c;
-    font-weight: bold;
+.resume-btn {
+    text-align: center;
 }
 
-.resume-button::before,
-.resume-button::after {
+.btn {
+    display: inline-block;
+    color: #ffffff;
+    padding: 38px;
+    margin-top: 2rem;
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.btn__circle,
+.btn__text,
+.btn__white-circle {
     position: absolute;
+}
+
+.btn__circle {
     top: 0;
     left: 0;
-    content: '';
-    display: block;
-    background-color: lightgreen;
-    transition: all 250ms ease-in-out;
+    height: 100%;
+    border-radius: 100%;
+    width: 100%;
+    box-shadow: 0 0 1px 1px #fff;
+    transition: 0.3s linear;
 }
 
-.resume-button::before {
-    width: 2px;
-    height: 100px;
-    box-shadow: 298px 0 lightgreen;
+.btn__white-circle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    background: #ffffff;
+    display: flex;
+    transition: 0.3s ease-in-out;
 }
 
-.resume-button::after {
-    height: 2px;
-    width: 300px;
-    box-shadow: 0 98px lightgreen;
+.btn__white-circle svg {
+    width: 24px;
+    height: 24px;
+    margin: auto;
 }
 
-.resume-button:hover::before {
-    left: -10px;
-    box-shadow: 318px 0 lightgreen;
-
+.btn__text {
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 2;
+    padding: 24px 8px;
+    transition: 0.3s linear;
 }
 
-.resume-button:hover::after {
-    top: -10px;
-    box-shadow: 0 118px lightgreen;
+.btn:hover .btn__circle {
+    transform: scale(0);
 }
 
-.underline--magical {
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 88%;
-    transition: background-size 0.25s ease-in;
+.btn:hover .btn__white-circle {
+    transform: translate(-50%, -50%) scale(1);
+}
 
-    &:hover {
-        background-size: 100% 90%;
-    }
+.btn:hover .btn__text {
+    transform: translate(40px, -50%);
+}
+
+.content {
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

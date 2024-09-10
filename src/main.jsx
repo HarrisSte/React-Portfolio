@@ -7,9 +7,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App';
 import Welcome from './components/welcome/welcome';
-import About from './components/About/About';
-import Portfolio from './components/Portfolio/Project';
-import Contact from './components/Contact/Contact';
+import About from './components/about/about';
+import WebDev from './components/webDevPortfolio/webProjects';
+import Education from './components/eduPortfolio/eduPortfolio';
+import Contact from './components/contact/contact';
 
 const router = createBrowserRouter([
   {
@@ -25,8 +26,12 @@ const router = createBrowserRouter([
         element: <Welcome />,
       },
       {
-        path: '/Portfolio',
-        element: <Portfolio />,
+        path: '/web-dev-portfolio',
+        element: <WebDev />,
+      },
+      {
+        path: '/education-portfolio',
+        element: <Education />,
       },
       {
         path: '/Contact',
