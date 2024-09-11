@@ -8,7 +8,6 @@ import CodeQuiz from '../../assets/codingquiz.jpg';
 import PwGen from '../../assets/PWGen.jpg';
 import SingleGame from '../../assets/SingleGame.jpg';
 import Regex from '../../assets/regex.jpg';
-import kitchWitch from '../../assets/theKitchWitch.jpg';
 import jennsCupcakes from '../../assets/jennscupcakes.jpg';
 
 import './webPortfolio.css';
@@ -23,38 +22,34 @@ const projects = [
     githubURL: 'https://github.com/HarrisSte/Cupcakes-by-Jenn',
   },
   {
-    img: kitchWitch,
-    title: 'The Kitchen Witch',
-    description:
-      '-- UNDER DEVELOPMENT -- Future site where users can find recipes & YouTube tutorials.',
-    role: 'Author',
-    githubURL: 'https://github.com/HarrisSte/HexleLich-The-Kitchen-Witch',
-  },
-  {
     img: ZooImg,
     title: 'Zooquarium',
-    description: 'Search for  local accredited zoos & their animals!',
+    description:
+      'An application where users can search for  local accredited zoos & their animals!',
     role: 'Author',
     githubURL: 'https://github.com/caitlinramsey/zooquarium/',
   },
   {
     img: DiscDevs,
     title: 'DiscoverDevs',
-    description: 'Connecting employers with newly graduated developers.',
+    description:
+      'A networking application where employers/employees can connect with one another. Users can log in to view their profiles & connect with one another.',
     role: 'Back-End Development',
     githubURL: 'https://github.com/Prototype1309/DiscoverDevs',
   },
   {
     img: SingleGame,
     title: 'BUGBytes',
-    description: 'A gaming hub to connect, collaborate, & conquer together.',
+    description:
+      'A gaming hub application where users can search for information on their favorite video games, connect with other players, & create lists.',
     role: 'Front & Back-End Development',
     githubURL: 'https://github.com/HarrisSte/BUGbytes',
   },
   {
     img: Regex,
     title: 'Regex Tutorial: Hex Values',
-    description: 'A regex tutorial providing information on hex values.',
+    description:
+      'An informative regex tutorial that breaks down the meaning of hex values.',
     githubURL:
       'https://gist.github.com/HarrisSte/de01a81758dfe8f8afdbe5334a015eb7',
     role: 'Author',
@@ -63,28 +58,32 @@ const projects = [
   {
     img: NoteTaker,
     title: 'Note-Taker',
-    description: 'Easily enter, save, & remove notes.',
+    description:
+      'A note-taking application where users can easily enter, save, & remove notes.',
     role: 'Author',
     githubURL: 'https://github.com/HarrisSte/Note-Taker',
   },
   {
     img: CodeQuiz,
     title: 'Coding Quiz',
-    description: 'Test your knowledge of HTML, CSS, & JavaScript.',
+    description:
+      'A coding quiz that will your knowledge of HTML, CSS, & JavaScript.',
     role: 'Author',
     githubURL: 'https://github.com/HarrisSte/Coding-Quiz',
   },
   {
     img: PwGen,
     title: 'Password Generator',
-    description: 'An application that will generate passwords for users.',
+    description:
+      'An application that will generate passwords for users. Note, this generator is not intended to be used as a fail-safe password generator.',
     role: 'Author',
     githubURL: 'https://github.com/HarrisSte/Password-Generator',
   },
   {
     img: JATE,
     title: 'J.A.T.E.',
-    description: 'A note-taking application that meets PWA criteria.',
+    description:
+      'A note-taking application that meets progressive web application (PWA) criteria.',
     role: 'Author',
     githubURL: 'https://github.com/HarrisSte/Just-Another-Text-Editor',
   },
