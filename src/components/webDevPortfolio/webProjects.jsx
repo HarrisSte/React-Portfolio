@@ -19,6 +19,7 @@ const projects = [
     title: 'Cupcakes by Jenn',
     description:
       'Cupcakes by Jenn; an emerging, award-winning, bakery based in Iowa.',
+    role: 'Author',
     githubURL: 'https://github.com/HarrisSte/Cupcakes-by-Jenn',
   },
   {
@@ -26,24 +27,28 @@ const projects = [
     title: 'The Kitchen Witch',
     description:
       '-- UNDER DEVELOPMENT -- Future site where users can find recipes & YouTube tutorials.',
+    role: 'Author',
     githubURL: 'https://github.com/HarrisSte/HexleLich-The-Kitchen-Witch',
   },
   {
     img: ZooImg,
     title: 'Zooquarium',
     description: 'Search for  local accredited zoos & their animals!',
+    role: 'Author',
     githubURL: 'https://github.com/caitlinramsey/zooquarium/',
   },
   {
     img: DiscDevs,
     title: 'DiscoverDevs',
     description: 'Connecting employers with newly graduated developers.',
+    role: 'Back-End Development',
     githubURL: 'https://github.com/Prototype1309/DiscoverDevs',
   },
   {
     img: SingleGame,
     title: 'BUGBytes',
     description: 'A gaming hub to connect, collaborate, & conquer together.',
+    role: 'Front & Back-End Development',
     githubURL: 'https://github.com/HarrisSte/BUGbytes',
   },
   {
@@ -52,29 +57,35 @@ const projects = [
     description: 'A regex tutorial providing information on hex values.',
     githubURL:
       'https://gist.github.com/HarrisSte/de01a81758dfe8f8afdbe5334a015eb7',
+    role: 'Author',
   },
+
   {
     img: NoteTaker,
     title: 'Note-Taker',
     description: 'Easily enter, save, & remove notes.',
+    role: 'Author',
     githubURL: 'https://github.com/HarrisSte/Note-Taker',
   },
   {
     img: CodeQuiz,
     title: 'Coding Quiz',
     description: 'Test your knowledge of HTML, CSS, & JavaScript.',
+    role: 'Author',
     githubURL: 'https://github.com/HarrisSte/Coding-Quiz',
   },
   {
     img: PwGen,
     title: 'Password Generator',
     description: 'An application that will generate passwords for users.',
+    role: 'Author',
     githubURL: 'https://github.com/HarrisSte/Password-Generator',
   },
   {
     img: JATE,
     title: 'J.A.T.E.',
     description: 'A note-taking application that meets PWA criteria.',
+    role: 'Author',
     githubURL: 'https://github.com/HarrisSte/Just-Another-Text-Editor',
   },
 ];
@@ -84,7 +95,7 @@ function Projects() {
       <Row id='projects' className='project-container'>
         <Col className='project-info'>
           <h1>
-            <span className='underline--hover'>Projects</span>
+            <span className='underline--hover'>Web Development Projects</span>
           </h1>
           <section className='projects'>
             {projects.map((project, index) => (
@@ -96,6 +107,9 @@ function Projects() {
                   <div className='project-body'>
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
+                    <a>Project Role: {project.role}</a>
+                    <br></br>
+                    <br></br>
                     <div>
                       <a
                         href={project.githubURL}

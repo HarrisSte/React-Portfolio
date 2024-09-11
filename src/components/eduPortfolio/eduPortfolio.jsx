@@ -1,43 +1,68 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
-import ZooImg from '../../assets/Project1SS.jpg';
-import DiscDevs from '../../assets/DiscDevs.jpg';
-import JATE from '../../assets/JATE.jpg';
-import NoteTaker from '../../assets/notetaker.jpg';
-import CodeQuiz from '../../assets/codingquiz.jpg';
+import Presentation from '../../assets/GTPresentationImg.png';
+import Infographic1 from '../../assets/Infographic1.png';
+import Infographic2 from '../../assets/Infographic2.png';
+import Infographic3 from '../../assets/Infographic3.png';
+import TheOutsiders from '../../assets/TheOutsiders.png';
+import BookPub from '../../assets/Writing.png';
 
 import './eduPortfolio.css';
 
 const projects = [
   {
-    img: ZooImg,
-    title: 'Zooquarium',
-    description: 'Search for  local accredited zoos & their animals!',
-    githubURL: 'https://github.com/caitlinramsey/zooquarium/',
+    img: Presentation,
+    title: 'Gifted & Talented Presentation',
+    description:
+      'Presentation created for parents and educators exploring the ins and outs G/T Education.',
+    link: 'https://docs.google.com/presentation/d/1BTuvyEUoQk4a1lzhJAdIunpJO498UOAZ/edit?usp=sharing&ouid=117890310285460485858&rtpof=true&sd=true',
+    product: 'Training Presentation',
+    role: 'Author',
   },
   {
-    img: DiscDevs,
-    title: 'DiscoverDevs',
-    description: 'Connecting employers with newly graduated developers.',
-    githubURL: 'https://github.com/Prototype1309/DiscoverDevs',
+    img: Infographic1,
+    title: 'History of Gifted & Talented Education',
+    description:
+      'A timeline infographic illustrating the history of G/T Education in South Carolina.',
+    link: '',
+    product: 'Infographic',
+    role: 'Author',
   },
   {
-    img: NoteTaker,
-    title: 'Note-Taker',
-    description: 'Easily enter, save, & remove notes.',
-    githubURL: 'https://github.com/HarrisSte/Note-Taker',
+    img: Infographic2,
+    title: 'Gifted & Talented Extension Model',
+    description:
+      'An infographic that has an overview of the Extension Model used in Gifted and Talented Education.',
+    link: '',
+    product: 'Infographic',
+    role: 'Author',
   },
   {
-    img: CodeQuiz,
-    title: 'Coding Quiz',
-    description: 'Test your knowledge of HTML, CSS, & JavaScript.',
-    githubURL: 'https://github.com/HarrisSte/Coding-Quiz',
+    img: TheOutsiders,
+    title: 'The Outsiders | eLearning',
+    description:
+      'An eLearning curriculum developed using South Carolina State Education Standards. Based on The Outsiders by S.E. Hinton, this curriculum has a focus with utilizing technology.',
+    link: '',
+    product: 'eLearning Curriculum',
+    role: 'Author',
   },
   {
-    img: JATE,
-    title: 'J.A.T.E.',
-    description: 'A note-taking application that meets PWA criteria.',
-    githubURL: 'https://github.com/HarrisSte/Just-Another-Text-Editor',
+    img: Infographic3,
+    title: 'Educator Roles & Responsibilities',
+    description:
+      'An infographic that has an overview of the roles and responsibilities of professional educators.',
+    link: '',
+    product: 'Infographic',
+    role: 'Author',
+  },
+  {
+    img: BookPub,
+    title: 'Exploring Writing & Authors Craft',
+    description:
+      'A curriculum developed using South Carolina State Education Standards. Learners explore writing and authors craft by putting into action a book publication from start to finish.',
+    link: '',
+    product: 'Curriculum',
+    role: 'Author',
   },
 ];
 function Projects() {
@@ -46,7 +71,9 @@ function Projects() {
       <Row id='projects' className='project-container'>
         <Col className='project-info'>
           <h1>
-            <span className='underline--hover'>Projects</span>
+            <span className='underline--magical'>
+              Education & Professional Development Projects
+            </span>
           </h1>
           <section className='projects'>
             {projects.map((project, index) => (
@@ -59,21 +86,19 @@ function Projects() {
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
                     <div>
+                      <a>Product: {project.product}</a>
+                      <br></br>
+                      <a>Project Role: {project.role}</a>
+                      <br></br>
+                      <br></br>
                       <a
-                        href={project.githubURL}
+                        href={project.link}
                         target='_blank'
                         rel='noopener noreferrer'
                       >
-                        GitHub
+                        Google Drive
                       </a>
                       <span>&nbsp;|&nbsp;</span>
-                      <a
-                        href={project.websiteURL}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                      >
-                        Deployed Website
-                      </a>
                     </div>
                   </div>
                 </div>
