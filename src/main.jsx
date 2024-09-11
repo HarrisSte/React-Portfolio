@@ -1,10 +1,10 @@
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
+import App from './App.jsx';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import App from './App';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import Welcome from './components/Welcome/Welcome.jsx';
 import About from './components/About/About.jsx';
 import Credentials from './components/Credentials/Credentials.jsx';
