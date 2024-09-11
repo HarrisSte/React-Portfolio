@@ -7,7 +7,7 @@ import Infographic3 from '../../assets/Infographic3.png';
 import TheOutsiders from '../../assets/TheOutsiders.png';
 import BookPub from '../../assets/Writing.png';
 
-import './eduPortfolio.css';
+import './EduPortfolio.css';
 
 const projects = [
   {

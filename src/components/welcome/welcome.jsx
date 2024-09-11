@@ -1,7 +1,7 @@
-import React from 'react';
+// import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import './welcome.css';
+import './Welcome.css';
 
 function handleDownload() {
   const link = document.createElement('a');

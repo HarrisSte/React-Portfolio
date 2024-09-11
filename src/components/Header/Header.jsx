@@ -3,7 +3,7 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import Initials from '../../assets/ReactPortfolioINITIALS.png';
 
-import './header.css';
+import './Header.css';
 
 function Header() {
   const location = useLocation();

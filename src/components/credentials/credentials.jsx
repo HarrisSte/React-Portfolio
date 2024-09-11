@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
-import './credentials.css';
+import './Credentials.css';
 
 function Credentials() {
   return (
