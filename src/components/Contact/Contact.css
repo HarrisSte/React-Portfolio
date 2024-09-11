@@ -1,67 +1,59 @@
-.contact-form {
-    margin: auto;
-    margin-top: 3rem;
-    padding: 2rem;
-    background-color: #f8f5f2;
-    border-style: solid;
-    border-image: linear-gradient(to right, #84fab0, #8fd3f4) 1;
-    font-family: 'Raleway', sans-serif;
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.contact-form a {
-    font-size: 3rem;
-    margin: 1rem;
-    color: #1B4D3E;
+.contactForm {
+    background: #df7373;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
 }
 
-.contact-form a:hover {
-    color:#37aa88;
+.contactForm h1 {
+    margin-bottom: 20px;
+    color: black;
 }
 
-.contact-form h5{
-    margin-bottom: 2rem; 
+.contactForm h2 {
+    margin-bottom: 20px;
+    color: black;
 }
 
-.contact-submit {
-    background-color: #41745Bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    cursor: pointer;
-}
-
-.contact-submit:hover {
-    background-color: #37aa88;
-    color: white;
-    text-align: center;
-}
-
-input::placeholder {
-    color: #1B4D3E;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 1.5rem;
-    padding-top: 1rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid #1B4D3E;
-    resize: none;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: black;
     background-color: white;
 }
 
-textarea {
-    padding-bottom: 6.5rem;
+.form-group {
+    display: flex;
+    justify-content: center;
 }
 
-textarea::placeholder {
-    color: #1B4D3E;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
+.contactBtn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #6decaf;
+    color: black;
+    font-size: 16px;
+}
+
+.contactBtn:hover {
+    background-color: #00f0b5;
 }

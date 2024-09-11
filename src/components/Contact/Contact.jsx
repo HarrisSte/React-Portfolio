@@ -1,82 +1,86 @@
-import { useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
-import emailjs from 'emailjs-com';
-import './Contact.css';
+import './contact.css';
 
-const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+const ContactForm = () => {
+  const [formState, setFormState] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
-  const submit = () => {
-    if (name && email && message) {
-      const serviceId = 'service_sbh5mln';
-      const templateId = 'template_20ys677';
-      const userId = 'q7cA_ga5eGF1FNubN';
-      const templateParams = {
-        name,
-        email,
-        message,
-      };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormState({ ...formState, [name]: value });
+  };
 
-      emailjs
-        .send(serviceId, templateId, templateParams, userId)
-        .then((response) => console.log(response))
-        .then((error) => console.log(error));
-
-      setName('');
-      setEmail('');
-      setMessage('');
-    } else {
-      alert('You rebel! All fields are required.');
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'service_2cncqwg',
+        'template_15ogdhd',
+        e.target,
+        'NHIy1wdaZdEyLSRmP'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert('Your message has been sent successfully.');
+        },
+        (error) => {
+          console.log(error.text);
+          alert(
+            'There was an error sending your message. Please try again later.'
+          );
+        }
+      );
+    setFormState({ name: '', email: '', message: '' });
   };
 
   return (
-    <Container>
-      <Row>
-        <Col>
-          <div className='contact-form'>
-            <a href='https://www.linkedin.com/in/harrisste9/'>
-              <i className='bi bi-linkedin'></i>
-            </a>
-            <a href='https://www.github.com/HarrisSte'>
-              <i className='bi bi-github'></i>
-            </a>
+    <div className='container'>
+      <div className='contactForm'>
+        <h1>Contact Us</h1>
+        <h2>Questions? Go ahead and send us a message!</h2>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor='name'>Name</label>
+          <input
+            type='text'
+            id='name'
+            name='name'
+            value={formState.name}
+            onChange={handleChange}
+            required
+          />
 
-            <h2>Want to get in touch? Let's connect!</h2>
-            <h5>
-              Drop me a line or find me on my social media accounts! <br></br>
-              I'll be sure to get back to you as soon as possible.
-            </h5>
-            <input
-              className='name mb-1'
-              type='text'
-              placeholder='First and Last Name'
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <input
-              className='email mb-1'
-              type='email'
-              placeholder='Your email address'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <textarea
-              placeholder='Leave your message here!'
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            ></textarea>
-            <button className='contact-submit' onClick={submit}>
-              Send my message!
-            </button>
-          </div>
-        </Col>
-      </Row>
-    </Container>
+          <label htmlFor='email'>Email</label>
+          <input
+            type='email'
+            id='email'
+            name='email'
+            value={formState.email}
+            onChange={handleChange}
+            required
+          />
+
+          <label htmlFor='message'>Message</label>
+          <textarea
+            id='message'
+            name='message'
+            value={formState.message}
+            onChange={handleChange}
+            required
+          ></textarea>
+
+          <button className='contactBtn' type='submit'>
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
   );
 };
 
-export default Contact;
+export default ContactForm;
