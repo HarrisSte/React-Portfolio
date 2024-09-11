@@ -5,7 +5,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App';
-import Welcome from './components/Welcome/Welcome.jsx';
+// import Welcome from './components/Welcome/Welcome.jsx';
 import About from './components/About/About.jsx';
 import Credentials from './components/Credentials/Credentials.jsx';
 import WebDev from './components/WebDevPortfolio/WebProjects.jsx';
@@ -17,10 +17,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
-      {
-        path: '/',
-        element: <Welcome />,
-      },
+      // {
+      //   path: '/',
+      //   element: <Welcome />,
+      // },
       {
         path: '/about',
         element: <About />,
