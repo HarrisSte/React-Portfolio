@@ -1,6 +1,5 @@
 // import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-
 import './Welcome.css';
 
 function handleDownload() {
@@ -23,12 +22,12 @@ function Welcome() {
             built a dynamic career in leadership and program management, driven
             by my passion for continuous learning. My work spans collaborating
             with diverse stakeholders, leading school-wide initiatives, and
-            organizing professional development events. <br></br> <br></br> I have managed
-            data-driven programs that drive improvement and track progress, and
-            I am dedicated to ongoing professional growth. Adaptable and
-            results-oriented, I excel in leading teams and executing
-            initiatives, always aiming to foster innovation, equity, and
-            excellence in education.
+            organizing professional development events. <br /> <br /> I have
+            managed data-driven programs that drive improvement and track
+            progress, and I am dedicated to ongoing professional growth.
+            Adaptable and results-oriented, I excel in leading teams and
+            executing initiatives, always aiming to foster innovation, equity,
+            and excellence in education.
           </h2>
         </Col>
       </Row>
