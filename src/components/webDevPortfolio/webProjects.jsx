@@ -94,7 +94,7 @@ function Projects() {
       <Row id='projects' className='project-container'>
         <Col className='project-info'>
           <h1>
-            <span className='underline--hover'>Web Development Projects</span>
+            <span className='underline--magical'>Web Development Projects</span>
           </h1>
           <section className='projects'>
             {projects.map((project, index) => (
