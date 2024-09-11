@@ -1,4 +1,3 @@
-// Importing items to allow routes to work properly.
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 

@@ -1,22 +1,58 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
+    user-select: none;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: white;
+    overflow-x: hidden;
 }
 
 body {
-    min-width: 320px;
-    min-height: 100vh;
-    margin:0;
-    padding: 0;
-    user-select: none;
-    overflow-x: hidden;
+    background-color: #f4f4f4;
     background-image: url('./assets/background.jpg');
     background-size: cover;
+    /* Ensures the image covers the entire viewport */
     background-position: center;
+    /* Centers the background image */
     background-repeat: no-repeat;
+    /* Ensures the image doesn't repeat */
     background-attachment: fixed;
-    font-family: 'Raleway', sans-serif;
-    color: white;
+    /* Keeps the background fixed during scroll */
+}
+
+/* Container styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.main-content {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent white background */
+    border-radius: 8px;
+    color: #333;
+    /* Darker text color to ensure readability */
 }

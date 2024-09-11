@@ -16,34 +16,33 @@ function Welcome() {
       <Row>
         <Col className='welcome'>
           <h1>
-             <span className='underline--magical'>Hey there!</span>
+            <span className='underline--magical'>Hey there!</span>
           </h1>
           <h2>
-            My name is <span className='underline--magical'>Stephanie</span> and
-            I’ve spent over ten years designing & managing effective learning
-            programs and am passionate about creating engaging digital
-            experiences. I’ve led curriculum projects and used data to make sure
-            teaching is impactful. I love using tech to help people learn and
-            grow.
+            My name is Stephanie and I have over a decade in education; I've
+            built a dynamic career in leadership and program management, driven
+            by my passion for continuous learning. My work spans collaborating
+            with diverse stakeholders, leading school-wide initiatives, and
+            organizing transformative events. <br></br> <br></br> I've managed
+            data-driven programs that drive improvement and track progress, and
+            I'm dedicated to ongoing professional growth. Adaptable and
+            results-oriented, I excel in leading teams and executing
+            initiatives, always aiming to foster innovation, equity, and
+            excellence in education.
           </h2>
         </Col>
       </Row>
 
-      <Row className='resume-btn'>
+      <Row>
         <Col>
-          <a href='#' onClick={handleDownload} className='btn'>
-            <span className='btn__circle'></span>
-            <span className='btn__white-circle'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                id='icon-arrow-right'
-                viewBox='0 0 21 12'
-              >
-                <path d='M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z'></path>
-              </svg>
-            </span>
-            <span className='btn__text'>Download Resume</span>
-          </a>
+          <div className='resume-container'>
+            <button className='learn-more' onClick={handleDownload}>
+              <span className='circle' aria-hidden='true'>
+                <span className='icon arrow'></span>
+              </span>
+              <span className='button-text'>Download Resume</span>
+            </button>
+          </div>
         </Col>
       </Row>
     </Container>

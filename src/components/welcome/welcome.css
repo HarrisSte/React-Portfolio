@@ -1,14 +1,18 @@
 .welcome {
-    margin: 2rem auto 0;
+    margin: 3rem auto 0;
     width: 100%;
     font-size: 3rem;
     font-family: 'Raleway', sans-serif;
-    min-height: 200px;
-    background-color: white;
-    color: grey;
+    min-height: 500px;
+    color: white;
     border-radius: 2rem;
     padding: 1rem;
     box-sizing: border-box;
+    background: rgba(234, 221, 221, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .welcome h1 {
@@ -16,79 +20,114 @@
     text-align: center;
 }
 
-.btn {
-    display: inline-block;
-    color: #ffffff;
-    padding: 38px;
-    margin-top: 2rem;
+.welcome h2 {
+    font-size: 2rem;
+}
+
+.resume-container {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+button {
+    color: white;
     position: relative;
-    letter-spacing: 1px;
-    font-size: 22px;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+
 }
 
-.btn__circle,
-.btn__text,
-.btn__white-circle {
+button.learn-more {
+    width: 40%;
+    height: auto;
+    background: rgba(234, 221, 221, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: white;
+    border-radius: 1.625rem;
+    padding: 0.75rem 1rem;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3.5rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
 }
 
-.btn__circle {
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    margin-left: 3rem;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0 1px 1px #fff;
-    transition: transform 0.3s linear;
-}
-
-.btn__white-circle {
-    top: 50%;
-    left: 50%;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: #ffffff;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    color: #282936;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
     display: flex;
-    justify-content: center;
     align-items: center;
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.3s ease-in-out;
+    justify-content: center;
+
 }
 
-.btn__white-circle svg {
-    width: 24px;
-    height: 24px;
+button:hover .circle {
+    width: 100%;
 }
 
-.btn__text {
-    top: 50%;
-    transform: translateY(-50%);
-    white-space: nowrap;
-    z-index: 2;
-    padding: 8px;
-    background-color: grey;
-    border-radius: 1rem;
-    transition: transform 0.3s linear;
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
 }
 
-.btn:hover .btn__circle {
-    transform: scale(0);
-}
-
-.btn:hover .btn__white-circle {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.btn:hover .btn__text {
-    transform: translate(40px, -50%);
-}
-
-.content {
-    background: black;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
+button:hover .button-text {
+    color: #fff;
 }
 
 .underline--magical {

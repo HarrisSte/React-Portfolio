@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import Initials from '../../assets/ReactPortfolioINITIALS.png';
-import './Header.css';
+
+import './header.css';
 
 function Header() {
   const location = useLocation();
@@ -12,7 +13,7 @@ function Header() {
   const isActive = (path) => (location.pathname === path ? 'active' : '');
 
   return (
-    <Navbar expand='lg' className='nav-bar'>
+    <Navbar className='nav-bar' expand='md'>
       <Container>
         <Link to='/' className='logo'>
           <img src={Initials} alt='Logo' width={120} height={120} />
@@ -20,20 +21,27 @@ function Header() {
         <Navbar.Brand as={Link} to='/'>
           <div className='brand-text'>
             Stephanie Harris
-            <p>Full-Stack Software Developer</p>
+            <p>Leader | Educator | Web Developer</p>
           </div>
         </Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse>
-          <Nav className='ml-auto'>
+        <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        <Navbar.Collapse id='basic-navbar-nav'>
+          <Nav className='ml-'>
             <Nav.Link as={Link} to='/' className={isActive('/')}>
               Welcome
             </Nav.Link>
             <Nav.Link as={Link} to='/about' className={isActive('/about')}>
               About
             </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to='/credentials'
+              className={isActive('/credentials')}
+            >
+              Credentials
+            </Nav.Link>
             <NavDropdown
-              title='Portfolio'
+              title='Portfolios'
               className={isActive('/portfolio')}
               show={showPortfolioDropdown}
               onMouseEnter={() => setShowPortfolioDropdown(true)}
@@ -55,9 +63,6 @@ function Header() {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link as={Link} to='/contact' className={isActive('/contact')}>
-              Contact
-            </Nav.Link>
             <NavDropdown
               title='Social Media'
               show={showSocialDropdown}
@@ -70,7 +75,17 @@ function Header() {
               <NavDropdown.Item href='https://github.com/HarrisSte/'>
                 GitHub
               </NavDropdown.Item>
+              <NavDropdown.Item href='https://stackoverflow.com/users/23360673/harrisste'>
+                Stack Overflow
+              </NavDropdown.Item>
+              <NavDropdown.Item href='https://www.upwork.com/freelancers/~01fd4fb0211c0f8f3f?mp_source=share'>
+                UpWork
+              </NavDropdown.Item>
             </NavDropdown>
+
+            <Nav.Link as={Link} to='/contact' className={isActive('/contact')}>
+              Contact
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

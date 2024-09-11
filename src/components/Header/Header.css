@@ -1,34 +1,197 @@
+/* Base Styles - Apply to all screen sizes */
 .active {
   font-weight: bold;
 }
 
 .logo img {
-  margin-right: 1.5rem;
+  margin: 10px auto;
+  margin-right: 25px;
+  /* Space between logo and nav links */
+}
+
+.navbar {
+  background: #f8f5f2;
 }
 
 .navbar-brand {
   font-size: 2.5rem;
   font-family: 'Raleway', sans-serif;
+  margin-right: 20rem;
+  /* Large margin for desktops */
 }
 
 .navbar-brand p {
   color: #09516c;
-  font-size: 1.2rem;
-  font-family: 'Raleway', sans-serif;
-}
-
-.nav-bar {
-  background: #f8f5f2;
-  padding-left: 2rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  /* Inherit font-family from navbar-brand */
 }
 
 .nav-link {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-left: 15px;
+  /* Space between nav links */
+  padding: 10px 0;
+  /* Vertical padding around each link */
 }
 
+/* Styling for h1 */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* Styling for Download Resume Button */
+.button-resume {
+  background-color: #09516c;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+/* Hover effect for resume button */
+.button-resume:hover {
+  background-color: #06374a;
+}
+
+/* Dropdown container */
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+/* Style for dropdown menu */
+.navbar-nav .dropdown-menu {
+  display: none;
+  /* Hide the dropdown by default */
+  position: absolute;
+  left: 0;
+  /* Align with the parent link */
+  top: 100%;
+  /* Directly below the parent link */
+  background-color: #f8f5f2;
+  /* Matches your navbar background */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  min-width: 160px;
+  /* Minimum width of the dropdown menu */
+  z-index: 1000;
+  /* Ensure it appears above other elements */
+}
+
+/* Show the dropdown menu on hover or when active */
+.navbar-nav .nav-item:hover .dropdown-menu,
+.navbar-nav .nav-item .dropdown-menu.show {
+  display: block;
+  /* Show the dropdown on hover or when the class 'show' is present */
+}
+
+/* Dropdown items */
+.navbar-nav .dropdown-menu .dropdown-item {
+  color: #09516c;
+  /* Link color */
+  padding: 12px 16px;
+  /* Padding for dropdown items */
+  font-family: 'Raleway', sans-serif;
+  /* Font family */
+  text-decoration: none;
+  /* Remove underline from links */
+  display: block;
+  /* Display block for full width */
+}
+
+/* Dropdown item hover effect */
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #ddd;
+  /* Background color on hover */
+}
+
+/* Medium Screens - Tablets and Small Laptops (768px and below) */
 @media screen and (max-width: 768px) {
   .logo img {
-    margin-left: 78px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem;
+    margin-right: 0;
+    /* Remove large margin on smaller screens */
+  }
+
+  .navbar-brand p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  /* Adjust h1 for medium screens */
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* Adjust resume button for medium screens */
+  .button-resume {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+/* Small Screens - Phones (576px and below) */
+@media screen and (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand p {
+    font-size: 0.9rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    padding: 0.5rem;
+    /* Reduce padding for very small screens */
+  }
+
+  /* Adjust h1 for small screens */
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* Adjust resume button for small screens */
+  .button-resume {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
   }
 }
