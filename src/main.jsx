@@ -5,7 +5,7 @@ import './index.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Welcome from './components/welcome/welcome.jsx';
+import Welcome from './components/Welcome/Welcome.jsx';
 import About from './components/About/About.jsx';
 import Credentials from './components/credentials/credentials.jsx';
 import WebDev from './components/webDevPortfolio/webProjects.jsx';
