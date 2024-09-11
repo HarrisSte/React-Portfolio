@@ -1,101 +1,59 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import aboutPhoto from '../../assets/AboutPhoto.jpg';
-
-import './About.css';
+import './about.css';
 
 function About() {
   return (
-    <Container>
-      <Row>
-        <Col className='about-info'>
-          Originally from Upstate New York, I graduated from SUNY Oswego in 2013
-          with a dual bachelor's degree; one in Education and the other in
-          Advanced Literature. I taught in South Carolina for ten years,
-          eventually finding myself in North Carolina. <br></br>
-          <br></br>I have always had a{' '}
-          <span className='underline--magical'>
-            {' '}
-            passion for software development{' '}
-          </span>{' '}
-          and all that comes with the field - particularly reading documentation
-          into the night. 🙃 I decided to complete a six-month full stack boot
-          camp through UNC-Chapel Hill. As of August 2023, I earned my
-          certificate and I am excited to shift my career path.<br></br>
-          <br></br>
-          My experiences have given me exceptional skills in{' '}
-          <span className='underline--magical'> leadership</span>,
-          <span className='underline--magical'> collaboration</span>, and
-          <span className='underline--magical'> problem-solving</span>. I have a
-          natural drive to organize, meet deadlines, and overcome challenges. It
-          has always been so satisfying to fix a bug or have my work make others
-          happy.
-        </Col>
-        <Col>
-          <img
-            src={aboutPhoto}
-            alt='Picture of Stephanie'
-            className='profile-image'
-          />
-        </Col>
-      </Row>
-      <Row className='about-skills'>
-        <Col>
-          <h1>My career, so far...</h1>
-          <p>
-            My time working within the field of education granted me
-            opportunities to work with a variety of stakeholders & develop a
-            strong skill set. These skills give me an upper hand when working on
-            a team & gives me the discipline to continue my own personal growth.
-            Because of this, I am consistently seeking information in order to
-            better my craft.
-          </p>
-        </Col>
-        <Col xs lg='3'>
-          <h4>
-            <ul>
-              Planning &<br></br> Organization
-            </ul>
-            <ul>Communication</ul>
-            <ul>Problem-solving</ul>
-            <ul>Adaptability</ul>
-            <ul>Patience</ul>
-          </h4>
-        </Col>
-        <Col xs lg='2'>
-          <h4>
-            <ul>Teamwork</ul>
-            <ul>Leadership</ul>
-            <ul>Creativity</ul>
-            <ul>Life-long Learner</ul>
-          </h4>
-        </Col>
-      </Row>
-      <Row className='about-certs'>
-        <Col xs lg='3'>
-          <h4>
-            <ul>
-              Full-Stack Web <br></br>Development
-            </ul>
-            <ul>
-              University of South <br></br>Carolina Coaching Teacher
-            </ul>
-            <ul>NSWF; Critical Friends Leadership</ul>
-          </h4>
-        </Col>
-        <Col>
-          <h1>My certifications</h1>
-          <p>
-            My certifications in leadership, coupled with web development, make
-            me a strong candidate in a variety of roles. I have a strong ability
-            to motivate myself & my teammates, as well as solve problems & make
-            decisions effectively. I am versed in the latest technologies &
-            tools that are present in today's industry. Being a highly adaptable
-            individual, I am able to quickly learn new skills & pivot when
-            necessary.
-          </p>
-        </Col>
-      </Row>
-    </Container>
+    <>
+      <Container>
+        <Row>
+          <Col className='about-info'>
+            With over a decade in education, I’ve built a varied and fulfilling
+            career focused on leadership, program management, and a love for
+            ongoing learning. My journey has allowed me to work with a wide
+            range of students, colleagues, and stakeholders, creating spaces
+            where growth, teamwork, and excellence thrive.<br></br>
+            <br></br> Early on, I took on leadership roles aimed at aligning
+            educational programs with state standards while working closely with
+            different stakeholders. As a school leader and NSRF-Critical Friends
+            facilitator, I helped connect educators with district officials,
+            ensuring clear communication and steady progress towards our goals.
+            I also enjoyed organizing big events that gave students valuable
+            experiences beyond the classroom. <br></br>
+            <br></br>A big part of my role has been managing programs with a
+            focus on using data to drive results. I’m committed to using data
+            insights to make informed decisions, track progress, and keep
+            improving. This has helped me create and manage successful
+            educational programs that make a real difference and stand the test
+            of time. <br></br>
+            <br></br>I’m all about professional growth and love learning new
+            things. Whether I’m leading professional development for my
+            colleagues, mentoring peers, or keeping up with the latest in
+            education, I’m always looking to expand my skills and knowledge.{' '}
+            <br></br>
+            <br></br>I’m adaptable, solution-oriented, and excel at leading
+            teams and managing key initiatives. My drive for results and ability
+            to adjust as needed help me consistently achieve impactful outcomes
+            for students and the wider educational community. I’m passionate
+            about fostering environments where all learners can succeed and am
+            dedicated to innovation, equity, and excellence in everything I do.
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <div className='gallery-wrap'>
+              <div className='item item-1'></div>
+              <div className='item item-2'></div>
+              <div className='item item-3'></div>
+              <div className='item item-4'></div>
+              <div className='item item-5'></div>
+              <div className='item item-6'></div>
+              <div className='item item-7'></div>
+              <div className='item item-8'></div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
 

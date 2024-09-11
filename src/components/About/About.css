@@ -1,85 +1,64 @@
+.gallery-wrap {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+}
+
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: flex 0.8s ease;
+}
+
+.item:hover {
+    flex: 7;
+}
+
+.item-1 {
+    background-image: url('../../assets/aboutPhoto.jpg');
+}
+
+.item-2 {
+    background-image: url('https://images.unsplash.com/photo-1492760864391-753aaae87234?auto=format&fit=crop&w=1336&q=80');
+}
+
+.item-3 {
+    background-image: url('https://images.unsplash.com/photo-1503631285924-e1544dce8b28?auto=format&fit=crop&w=1234&q=80');
+}
+
+.item-4 {
+    background-image: url('https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format&fit=crop&w=1352&q=80');
+}
+
+.item-5 {
+    background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80');
+}
+
+.item-6 {
+    background-image: url('https://images.unsplash.com/photo-1492760864391-753aaae87234?auto=format&fit=crop&w=1336&q=80');
+}
+
+.item-7 {
+    background-image: url('https://images.unsplash.com/photo-1492760864391-753aaae87234?auto=format&fit=crop&w=1336&q=80');
+}
+
+.item-8 {
+    background-image: url('https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format&fit=crop&w=1352&q=80');
+}
+
 .about-info {
-    margin-top: 6rem;
+    margin-top: 3rem;
     padding: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 22px;
     font-family: 'Raleway', sans-serif;
-    background-color: #f8f5f2;
-    border-style: solid;
-    border-image: linear-gradient(to right, #84fab0, #8fd3f4) 1;
-}
-
-.about-skills {
-    padding-bottom: 2rem;
-    font-family: 'Raleway', sans-serif;
-    min-height: 420px;
-}
-
-.about-skills h1 {
-    margin-top: 5rem;
-}
-
-.about-skills p {
-    font-size: 1.3rem;
-}
-
-.about-skills h4 {
-    margin-top: 7rem;
-    font-weight: bold;
-}
-
-.about-skills ul:hover {
-    font-size: 1.6rem;
-    background: -webkit-linear-gradient(#00467F 0%,
-            #A5CC82 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.about-certs {
-    border-top: solid #09516c;
-    font-family: 'Raleway', sans-serif;
-    min-height: 400px;
-}
-
-.about-certs h1 {
-    text-align: right;
-    margin-top: 5rem;
-}
-
-.about-certs p {
-    font-size: 1.3rem;
-    text-align: right;
-}
-
-.about-certs h4 {
-    margin-top: 7rem;
-    font-weight: bold;
-}
-
-.about-certs ul:hover {
-    font-size: 1.6rem;
-    background: -webkit-linear-gradient(#00467F 0%,
-            #A5CC82 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.profile-image {
-    display: block;
-    margin: 0 auto;
-    width: 425px;
-    object-fit: cover;
-    padding-top: 5rem;
-    border-radius: 59% 41% 72% 28% / 34% 75% 25% 66%;
-}
-
-@media only screen and (max-width: 768px) {
-    .profile-image {
-        display: block;
-        margin: 0 auto;
-        width: 325px;
-        object-fit: cover;
-        padding-top: 5rem;
-        border-radius: 59% 41% 72% 28% / 34% 75% 25% 66%;
-    }
+    background: rgba(234, 221, 221, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
