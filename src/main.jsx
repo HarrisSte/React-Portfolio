@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Welcome from './components/welcome/welcome.jsx';
 import About from './components/About/About.jsx';
-import Credentials from './components/Credentials/Credentials.jsx';
+import Credentials from './components/credentials/credentials.jsx';
 import WebDev from './components/WebDevPortfolio/WebProjects.jsx';
 import Education from './components/EduPortfolio/EduPortfolio.jsx';
 import Contact from './components/Contact/Contact.jsx';
