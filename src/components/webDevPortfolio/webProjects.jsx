@@ -10,7 +10,7 @@ import SingleGame from '../../assets/SingleGame.jpg';
 import Regex from '../../assets/regex.jpg';
 import jennsCupcakes from '../../assets/jennscupcakes.jpg';
 
-import './WebPortfolio.css';
+import './webPortfolio.css';
 
 const projects = [
   {
