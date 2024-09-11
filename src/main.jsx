@@ -5,12 +5,12 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App';
-import Welcome from './components/welcome/welcome';
-import About from './components/About/About';
-import Credentials from './components/credentials/credentials';
-import WebDev from './components/webDevPortfolio/webProjects';
-import Education from './components/eduPortfolio/eduPortfolio';
-import Contact from './components/contact/contact';
+import Welcome from './components/Welcome/Welcome.jsx';
+import About from './components/About/About.jsx';
+import Credentials from './components/Credentials/Credentials.jsx';
+import WebDev from './components/WebDevPortfolio/WebProjects.jsx';
+import Education from './components/EduPortfolio/EduPortfolio.jsx';
+import Contact from './components/Contact/Contact.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '/About',
+        path: '/about',
         element: <About />,
       },
       {

@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import './about.css';
+import './About.css';
 
 function About() {
   return (
@@ -13,7 +13,6 @@ function About() {
               <div className='item item-3'></div>
               <div className='item item-4'></div>
               <div className='item item-5'></div>
-          
             </div>
           </Col>
         </Row>
