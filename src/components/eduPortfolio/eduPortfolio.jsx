@@ -16,7 +16,7 @@ const projects = [
     title: 'Gifted & Talented Presentation',
     description:
       'Presentation created for parents and educators exploring the ins and outs G/T Education.',
-    link: 'https://docs.google.com/presentation/d/1BTuvyEUoQk4a1lzhJAdIunpJO498UOAZ/edit?usp=sharing&ouid=117890310285460485858&rtpof=true&sd=true',
+    link: 'https://docs.google.com/presentation/d/1AMLU7dp5NrF2M0VJquiyx3aSFdQy14bil6TZmNgP18s/edit?usp=sharing',
     product: 'Training Presentation',
     role: 'Author',
   },
