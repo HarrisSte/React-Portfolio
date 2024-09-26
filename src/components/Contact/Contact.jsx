@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
+import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 
-import './Contact.css';
+import './contact.css';
 
-const ContactForm = () => {
+const Contact = () => {
   const [formState, setFormState] = useState({
     name: '',
     email: '',
     message: '',
   });
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleCloseModal = () => setShowModal(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,70 +22,101 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     emailjs
       .sendForm(
-        'service_2cncqwg',
-        'template_15ogdhd',
+        'service_sbh5mln',
+        'template_20ys677',
         e.target,
-        'NHIy1wdaZdEyLSRmP'
+        'q7cA_ga5eGF1FNubN'
       )
       .then(
         (result) => {
           console.log(result.text);
-          alert('Your message has been sent successfully.');
+          setShowModal(true);
         },
         (error) => {
-          console.log(error.text);
+          console.error('Error sending email:', error.text);
           alert(
             'There was an error sending your message. Please try again later.'
           );
         }
       );
-    setFormState({ name: '', email: '', message: '' });
+
+    // Reset form fields
+    setFormState({
+      name: '',
+      email: '',
+      message: '',
+    });
   };
 
   return (
-    <div className='container'>
-      <div className='contactForm'>
-        <h1>Contact Us</h1>
-        <h2>Questions? Go ahead and send us a message!</h2>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor='name'>Name</label>
-          <input
-            type='text'
-            id='name'
-            name='name'
-            value={formState.name}
-            onChange={handleChange}
-            required
-          />
+    <Container>
+      <Row className='contact-pg'>
+        <Col sm={4}>
+          <h2>Reach out!</h2>
+          <br />
+          <p>
+            Have questions? Interested in working together? Send me a message
+            and I'll get back to you as soon as possible.
+          </p>
+        </Col>
+        <Col sm={8}>
+          <div className='contact-form'>
+            <form onSubmit={handleSubmit}>
+              <input
+                className='name mb-1'
+                type='text'
+                id='name'
+                name='name'
+                placeholder='First and Last Name'
+                value={formState.name}
+                onChange={handleChange}
+                required
+              />
 
-          <label htmlFor='email'>Email</label>
-          <input
-            type='email'
-            id='email'
-            name='email'
-            value={formState.email}
-            onChange={handleChange}
-            required
-          />
+              <input
+                className='email mb-1'
+                type='email'
+                id='email'
+                name='email'
+                placeholder='Your email address'
+                value={formState.email}
+                onChange={handleChange}
+                required
+              />
 
-          <label htmlFor='message'>Message</label>
-          <textarea
-            id='message'
-            name='message'
-            value={formState.message}
-            onChange={handleChange}
-            required
-          ></textarea>
-
-          <button className='contactBtn' type='submit'>
-            Send
-          </button>
-        </form>
-      </div>
-    </div>
+              <textarea
+                id='message'
+                name='message'
+                placeholder='Leave your message here!'
+                value={formState.message}
+                onChange={handleChange}
+                required
+              />
+              <button className='contact-submit' type='submit'>
+                Send my message!
+              </button>
+            </form>
+          </div>
+        </Col>
+      </Row>
+      <Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Email Sent!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Your email has been sent. We will get back to you as soon as possible.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant='secondary' onClick={handleCloseModal}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </Container>
   );
 };
 
-export default ContactForm;
+export default Contact;

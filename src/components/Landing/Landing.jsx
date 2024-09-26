@@ -4,8 +4,8 @@ import './Landing.css';
 
 function handleDownload() {
   const link = document.createElement('a');
-  link.href = '/SHarris_Resume.pdf';
-  link.download = 'SHarris_Resume.pdf';
+  link.href = '/Resume.pdf';
+  link.download = 'Resume.pdf';
   link.click();
 }
 
