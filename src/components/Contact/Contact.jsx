@@ -12,6 +12,8 @@ const Contact = () => {
   });
 
   const [showModal, setShowModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState(''); // State for modal message
+  const [modalTitle, setModalTitle] = useState(''); // State for modal title
 
   const handleCloseModal = () => setShowModal(false);
 
@@ -25,21 +27,25 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_sbh5mln',
+        'service_znnsb78',
         'template_20ys677',
         e.target,
-        'q7cA_ga5eGF1FNubN'
+        '9UU4utWsuQtaqJNkA'
       )
       .then(
         (result) => {
           console.log(result.text);
+          setModalTitle('Success');
+          setModalMessage('Your message has been sent successfully!');
           setShowModal(true);
         },
         (error) => {
           console.error('Error sending email:', error.text);
-          alert(
+          setModalTitle('Error');
+          setModalMessage(
             'There was an error sending your message. Please try again later.'
           );
+          setShowModal(true);
         }
       );
 
@@ -102,13 +108,13 @@ const Contact = () => {
           </div>
         </Col>
       </Row>
+
+      {/* Modal for displaying messages */}
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
-          <Modal.Title>Email Sent!</Modal.Title>
+          <Modal.Title>{modalTitle}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          Your email has been sent. We will get back to you as soon as possible.
-        </Modal.Body>
+        <Modal.Body>{modalMessage}</Modal.Body>
         <Modal.Footer>
           <Button variant='secondary' onClick={handleCloseModal}>
             Close
