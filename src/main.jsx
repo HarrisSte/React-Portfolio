@@ -5,7 +5,7 @@ import './index.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Landing from './components/Landing/Landing.jsx'
+import Landing from './components/Landing/Landing.jsx';
 import About from './components/About/About.jsx';
 import Credentials from './components/credentials/credentials.jsx';
 import WebDev from './components/webDevPortfolio/webProjects.jsx';
