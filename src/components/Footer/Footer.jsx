@@ -5,55 +5,59 @@ import './Footer.css';
 function Footer() {
   const [hoveredIcon, setHoveredIcon] = useState(null);
 
-  const handleIconHover = (iconName) => {
-    setHoveredIcon(iconName);
-  };
+  const handleIconHover = (iconName) => setHoveredIcon(iconName);
+
+  const socialIcons = [
+    {
+      name: 'github',
+      link: 'https://github.com/HarrisSte/',
+      iconClass: 'fa-brands fa-github',
+    },
+    {
+      name: 'linkedin',
+      link: 'https://www.linkedin.com/in/harrisste9/',
+      iconClass: 'fa-brands fa-linkedin',
+    },
+    {
+      name: 'stack-overflow',
+      link: 'https://stackoverflow.com/users/23360673/harrisste',
+      iconClass: 'fa-brands fa-stack-overflow',
+    },
+    {
+      name: 'upwork',
+      link: 'https://www.upwork.com/freelancers/~01fd4fb0211c0f8f3f?viewMode=1',
+      iconClass: 'fa-brands fa-upwork',
+    },
+    {
+      name: 'email',
+      link: 'mailto:harrisste9@gmail.com',
+      iconClass: 'fa-regular fa-envelope',
+    },
+  ];
 
   return (
     <footer>
       <div className='footer'>
         <Row className='footer-icons justify-content-center'>
-          {[
-            {
-              name: 'github',
-              link: 'https://github.com/HarrisSte/',
-              icon: 'fa-github',
-            },
-            {
-              name: 'linkedin',
-              link: 'https://www.linkedin.com/in/harrisste9/',
-              icon: 'fa-linkedin',
-            },
-            {
-              name: 'stack-overflow',
-              link: 'https://stackoverflow.com/users/23360673/harrisste',
-              icon: 'fa-stack-overflow',
-            },
-            {
-              name: 'upwork',
-              link: 'https://www.upwork.com/freelancers/~01fd4fb0211c0f8f3f?viewMode=1',
-              icon: 'fa-upwork',
-            },
-          ].map((social) => (
+          {socialIcons.map(({ name, link, iconClass }) => (
             <Col
-              key={social.name}
+              key={name}
               xs='auto'
-              className={`text-center ${
-                hoveredIcon === social.name ? 'hovered' : ''
-              }`}
-              onMouseEnter={() => handleIconHover(social.name)}
+              className={`text-center ${hoveredIcon === name ? 'hovered' : ''}`}
+              onMouseEnter={() => handleIconHover(name)}
               onMouseLeave={() => setHoveredIcon(null)}
             >
               <a
-                className={`fa-brands ${social.icon}`}
-                href={social.link}
-                target='_blank'
-                rel='noopener noreferrer'
+                className={iconClass}
+                href={link}
+                target={name === 'email' ? '_self' : '_blank'}
+                rel={name === 'email' ? '' : 'noopener noreferrer'}
               />
             </Col>
           ))}
         </Row>
 
+        {/* Navigation Links */}
         <Row className='footer-links justify-content-center'>
           <Col className='text-center'>
             <ul>
@@ -67,9 +71,9 @@ function Footer() {
                   path: '/web-dev-portfolio',
                 },
                 { name: 'Contact Me', path: '/contact' },
-              ].map((link) => (
-                <li key={link.name}>
-                  <a href={link.path}>{link.name}</a>
+              ].map(({ name, path }) => (
+                <li key={name}>
+                  <a href={path}>{name}</a>
                 </li>
               ))}
             </ul>
