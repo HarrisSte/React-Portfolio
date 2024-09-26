@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 
-import './contact.css';
+import './Contact.css';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
