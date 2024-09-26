@@ -2,54 +2,51 @@ import { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import './Footer.css';
 
-const socialLinks = [
-  {
-    name: 'github',
-    iconClass: 'fa-brands fa-github',
-    url: 'https://github.com/HarrisSte/',
-  },
-  {
-    name: 'linkedin',
-    iconClass: 'fa-brands fa-linkedin',
-    url: 'https://www.linkedin.com/in/harrisste9/',
-  },
-  {
-    name: 'stack-overflow',
-    iconClass: 'fa-brands fa-stack-overflow',
-    url: 'https://stackoverflow.com/users/23360673/harrisste',
-  },
-  {
-    name: 'upwork',
-    iconClass: 'fa-brands fa-upwork',
-    url: 'https://www.upwork.com/freelancers/~01fd4fb0211c0f8f3f?viewMode=1',
-  },
-  {
-    name: 'email',
-    iconClass: 'fa-regular fa-envelope',
-    url: 'mailto:harrisste9@gmail.com',
-  },
-];
-
 function Footer() {
   const [hoveredIcon, setHoveredIcon] = useState(null);
 
-  const handleIconHover = (iconName) => setHoveredIcon(iconName);
+  const handleIconHover = (iconName) => {
+    setHoveredIcon(iconName);
+  };
 
   return (
     <footer>
       <div className='footer'>
         <Row className='footer-icons justify-content-center'>
-          {socialLinks.map(({ name, iconClass, url }) => (
+          {[
+            {
+              name: 'github',
+              link: 'https://github.com/HarrisSte/',
+              icon: 'fa-github',
+            },
+            {
+              name: 'linkedin',
+              link: 'https://www.linkedin.com/in/harrisste9/',
+              icon: 'fa-linkedin',
+            },
+            {
+              name: 'stack-overflow',
+              link: 'https://stackoverflow.com/users/23360673/harrisste',
+              icon: 'fa-stack-overflow',
+            },
+            {
+              name: 'upwork',
+              link: 'https://www.upwork.com/freelancers/~01fd4fb0211c0f8f3f?viewMode=1',
+              icon: 'fa-upwork',
+            },
+          ].map((social) => (
             <Col
-              key={name}
+              key={social.name}
               xs='auto'
-              className={`text-center ${hoveredIcon === name ? 'hovered' : ''}`}
-              onMouseEnter={() => handleIconHover(name)}
+              className={`text-center ${
+                hoveredIcon === social.name ? 'hovered' : ''
+              }`}
+              onMouseEnter={() => handleIconHover(social.name)}
               onMouseLeave={() => setHoveredIcon(null)}
             >
               <a
-                className={iconClass}
-                href={url}
+                className={`fa-brands ${social.icon}`}
+                href={social.link}
                 target='_blank'
                 rel='noopener noreferrer'
               />
@@ -61,17 +58,18 @@ function Footer() {
           <Col className='text-center'>
             <ul>
               {[
-                'Welcome',
-                'About Me',
-                'Credentials',
-                'Education Portfolio',
-                'Web Development Portfolio',
-                'Contact Me',
+                { name: 'Welcome', path: '/' },
+                { name: 'About Me', path: '/about' },
+                { name: 'Credentials', path: '/credentials' },
+                { name: 'Education Portfolio', path: '/education-portfolio' },
+                {
+                  name: 'Web Development Portfolio',
+                  path: '/web-dev-portfolio',
+                },
+                { name: 'Contact Me', path: '/contact' },
               ].map((link) => (
-                <li key={link}>
-                  <a href={`/${link.toLowerCase().replace(/ /g, '-')}`}>
-                    {link}
-                  </a>
+                <li key={link.name}>
+                  <a href={link.path}>{link.name}</a>
                 </li>
               ))}
             </ul>
