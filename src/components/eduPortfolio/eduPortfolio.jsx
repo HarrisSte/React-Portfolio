@@ -40,7 +40,7 @@ const projects = [
   },
   {
     img: TheOutsiders,
-    title: 'The Outsiders: eLearning',
+    title: 'The Outsiders: eLearning Curriculum',
     description:
       'An eLearning curriculum developed using South Carolina State Education Standards. Based on The Outsiders by S.E. Hinton, this curriculum has a focus on utilizing technology.',
     link: 'https://drive.google.com/drive/folders/1D74ISG3YTogctoIMy3CG3gBXMzI_9ZO2?usp=sharing',
@@ -51,7 +51,7 @@ const projects = [
     img: Infographic3,
     title: 'Educator Roles & Responsibilities',
     description:
-      'An infographic that has an overview of the roles and responsibilities of professional educators.',
+      'An infographic that has an overview of the professional roles and responsibilities of professional educators.',
     link: 'https://drive.google.com/file/d/1n72BbCOIWcD0yuSRYyHhOfDamcadllrm/view?usp=sharing',
     product: 'Infographic',
     role: 'Author',
@@ -60,7 +60,7 @@ const projects = [
     img: Lesson1,
     title: 'Literary Technique: Irony',
     description:
-      'A curriculum developed using South Carolina State Education Standards. Learners explore the different types of Irony and the effect it has on the audience.',
+      'Developed using South Carolina State Education Standards, this curriculum includes learning targets & assessments to track progress. Learners explore the different types of Irony and the effect it has on the audience.',
     link: 'https://docs.google.com/document/d/1aWDWx9JKw1HGmakWSYuVU471Qay2AJX96GKt7gkcWxY/edit?usp=sharing',
     product: 'Curriculum',
     role: 'Author',
