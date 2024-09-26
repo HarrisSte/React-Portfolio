@@ -42,12 +42,12 @@
 }
 
 .footer-icons .fa-brands:hover {
-  color: #51aebf;
+  color: #007e5bff;
   transform: scale(1.2);
 }
 
 .footer-icons .fa-regular:hover {
-  color: #51aebf;
+  color: #007e5bff;
   transform: scale(1.2);
 }
 
@@ -69,7 +69,7 @@
 }
 
 .footer .footer-links a:hover {
-  color: green;
+  color: #007e5bff;
 }
 
 .footer .footer-copyright {

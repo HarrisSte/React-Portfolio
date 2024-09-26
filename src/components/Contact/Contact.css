@@ -31,6 +31,7 @@
 
 .contact-submit {
   float: right;
+  border-radius: 1rem;
   padding: 10px 20px;
   margin: 8px 0;
   font-family: 'Raleway', sans-serif;
@@ -44,6 +45,7 @@
 
 .contact-submit:hover {
   background-color: #37aa88;
+  border-radius: 1rem;
 }
 
 input::placeholder,

@@ -29,7 +29,7 @@ article {
 
 article:hover {
   --img-scale: 1.1;
-  --title-color: #28666e;
+  --title-color: #007e5bff;
   --link-icon-translate: 0;
   --link-icon-opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
@@ -74,7 +74,7 @@ article a {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: #28666e;
+  color: #007e5bff;
   z-index: 1;
 }
 

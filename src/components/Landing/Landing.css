@@ -2,7 +2,6 @@
   margin: 3rem auto 0;
   width: 100%;
   min-height: 400px;
-
   font-family: 'Raleway', sans-serif;
   color: white;
   padding: 1rem;
@@ -16,6 +15,37 @@
 .welcome h1 {
   font-size: 7rem;
   text-align: center;
+}
+
+.welcome h1 span {
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+
+.welcome h1 span::before {
+  background: linear-gradient(
+    to right,
+    rgba(0, 126, 91, 1) 0%,
+    rgba(40, 101, 55, 1) 25%,
+    rgba(0, 78, 54, 1) 50%,
+    rgba(0, 86, 62, 1) 100%
+  );
+
+  content: '';
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+  z-index: -1;
+  border-radius: 0;
+}
+
+.welcome h1 span:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+  border-radius: 0.5rem;
 }
 
 .welcome h2 {
@@ -43,11 +73,10 @@ button {
 }
 
 button.learn-more {
-  width: 40%;
+  width: 30%;
+  border-radius: 2rem;
   background: rgba(234, 221, 221, 0.25);
   backdrop-filter: blur(4px);
-  border-radius: 1.625rem;
-  padding: 0.75rem 1rem;
 }
 
 button.learn-more .circle {
@@ -99,7 +128,6 @@ button.learn-more .button-text {
   bottom: 0;
   padding: 0.75rem 0;
   color: #fff;
-  font-weight: 700;
   font-size: 22px;
   line-height: 1.6;
   text-align: center;
@@ -121,36 +149,6 @@ button:hover .circle .icon.arrow {
 
 button:hover .button-text {
   color: #fff;
-}
-
-span {
-  color: #fff;
-  position: relative;
-  text-decoration: none;
-}
-
-span::before {
-  background: linear-gradient(
-    90deg,
-    rgba(45, 120, 166, 1) 0%,
-    rgba(49, 141, 163, 1) 32%,
-    rgba(95, 203, 151, 1) 69%,
-    rgba(94, 251, 197, 1) 100%
-  );
-  content: '';
-  inset: 0;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out; /* Adding border-radius transition */
-  z-index: -1;
-  border-radius: 0;
-}
-
-span:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-  border-radius: 0.5rem;
 }
 
 @media (max-width: 1200px) {
@@ -179,6 +177,7 @@ span:hover::before {
   button.learn-more {
     width: 60%;
     font-size: 1.5rem;
+    border-radius: 2rem;
   }
 }
 
@@ -199,7 +198,7 @@ span:hover::before {
   button.learn-more {
     width: 80%;
     font-size: 1.5rem;
-    padding: 0.5rem;
+    border-radius: 2rem;
   }
 }
 
@@ -217,6 +216,6 @@ span:hover::before {
   button.learn-more {
     width: 100%;
     font-size: 1.2rem;
-    padding: 0.5rem;
+    border-radius: 2rem;
   }
 }
