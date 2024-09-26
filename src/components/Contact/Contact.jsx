@@ -12,8 +12,8 @@ const Contact = () => {
   });
 
   const [showModal, setShowModal] = useState(false);
-  const [modalMessage, setModalMessage] = useState(''); // State for modal message
-  const [modalTitle, setModalTitle] = useState(''); // State for modal title
+  const [modalMessage, setModalMessage] = useState('');
+  const [modalTitle, setModalTitle] = useState('');
 
   const handleCloseModal = () => setShowModal(false);
 
@@ -109,7 +109,6 @@ const Contact = () => {
         </Col>
       </Row>
 
-      {/* Modal for displaying messages */}
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
           <Modal.Title>{modalTitle}</Modal.Title>
