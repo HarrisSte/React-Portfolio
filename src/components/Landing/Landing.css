@@ -10,7 +10,6 @@
   box-sizing: border-box;
   background: rgba(234, 221, 221, 0.25);
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -47,7 +46,6 @@ button.learn-more {
   width: 40%;
   background: rgba(234, 221, 221, 0.25);
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   border-radius: 1.625rem;
   padding: 0.75rem 1rem;
 }
@@ -141,4 +139,72 @@ button:hover .button-text {
 
 .underline--magical:hover {
   background-size: 110% 95%;
+}
+
+@media (max-width: 1200px) {
+  .welcome {
+    font-size: 2.5rem;
+  }
+  .welcome h1 {
+    font-size: 6rem;
+  }
+  .welcome h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .welcome {
+    font-size: 2rem;
+    padding: 1rem 0.5rem;
+  }
+  .welcome h1 {
+    font-size: 4rem;
+  }
+  .welcome h2 {
+    font-size: 1.5rem;
+  }
+  button.learn-more {
+    width: 60%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    font-size: 1.8rem;
+    min-height: 400px;
+  }
+  .welcome h1 {
+    font-size: 3rem;
+  }
+  .welcome h2 {
+    font-size: 1.5rem;
+  }
+  .resume-container {
+    padding-top: 1rem;
+  }
+  button.learn-more {
+    width: 80%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome {
+    font-size: 1.5rem;
+    min-height: 300px;
+  }
+  .welcome h1 {
+    font-size: 2.5rem;
+  }
+  .welcome h2 {
+    font-size: 1.2rem;
+  }
+  button.learn-more {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
 }

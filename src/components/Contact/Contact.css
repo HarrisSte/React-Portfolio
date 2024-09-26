@@ -82,22 +82,64 @@ textarea:focus::placeholder {
   opacity: 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .contact-pg {
+    padding: 1.5rem 1rem;
+    font-size: 20px;
+  }
+
+  .contact-pg h2 {
+    padding-top: 4rem;
+    font-size: 24px;
+  }
+
+  .contact-submit {
+    font-size: 22px;
+    padding: 8px 16px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .contact-pg {
     padding: 1rem;
+    font-size: 18px;
   }
 
   .contact-pg h2 {
     padding-top: 3rem;
+    font-size: 20px;
   }
 
   .contact-form {
-    margin-top: 0;
+    padding: 1rem;
+  }
+
+  .contact-submit {
+    float: none;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 1rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .contact-pg {
-    min-height: auto;
+    padding: 0.5rem;
+    font-size: 16px;
+  }
+
+  .contact-pg h2 {
+    padding-top: 2rem;
+    font-size: 18px;
+  }
+
+  input,
+  textarea {
+    padding: 1rem;
+  }
+
+  .contact-submit {
+    font-size: 18px;
+    padding: 8px;
   }
 }
