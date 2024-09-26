@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import Initials from '../../assets/ReactPortfolioINITIALS.png';
-
 import './Header.css';
 
 function Header() {
