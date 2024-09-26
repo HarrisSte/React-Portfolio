@@ -103,7 +103,20 @@ article a {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px) {
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 1200px) {
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding-inline: 16px;
+  }
+
+  .project-info h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
   .project-container {
     flex-direction: column;
     padding-top: 4rem;
@@ -118,12 +131,6 @@ article a {
     font-size: 3rem;
   }
 
-  .projects {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 16px;
-    padding-inline: 16px;
-  }
-
   article h2 {
     font-size: 1.6rem;
   }
@@ -134,5 +141,50 @@ article a {
 
   .project-body p {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-info h1 {
+    font-size: 2.5rem;
+  }
+
+  article h2 {
+    font-size: 1.4rem;
+  }
+
+  .project-body p {
+    font-size: 0.9rem;
+  }
+
+  .project-body a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .project-info h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .project-info {
+    padding: 0.5rem;
+  }
+
+  article h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-body {
+    padding: 12px;
+  }
+
+  .project-body p {
+    font-size: 0.8rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
   }
 }
