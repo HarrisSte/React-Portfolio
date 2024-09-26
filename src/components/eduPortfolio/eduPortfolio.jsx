@@ -15,7 +15,7 @@ const projects = [
     img: Presentation,
     title: 'Gifted & Talented Presentation',
     description:
-      'Presentation created for parents and educators exploring the ins and outs G/T Education.',
+      'Professional development presentation created for educators and parents exploring G/T education.',
     link: 'https://docs.google.com/presentation/d/1AMLU7dp5NrF2M0VJquiyx3aSFdQy14bil6TZmNgP18s/edit?usp=sharing',
     product: 'Training Presentation',
     role: 'Author',
@@ -24,7 +24,7 @@ const projects = [
     img: Infographic1,
     title: 'History of Gifted & Talented Education',
     description:
-      'A timeline infographic illustrating the history of G/T Education in South Carolina.',
+      'An infographic illustrating the history of G/T Education in South Carolina.',
     link: 'https://drive.google.com/file/d/1yD3b-00PdZxCXXz-I0ED3q_Zur1IIXtg/view?usp=sharing',
     product: 'Infographic',
     role: 'Author',
@@ -75,6 +75,7 @@ const projects = [
   //   role: 'Author',
   // },
 ];
+
 function Projects() {
   return (
     <Container>
@@ -89,26 +90,24 @@ function Projects() {
             {projects.map((project, index) => (
               <article key={index}>
                 <div>
-                  <figure>
-                    <img src={project.img} alt='image of project' />
-                  </figure>
+                  <a
+                    href={project.link}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <figure>
+                      <img src={project.img} alt={project.title} />
+                    </figure>
+                  </a>
                   <div className='project-body'>
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
                     <div>
                       <a>Product: {project.product}</a>
-                      <br></br>
+                      <br />
                       <a>Project Role: {project.role}</a>
-                      <br></br>
-                      <br></br>
-
-                      <a
-                        href={project.link}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                      >
-                        Google Drive
-                      </a>
+                      <br />
+                      <br />
                     </div>
                   </div>
                 </div>
