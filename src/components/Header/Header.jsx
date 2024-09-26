@@ -21,7 +21,7 @@ function Header() {
         <Navbar.Brand as={Link} to='/'>
           <div className='brand-text'>
             Stephanie Harris
-            <p>Leader | Educator | Web Developer</p>
+            <p>Leader | Educator | Software Developer</p>
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />

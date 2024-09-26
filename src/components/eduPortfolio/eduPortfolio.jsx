@@ -5,7 +5,8 @@ import Infographic1 from '../../assets/Infographic1.png';
 import Infographic2 from '../../assets/Infographic2.png';
 import Infographic3 from '../../assets/Infographic3.png';
 import TheOutsiders from '../../assets/TheOutsiders.png';
-import BookPub from '../../assets/Writing.png';
+import Lesson1 from '../../assets/Irony.png';
+// import BookPub from '../../assets/Writing.png';
 
 import './eduPortfolio.css';
 
@@ -24,7 +25,7 @@ const projects = [
     title: 'History of Gifted & Talented Education',
     description:
       'A timeline infographic illustrating the history of G/T Education in South Carolina.',
-    link: '',
+    link: 'https://drive.google.com/file/d/1yD3b-00PdZxCXXz-I0ED3q_Zur1IIXtg/view?usp=sharing',
     product: 'Infographic',
     role: 'Author',
   },
@@ -33,16 +34,16 @@ const projects = [
     title: 'Gifted & Talented Extension Model',
     description:
       'An infographic that has an overview of the Extension Model used in Gifted and Talented Education.',
-    link: '',
+    link: 'https://drive.google.com/file/d/1e-I3N3aBb-uYF_r_w3fEgPiswaGolgOl/view?usp=sharing',
     product: 'Infographic',
     role: 'Author',
   },
   {
     img: TheOutsiders,
-    title: 'The Outsiders | eLearning',
+    title: 'The Outsiders: eLearning',
     description:
-      'An eLearning curriculum developed using South Carolina State Education Standards. Based on The Outsiders by S.E. Hinton, this curriculum has a focus with utilizing technology.',
-    link: '',
+      'An eLearning curriculum developed using South Carolina State Education Standards. Based on The Outsiders by S.E. Hinton, this curriculum has a focus on utilizing technology.',
+    link: 'https://drive.google.com/drive/folders/1D74ISG3YTogctoIMy3CG3gBXMzI_9ZO2?usp=sharing',
     product: 'eLearning Curriculum',
     role: 'Author',
   },
@@ -51,19 +52,28 @@ const projects = [
     title: 'Educator Roles & Responsibilities',
     description:
       'An infographic that has an overview of the roles and responsibilities of professional educators.',
-    link: '',
+    link: 'https://drive.google.com/file/d/1n72BbCOIWcD0yuSRYyHhOfDamcadllrm/view?usp=sharing',
     product: 'Infographic',
     role: 'Author',
   },
   {
-    img: BookPub,
-    title: 'Exploring Writing & Authors Craft',
+    img: Lesson1,
+    title: 'Literary Technique: Irony',
     description:
-      'A curriculum developed using South Carolina State Education Standards. Learners explore writing and authors craft by putting into action a book publication from start to finish.',
-    link: '',
+      'A curriculum developed using South Carolina State Education Standards. Learners explore the different types of Irony and the effect it has on the audience.',
+    link: 'https://docs.google.com/document/d/1aWDWx9JKw1HGmakWSYuVU471Qay2AJX96GKt7gkcWxY/edit?usp=sharing',
     product: 'Curriculum',
     role: 'Author',
   },
+  // {
+  //   img: BookPub,
+  //   title: 'Exploring Writing & Authors Craft',
+  //   description:
+  //     'A curriculum developed using South Carolina State Education Standards. Learners explore writing and authors craft by putting into action a book publication from start to finish.',
+  //   link: '',
+  //   product: 'Curriculum',
+  //   role: 'Author',
+  // },
 ];
 function Projects() {
   return (
@@ -72,7 +82,7 @@ function Projects() {
         <Col className='project-info'>
           <h1>
             <span className='underline--magical'>
-              Education & Professional Development Projects
+              Education & Professional Development
             </span>
           </h1>
           <section className='projects'>
@@ -91,6 +101,7 @@ function Projects() {
                       <a>Project Role: {project.role}</a>
                       <br></br>
                       <br></br>
+
                       <a
                         href={project.link}
                         target='_blank'
@@ -98,7 +109,6 @@ function Projects() {
                       >
                         Google Drive
                       </a>
-                      <span>&nbsp;|&nbsp;</span>
                     </div>
                   </div>
                 </div>
