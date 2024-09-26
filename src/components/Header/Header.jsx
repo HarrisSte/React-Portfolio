@@ -6,8 +6,17 @@ import './Header.css';
 
 function Header() {
   const location = useLocation();
-  const [showPortfolioDropdown, setShowPortfolioDropdown] = useState(false);
-  const [showSocialDropdown, setShowSocialDropdown] = useState(false);
+  const [dropdownStates, setDropdownStates] = useState({
+    portfolio: false,
+    social: false,
+  });
+
+  const toggleDropdown = (name, value) => {
+    setDropdownStates((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
 
   const isActive = (path) => (location.pathname === path ? 'active' : '');
 
@@ -25,7 +34,7 @@ function Header() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='ml-'>
+          <Nav className='ml-auto'>
             <Nav.Link as={Link} to='/' className={isActive('/')}>
               Welcome
             </Nav.Link>
@@ -39,12 +48,13 @@ function Header() {
             >
               Credentials
             </Nav.Link>
+
             <NavDropdown
               title='Portfolios'
               className={isActive('/portfolio')}
-              show={showPortfolioDropdown}
-              onMouseEnter={() => setShowPortfolioDropdown(true)}
-              onMouseLeave={() => setShowPortfolioDropdown(false)}
+              show={dropdownStates.portfolio}
+              onMouseEnter={() => toggleDropdown('portfolio', true)}
+              onMouseLeave={() => toggleDropdown('portfolio', false)}
             >
               <NavDropdown.Item
                 as={Link}
@@ -64,9 +74,9 @@ function Header() {
 
             <NavDropdown
               title='Social Media'
-              show={showSocialDropdown}
-              onMouseEnter={() => setShowSocialDropdown(true)}
-              onMouseLeave={() => setShowSocialDropdown(false)}
+              show={dropdownStates.social}
+              onMouseEnter={() => toggleDropdown('social', true)}
+              onMouseLeave={() => toggleDropdown('social', false)}
             >
               <NavDropdown.Item href='https://www.linkedin.com/in/harrisste9/'>
                 LinkedIn

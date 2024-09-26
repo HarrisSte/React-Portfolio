@@ -57,7 +57,6 @@ function Footer() {
           ))}
         </Row>
 
-        {/* Navigation Links */}
         <Row className='footer-links justify-content-center'>
           <Col className='text-center'>
             <ul>

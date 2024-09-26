@@ -15,7 +15,7 @@ const Welcome = () => {
       <Row>
         <Col className='welcome'>
           <h1>
-            <span className='underline--magical'>Hey there!</span>
+            <span>Hey there!</span>
           </h1>
           <h2>
             My name is Stephanie, and I have over a decade in education. I have
