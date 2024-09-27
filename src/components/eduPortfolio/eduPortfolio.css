@@ -16,6 +16,10 @@
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+h1 {
+  text-align: center;
+}
+
 article {
   position: relative;
   border-radius: 16px;

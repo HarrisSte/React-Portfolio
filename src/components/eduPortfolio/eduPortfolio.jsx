@@ -81,11 +81,7 @@ function Projects() {
     <Container>
       <Row id='projects' className='project-container'>
         <Col className='project-info'>
-          <h1>
-            <span className='underline--magical'>
-              Education & Professional Development
-            </span>
-          </h1>
+          <h1>Education & Professional Development</h1>
           <section className='projects'>
             {projects.map((project, index) => (
               <article key={index}>
