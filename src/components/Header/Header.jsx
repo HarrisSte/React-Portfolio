@@ -41,14 +41,6 @@ function Header() {
             <Nav.Link as={Link} to='/about' className={isActive('/about')}>
               About
             </Nav.Link>
-            {/* <Nav.Link
-              as={Link}
-              to='/credentials'
-              className={isActive('/credentials')}
-            >
-              Credentials
-            </Nav.Link> */}
-
             <NavDropdown
               title='Portfolios'
               className={isActive('/portfolio')}
@@ -71,7 +63,6 @@ function Header() {
                 Web Development
               </NavDropdown.Item>
             </NavDropdown>
-
             <NavDropdown
               title='Social Media'
               show={dropdownStates.social}
@@ -91,7 +82,6 @@ function Header() {
                 UpWork
               </NavDropdown.Item>
             </NavDropdown>
-
             <Nav.Link as={Link} to='/contact' className={isActive('/contact')}>
               Contact
             </Nav.Link>
