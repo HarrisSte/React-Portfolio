@@ -50,7 +50,7 @@ function Credentials() {
           </h4>
         </Col>
         <Col>
-          <h1>My certifications</h1>
+          <h1>My credentials</h1>
           <p>
             My certifications in leadership, coupled with web development, make
             me a strong candidate in a variety of roles. I have a strong ability

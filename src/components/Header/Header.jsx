@@ -41,13 +41,13 @@ function Header() {
             <Nav.Link as={Link} to='/about' className={isActive('/about')}>
               About
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               as={Link}
               to='/credentials'
               className={isActive('/credentials')}
             >
               Credentials
-            </Nav.Link>
+            </Nav.Link> */}
 
             <NavDropdown
               title='Portfolios'

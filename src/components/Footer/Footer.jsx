@@ -63,7 +63,7 @@ function Footer() {
               {[
                 { name: 'Welcome', path: '/' },
                 { name: 'About Me', path: '/about' },
-                { name: 'Credentials', path: '/credentials' },
+                // { name: 'Credentials', path: '/credentials' },
                 { name: 'Education Portfolio', path: '/education-portfolio' },
                 {
                   name: 'Web Development Portfolio',
