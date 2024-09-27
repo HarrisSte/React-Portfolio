@@ -1,6 +1,6 @@
 .project-container {
   display: flex;
-  padding-top: 6rem;
+  padding-top: 2rem;
 }
 
 .project-info {
@@ -12,8 +12,7 @@
 .project-info h1 {
   padding-bottom: 1rem;
   font-size: 4rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Handlee, cursive;
 }
 
 h1 {

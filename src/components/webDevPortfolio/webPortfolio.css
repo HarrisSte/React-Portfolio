@@ -1,6 +1,6 @@
 .project-container {
   display: flex;
-  padding-top: 6rem;
+  padding-top: 2rem;
 }
 
 .project-info {
@@ -11,7 +11,7 @@
 
 .project-info h1 {
   padding-bottom: 1rem;
-  font-family: Bitter, serif;
+  font-family: Handlee, cursive;
   font-size: 4rem;
 }
 

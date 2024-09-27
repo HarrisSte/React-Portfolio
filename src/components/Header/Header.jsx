@@ -28,7 +28,7 @@ function Header() {
         </Link>
         <Navbar.Brand as={Link} to='/'>
           <div className='brand-text'>
-            Stephanie Harris
+            <h2>Stephanie Harris</h2>
             <p>Leader | Educator | Software Developer</p>
           </div>
         </Navbar.Brand>

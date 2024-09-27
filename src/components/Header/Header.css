@@ -17,9 +17,13 @@
   margin-right: 20rem;
 }
 
+.brand-text h2 {
+  font-family: Handlee, cursive;
+}
+
 .navbar-brand p {
   color: #09516c;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .nav-link {
