@@ -5,7 +5,8 @@ import Infographic1 from '../../assets/Infographic1.png';
 import Infographic2 from '../../assets/Infographic2.png';
 import Infographic3 from '../../assets/Infographic3.png';
 import TheOutsiders from '../../assets/TheOutsiders.png';
-import BookPub from '../../assets/Writing.png';
+import Lesson1 from '../../assets/Irony.png';
+// import BookPub from '../../assets/Writing.png';
 
 import './eduPortfolio.css';
 
@@ -14,8 +15,8 @@ const projects = [
     img: Presentation,
     title: 'Gifted & Talented Presentation',
     description:
-      'Presentation created for parents and educators exploring the ins and outs G/T Education.',
-    link: 'https://docs.google.com/presentation/d/1BTuvyEUoQk4a1lzhJAdIunpJO498UOAZ/edit?usp=sharing&ouid=117890310285460485858&rtpof=true&sd=true',
+      'Professional development presentation created for educators and parents exploring G/T education.',
+    link: 'https://docs.google.com/presentation/d/1AMLU7dp5NrF2M0VJquiyx3aSFdQy14bil6TZmNgP18s/edit?usp=sharing',
     product: 'Training Presentation',
     role: 'Author',
   },
@@ -23,7 +24,11 @@ const projects = [
     img: Infographic1,
     title: 'History of Gifted & Talented Education',
     description:
+<<<<<<< HEAD
       'A timeline infographic illustrating the history of G/T Education in South Carolina.',
+=======
+      'An infographic illustrating the history of G/T Education in South Carolina.',
+>>>>>>> a71bd33a0630797ec7cd4270b689e6474f388c77
     link: 'https://drive.google.com/file/d/1yD3b-00PdZxCXXz-I0ED3q_Zur1IIXtg/view?usp=sharing',
     product: 'Infographic',
     role: 'Author',
@@ -39,9 +44,13 @@ const projects = [
   },
   {
     img: TheOutsiders,
-    title: 'The Outsiders | eLearning',
+    title: 'The Outsiders: eLearning Curriculum',
     description:
+<<<<<<< HEAD
       'An eLearning curriculum developed using South Carolina State Education Standards. Based on The Outsiders by S.E. Hinton, this curriculum has a focus with utilizing technology.',
+=======
+      'An eLearning curriculum developed using South Carolina State Education Standards. Based on The Outsiders by S.E. Hinton, this curriculum has a focus on utilizing technology.',
+>>>>>>> a71bd33a0630797ec7cd4270b689e6474f388c77
     link: 'https://drive.google.com/drive/folders/1D74ISG3YTogctoIMy3CG3gBXMzI_9ZO2?usp=sharing',
     product: 'eLearning Curriculum',
     role: 'Author',
@@ -50,55 +59,63 @@ const projects = [
     img: Infographic3,
     title: 'Educator Roles & Responsibilities',
     description:
+<<<<<<< HEAD
       'An infographic that has an overview of the roles and responsibilities of professional educators.',
+=======
+      'An infographic that has an overview of the professional roles and responsibilities of professional educators.',
+>>>>>>> a71bd33a0630797ec7cd4270b689e6474f388c77
     link: 'https://drive.google.com/file/d/1n72BbCOIWcD0yuSRYyHhOfDamcadllrm/view?usp=sharing',
     product: 'Infographic',
     role: 'Author',
   },
   {
-    img: BookPub,
-    title: 'Exploring Writing & Authors Craft',
+    img: Lesson1,
+    title: 'Literary Technique: Irony',
     description:
-      'A curriculum developed using South Carolina State Education Standards. Learners explore writing and authors craft by putting into action a book publication from start to finish.',
-    link: '',
+      'Developed using South Carolina State Education Standards, this curriculum includes learning targets & assessments to track progress. Learners explore the different types of Irony and the effect it has on the audience.',
+    link: 'https://docs.google.com/document/d/1aWDWx9JKw1HGmakWSYuVU471Qay2AJX96GKt7gkcWxY/edit?usp=sharing',
     product: 'Curriculum',
     role: 'Author',
   },
+  // {
+  //   img: BookPub,
+  //   title: 'Exploring Writing & Authors Craft',
+  //   description:
+  //     'A curriculum developed using South Carolina State Education Standards. Learners explore writing and authors craft by putting into action a book publication from start to finish.',
+  //   link: '',
+  //   product: 'Curriculum',
+  //   role: 'Author',
+  // },
 ];
+
 function Projects() {
   return (
     <Container>
       <Row id='projects' className='project-container'>
         <Col className='project-info'>
-          <h1>
-            <span className='underline--magical'>
-              Education & Professional Development Projects
-            </span>
-          </h1>
+          <h1>Education & Professional Development</h1>
           <section className='projects'>
             {projects.map((project, index) => (
               <article key={index}>
                 <div>
-                  <figure>
-                    <img src={project.img} alt='image of project' />
-                  </figure>
+                  <a
+                    href={project.link}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <figure>
+                      <img src={project.img} alt={project.title} />
+                    </figure>
+                  </a>
                   <div className='project-body'>
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
                     <div>
                       <a>Product: {project.product}</a>
-                      <br></br>
+                      <br />
                       <a>Project Role: {project.role}</a>
-                      <br></br>
-                      <br></br>
-                      <a
-                        href={project.link}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                      >
-                        Google Drive
-                      </a>
-                      <span>&nbsp;|&nbsp;</span>
+                      <br />
+                      <br />
                     </div>
                   </div>
                 </div>

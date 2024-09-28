@@ -2,32 +2,32 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Landing.css';
 
-function handleDownload() {
+const handleDownload = () => {
   const link = document.createElement('a');
-  link.href = '/SHarris_Resume.pdf';
-  link.download = 'SHarris_Resume.pdf';
+  link.href = '/Resume.pdf';
+  link.download = 'Resume.pdf';
   link.click();
-}
+};
 
-function Welcome() {
+const Welcome = () => {
   return (
     <Container>
       <Row>
         <Col className='welcome'>
           <h1>
-            <span className='underline--magical'>Hey there!</span>
+            <span>Hey there!</span>
           </h1>
           <h2>
-            My name is Stephanie and I have over a decade in education; I have
-            built a dynamic career in leadership and program management, driven
-            by my passion for continuous learning. My work spans collaborating
-            with diverse stakeholders, leading school-wide initiatives, and
-            organizing professional development events. <br /> <br /> I have
-            managed data-driven programs that drive improvement and track
-            progress, and I am dedicated to ongoing professional growth.
-            Adaptable and results-oriented, I excel in leading teams and
-            executing initiatives, always aiming to foster innovation, equity,
-            and excellence in education.
+            My name is Stephanie, and I have over a decade of experience in
+            education. I have built a dynamic career in leadership and program
+            management, driven by my passion for continuous learning. My work
+            spans collaborating with diverse stakeholders, leading school-wide
+            initiatives, and organizing professional development events.
+            <br /> <br />I have managed data-driven programs that promote
+            improvement and track progress, and I am committed to continuous
+            professional growth. Adaptable and results-oriented, I excel in
+            leading teams and executing initiatives, always aiming to foster
+            innovation, equity, and excellence in education.
           </h2>
         </Col>
       </Row>
@@ -46,6 +46,6 @@ function Welcome() {
       </Row>
     </Container>
   );
-}
+};
 
 export default Welcome;

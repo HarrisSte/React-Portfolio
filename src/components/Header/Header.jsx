@@ -2,13 +2,21 @@ import { useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import Initials from '../../assets/ReactPortfolioINITIALS.png';
-
 import './Header.css';
 
 function Header() {
   const location = useLocation();
-  const [showPortfolioDropdown, setShowPortfolioDropdown] = useState(false);
-  const [showSocialDropdown, setShowSocialDropdown] = useState(false);
+  const [dropdownStates, setDropdownStates] = useState({
+    portfolio: false,
+    social: false,
+  });
+
+  const toggleDropdown = (name, value) => {
+    setDropdownStates((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
 
   const isActive = (path) => (location.pathname === path ? 'active' : '');
 
@@ -20,32 +28,25 @@ function Header() {
         </Link>
         <Navbar.Brand as={Link} to='/'>
           <div className='brand-text'>
-            Stephanie Harris
-            <p>Leader | Educator | Web Developer</p>
+            <h2>Stephanie Harris</h2>
+            <p>Leader | Educator | Software Developer</p>
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='ml-'>
+          <Nav className='ml-auto'>
             <Nav.Link as={Link} to='/' className={isActive('/')}>
               Welcome
             </Nav.Link>
             <Nav.Link as={Link} to='/about' className={isActive('/about')}>
               About
             </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to='/credentials'
-              className={isActive('/credentials')}
-            >
-              Credentials
-            </Nav.Link>
             <NavDropdown
               title='Portfolios'
               className={isActive('/portfolio')}
-              show={showPortfolioDropdown}
-              onMouseEnter={() => setShowPortfolioDropdown(true)}
-              onMouseLeave={() => setShowPortfolioDropdown(false)}
+              show={dropdownStates.portfolio}
+              onMouseEnter={() => toggleDropdown('portfolio', true)}
+              onMouseLeave={() => toggleDropdown('portfolio', false)}
             >
               <NavDropdown.Item
                 as={Link}
@@ -62,12 +63,11 @@ function Header() {
                 Web Development
               </NavDropdown.Item>
             </NavDropdown>
-
             <NavDropdown
               title='Social Media'
-              show={showSocialDropdown}
-              onMouseEnter={() => setShowSocialDropdown(true)}
-              onMouseLeave={() => setShowSocialDropdown(false)}
+              show={dropdownStates.social}
+              onMouseEnter={() => toggleDropdown('social', true)}
+              onMouseLeave={() => toggleDropdown('social', false)}
             >
               <NavDropdown.Item href='https://www.linkedin.com/in/harrisste9/'>
                 LinkedIn
@@ -82,7 +82,6 @@ function Header() {
                 UpWork
               </NavDropdown.Item>
             </NavDropdown>
-
             <Nav.Link as={Link} to='/contact' className={isActive('/contact')}>
               Contact
             </Nav.Link>

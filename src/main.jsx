@@ -5,9 +5,9 @@ import './index.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Landing from './components/Landing/Landing.jsx'
+import Landing from './components/Landing/Landing.jsx';
 import About from './components/About/About.jsx';
-import Credentials from './components/credentials/credentials.jsx';
+// import Credentials from './components/credentials/credentials.jsx';
 import WebDev from './components/webDevPortfolio/webProjects.jsx';
 import Education from './components/eduPortfolio/eduPortfolio.jsx';
 import Contact from './components/Contact/Contact.jsx';
@@ -25,10 +25,10 @@ const router = createBrowserRouter([
         path: '/about',
         element: <About />,
       },
-      {
-        path: '/credentials',
-        element: <Credentials />,
-      },
+      // {
+      //   path: '/credentials',
+      //   element: <Credentials />,
+      // },
       {
         path: '/web-dev-portfolio',
         element: <WebDev />,
