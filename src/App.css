@@ -20,7 +20,6 @@ body {
   background-color: #f4f4f4;
   background-image: url('./assets/background.jpg');
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
