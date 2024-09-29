@@ -3,9 +3,8 @@
 }
 
 .logo img {
-  margin: 10px 10px 25px 25px;
-  max-width: 100%;
-  height: auto;
+  margin: 10px auto;
+  margin-right: 25px;
 }
 
 .navbar {
