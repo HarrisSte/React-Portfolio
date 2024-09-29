@@ -24,11 +24,7 @@ const projects = [
     img: Infographic1,
     title: 'History of Gifted & Talented Education',
     description:
-<<<<<<< HEAD
-      'A timeline infographic illustrating the history of G/T Education in South Carolina.',
-=======
       'An infographic illustrating the history of G/T Education in South Carolina.',
->>>>>>> a71bd33a0630797ec7cd4270b689e6474f388c77
     link: 'https://drive.google.com/file/d/1yD3b-00PdZxCXXz-I0ED3q_Zur1IIXtg/view?usp=sharing',
     product: 'Infographic',
     role: 'Author',
@@ -46,11 +42,7 @@ const projects = [
     img: TheOutsiders,
     title: 'The Outsiders: eLearning Curriculum',
     description:
-<<<<<<< HEAD
-      'An eLearning curriculum developed using South Carolina State Education Standards. Based on The Outsiders by S.E. Hinton, this curriculum has a focus with utilizing technology.',
-=======
       'An eLearning curriculum developed using South Carolina State Education Standards. Based on The Outsiders by S.E. Hinton, this curriculum has a focus on utilizing technology.',
->>>>>>> a71bd33a0630797ec7cd4270b689e6474f388c77
     link: 'https://drive.google.com/drive/folders/1D74ISG3YTogctoIMy3CG3gBXMzI_9ZO2?usp=sharing',
     product: 'eLearning Curriculum',
     role: 'Author',
@@ -59,11 +51,7 @@ const projects = [
     img: Infographic3,
     title: 'Educator Roles & Responsibilities',
     description:
-<<<<<<< HEAD
-      'An infographic that has an overview of the roles and responsibilities of professional educators.',
-=======
       'An infographic that has an overview of the professional roles and responsibilities of professional educators.',
->>>>>>> a71bd33a0630797ec7cd4270b689e6474f388c77
     link: 'https://drive.google.com/file/d/1n72BbCOIWcD0yuSRYyHhOfDamcadllrm/view?usp=sharing',
     product: 'Infographic',
     role: 'Author',
