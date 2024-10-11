@@ -6,7 +6,7 @@ import Infographic2 from '../../assets/Infographic2.png';
 import Infographic3 from '../../assets/Infographic3.png';
 import TheOutsiders from '../../assets/TheOutsiders.png';
 import Lesson1 from '../../assets/Irony.png';
-// import BookPub from '../../assets/Writing.png';
+import Lesson2 from '../../assets/TTT.png';
 
 import './eduPortfolio.css';
 
@@ -18,6 +18,15 @@ const projects = [
       'Professional development presentation created for educators and parents exploring G/T education.',
     link: 'https://docs.google.com/presentation/d/1AMLU7dp5NrF2M0VJquiyx3aSFdQy14bil6TZmNgP18s/edit?usp=sharing',
     product: 'Training Presentation',
+    role: 'Author',
+  },
+  {
+    img: Lesson2,
+    title: 'Mini-Lesson: There/Their/Theyre',
+    description:
+      'A mini-lesson, including an infographic, created to explore the differences between the commonly confused words of there, their, and theyre.',
+    link: 'https://www.canva.com/design/DAGS0AD89TU/fGIIJWXUKLGvUasn6LGbNg/view?utm_content=DAGS0AD89TU&utm_campaign=designshare&utm_medium=link&utm_source=editor',
+    product: 'Mini-lesson & Infographic',
     role: 'Author',
   },
   {
@@ -65,15 +74,6 @@ const projects = [
     product: 'Curriculum',
     role: 'Author',
   },
-  // {
-  //   img: BookPub,
-  //   title: 'Exploring Writing & Authors Craft',
-  //   description:
-  //     'A curriculum developed using South Carolina State Education Standards. Learners explore writing and authors craft by putting into action a book publication from start to finish.',
-  //   link: '',
-  //   product: 'Curriculum',
-  //   role: 'Author',
-  // },
 ];
 
 function Projects() {
