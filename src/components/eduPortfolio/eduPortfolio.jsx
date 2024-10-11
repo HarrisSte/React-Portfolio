@@ -22,9 +22,9 @@ const projects = [
   },
   {
     img: Lesson2,
-    title: 'Mini-Lesson: There/Their/Theyre',
+    title: 'Mini-Lesson: There/Their/They\'re',
     description:
-      'A mini-lesson, including an infographic, created to explore the differences between the commonly confused words of there, their, and theyre.',
+      'A mini-lesson, including an infographic, created to explore the differences between the commonly confused words of there, their, and they\'re.',
     link: 'https://www.canva.com/design/DAGS0AD89TU/fGIIJWXUKLGvUasn6LGbNg/view?utm_content=DAGS0AD89TU&utm_campaign=designshare&utm_medium=link&utm_source=editor',
     product: 'Mini-lesson & Infographic',
     role: 'Author',
