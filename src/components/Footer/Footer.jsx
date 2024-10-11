@@ -9,19 +9,19 @@ function Footer() {
 
   const socialIcons = [
     {
-      name: 'github',
-      link: 'https://github.com/HarrisSte/',
-      iconClass: 'fa-brands fa-github',
-    },
-    {
       name: 'linkedin',
       link: 'https://www.linkedin.com/in/harrisste9/',
       iconClass: 'fa-brands fa-linkedin',
     },
     {
-      name: 'stack-overflow',
-      link: 'https://stackoverflow.com/users/23360673/harrisste',
-      iconClass: 'fa-brands fa-stack-overflow',
+      name: 'TpT',
+      link: 'https://www.teacherspayteachers.com/store/stephanie-harris-3061',
+      iconClass: 'fa-solid fa-chalkboard-user',
+    },
+    {
+      name: 'github',
+      link: 'https://github.com/HarrisSte/',
+      iconClass: 'fa-brands fa-github',
     },
     {
       name: 'upwork',

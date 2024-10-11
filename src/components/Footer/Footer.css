@@ -41,12 +41,25 @@
   transition: color 0.3s, transform 0.3s;
 }
 
+.footer-icons .fa-solid {
+  text-decoration: none;
+  font-size: 2.5em;
+  margin: 0 15px;
+  color: gray;
+  transition: color 0.3s, transform 0.3s;
+}
+
 .footer-icons .fa-brands:hover {
   color: #007e5bff;
   transform: scale(1.2);
 }
 
 .footer-icons .fa-regular:hover {
+  color: #007e5bff;
+  transform: scale(1.2);
+}
+
+.footer-icons .fa-solid:hover {
   color: #007e5bff;
   transform: scale(1.2);
 }

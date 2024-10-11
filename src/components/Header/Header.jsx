@@ -72,11 +72,11 @@ function Header() {
               <NavDropdown.Item href='https://www.linkedin.com/in/harrisste9/'>
                 LinkedIn
               </NavDropdown.Item>
+              <NavDropdown.Item href='https://www.teacherspayteachers.com/store/stephanie-harris-3061'>
+                Teachers Pay Teachers
+              </NavDropdown.Item>
               <NavDropdown.Item href='https://github.com/HarrisSte/'>
                 GitHub
-              </NavDropdown.Item>
-              <NavDropdown.Item href='https://stackoverflow.com/users/23360673/harrisste'>
-                Stack Overflow
               </NavDropdown.Item>
               <NavDropdown.Item href='https://www.upwork.com/freelancers/~01fd4fb0211c0f8f3f?mp_source=share'>
                 UpWork
