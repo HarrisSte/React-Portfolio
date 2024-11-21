@@ -51,7 +51,7 @@ const projects = [
     img: TheOutsiders,
     title: 'The Outsiders: eLearning Curriculum',
     description:
-      'An eLearning curriculum developed using South Carolina State Education Standards. Based on The Outsiders by S.E. Hinton, this curriculum has a focus on utilizing technology.',
+      'A curriculum developed using South Carolina State Education Standards. Based on The Outsiders by S.E. Hinton, this curriculum has a focus on utilizing technology.',
     link: 'https://drive.google.com/drive/folders/1D74ISG3YTogctoIMy3CG3gBXMzI_9ZO2?usp=sharing',
     product: 'Curriculum',
     role: 'Author',
